@@ -1,5 +1,5 @@
 ---
-variant: markdown+pipe_tables
+variant: markdown+pipe_tables+superscript
 ---
 # Datenschutzordnung
 
@@ -40,10 +40,12 @@ Im Folgenden sind alle Datenarten mit möglichen Nutzungen aufgeführt.
 
 | Datenart      | Verwendung       | Löschzeitpunkt     |
 |:--------------|:----------------------------|:-------------------|
-|Namen          |öffentliche Mitgliederliste| nach Erlöschung der Zustimmung |
-|Email          |öffentliche Mitgliederliste| nach Erlöschung der Zustimmung |
-|Homepage       |öffentliche Mitgliederliste| nach Erlöschung der Zustimmung |
-|geografische Koordinaten|öffentliche Mitgliederliste| nach Erlöschung der Zustimmung |
-|Zugehörigkeiten|öffentliche Mitgliederliste| nach Erlöschung der Zustimmung |
+|Namen          |öffentliche Mitgliederliste^1^| nach Erlöschung der Zustimmung |
+|Namen          |öffentliche Mitgliederliste^1^| nach Erlöschung der Zustimmung |
+|Email          |öffentliche Mitgliederliste^1^| nach Erlöschung der Zustimmung |
+|Homepage       |öffentliche Mitgliederliste^1^| nach Erlöschung der Zustimmung |
+|geografische Koordinaten|öffentliche Mitgliederliste^1^| nach Erlöschung der Zustimmung |
+|Zugehörigkeiten|öffentliche Mitgliederliste^1^| nach Erlöschung der Zustimmung |
 |elektronisches Schlüsselmaterial|Verschlüsselung von Kommunikation zwischen Verein und Mitglied, Identifikation des Mitglieds gegenüber dem Verein | nach Erlöschung der Zustimmung |
 
+^1^: Die öffentliche Mitgliederliste schließt ehemalige Mitglieder ein. Dies ist unabhängig davon, ob ehemalige Mitglieder in jeder Art der Veröffentlichung mit aufgeführt sind.
