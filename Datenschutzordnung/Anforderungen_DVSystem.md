@@ -23,7 +23,10 @@ Anforderungen an (Mitglieds-)datenspeicherung
 
 ## Soll
 
-- open source
+| Kriterium  | JVerein |
+| ------------- | ------------- |
+| open source  | ja  |
+
 - pro Datenpunkt:
     - Löschzeitpunkt?
 - Erstellung einer Liste von Verwendungen vereinfachen (log)
