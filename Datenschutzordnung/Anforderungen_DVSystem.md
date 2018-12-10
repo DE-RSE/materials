@@ -11,6 +11,8 @@ Anforderungen an (Mitglieds-)datenspeicherung
 | sicher, Zugriffsbeschränkung | lokaler Zugriff |
 | email, Rundschreiben | ja  |
 | banking | ja |
+| reporting | ja |
+| SEPA Lastschrift| ja | 
 
 - DSVGO
     - permanente Löschung von einzelnen Datenpunkten jederzeit möglich
