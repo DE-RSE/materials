@@ -13,18 +13,16 @@ Anforderungen an (Mitglieds-)datenspeicherung
 | banking | ja |
 | reporting | ja |
 | SEPA Lastschrift| ja | 
-
-- DSVGO
-    - permanente Löschung von einzelnen Datenpunkten jederzeit möglich
-        - Was machen wir mit Löschungen und Backups?
-    - Anzeige aller Daten einer Person leicht möglich (evtl. Anfragen)
-- pro Datenpunkt:
-    - zugestimmte Verwendungszwecke
+| permanente Löschung von einzelnen Datenpunkten | ? |
+| Löschung inkl. in Backups | ? |
+| leichte Anzeige aller zu einer Person gespeicherten Daten | ? |
+| pro Datenpunkt: zugestimmte Verwendungszwecke | ? |
 
 ## Soll
 
-- open source
-- pro Datenpunkt:
-    - Löschzeitpunkt?
-- Erstellung einer Liste von Verwendungen vereinfachen (log)
+| Kriterium  | JVerein |
+| ------------- | ------------- |
+| open source | ja |
+| pro Datenpunkt: Löschzeitpunkt | ? |
+| Log aller Verwendungen (wann wurden welche Daten wofür benutzt? | ? |
 
