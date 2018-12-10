@@ -14,7 +14,9 @@
 \pagestyle{empty}
 
 \begin{document}
-{\Large\bf\centering Antrag auf Mitgliedschaft in der de-RSE e.V. - Gesellschaft für Forschungssoftware\\*[3em]}
+{\Large\bf\centering Antrag auf Mitgliedschaft in der\\de-RSE e.V. - Gesellschaft für Forschungssoftware\\*[3em]}
+
+\stepcounter{footnote}\footnotetext{optional}\addtocounter{footnote}{-1}
 
 \begin{Form}
 \begin{tabular}{ll}
@@ -23,7 +25,8 @@ Nachname:           & \TextField[height=0.01cm, width=0.7\textwidth]{} \\\\*[1em
 Straße, Hausnummer: & \TextField[height=0.01cm, width=0.7\textwidth]{} \\\\
 PLZ:                & \TextField[height=0.01cm, width=0.2\textwidth]{} \\\\
 Wohnort:            & \TextField[height=0.01cm, width=0.7\textwidth]{} \\\\*[1em]
-Email:              & \TextField[height=0.01cm, width=0.7\textwidth]{} \\\\
+Email:              & \TextField[height=0.01cm, width=0.7\textwidth]{} \\\\*[1em]
+PGP/GPG Schlüssel\footnotemark & \TextField[height=0.01cm, width=0.7\textwidth]{} \\\\
 \end{tabular}
 
 Durch die Unterschrift erkennt der/die Antragssteller/-in die Satzung und die
@@ -35,11 +38,14 @@ Das Beitragsjahr beginnt mit dem Kalenderjahr des Eintritts des Mitglieds. Der B
 
 \CheckBox[checked,name=anteiligeZahlung]{anteilige Zahlung im ersten Jahr beantragen}
 
-Der Mitgliedsbeitrag ist unter Angabe der oben genannten Email auf folgendes Vereinskonto zu überweisen: IBAN:
+Der Mitgliedsbeitrag ist unter Angabe der oben genannten Email auf folgendes Vereinskonto zu überweisen:
 
+IBAN:
+
+\vspace{4em}
 \begin{tabular}{ll}
 Datum:        & \TextField[height=0.01cm, width=0.2\textwidth]{} \\\\
-Unterschrift: & \\
+Unterschrift: & \\*[1em]
 \end{tabular}
 
 \end{Form}
