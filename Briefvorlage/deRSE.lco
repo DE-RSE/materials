@@ -11,8 +11,12 @@
 \DeclareTextCommandDefault{\texteuro}{\euro}
 \DeclareUnicodeCharacter{20AC}{\euro}
 
+\LoadLetterOption{DIN}
+
 \defineshorthand{"`}{„}
 \defineshorthand{"'}{“}
+
+\setlength{\parindent}{0em}
 
 \KOMAoptions{
     foldmarks=true,
@@ -29,7 +33,9 @@
 \setkomavar{fromemail}[]{vorstand@de-rse.org}
 \setkomavar{fromurl}[]{\url{https://www.de-rse.org/}}
 \setkomavar{backaddress}{de-RSE e.V., Kleineweg 79, 12101 Berlin}
-\setkomavar{fromaddress}{de-RSE e.V.\\Kleineweg 79\\12101 Berlin}
+\setkomavar{fromaddress}{de-RSE e.V. - Gesellschaft für Forschungssoftware\\Kleineweg 79\\12101 Berlin}
+
+\setkomavar{firstfoot}{\begin{centering}Seite \thepage\\\end{centering}}
 
 \setkomafont{fromname}{\bfseries\color{black}\LARGE}
 \setkomafont{fromrule}{\color{col_deRSE}}
