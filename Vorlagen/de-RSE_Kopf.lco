@@ -1,0 +1,38 @@
+\ProvidesFile{deRSE.lco}[letter-class-option file]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{graphicx}
+\RequirePackage{color}
+\RequirePackage{url}
+
+\RequirePackage[ngerman,KeepShorthandsActive]{babel}
+\RequirePackage{eurosym}
+\DeclareTextCommandDefault{\texteuro}{\euro}
+\DeclareUnicodeCharacter{20AC}{\euro}
+
+\LoadLetterOption{DIN}
+
+\defineshorthand{"`}{„}
+\defineshorthand{"'}{“}
+
+\setlength{\parindent}{0em}
+
+\KOMAoptions{
+    foldmarks=false,
+    addrfield=false,
+    fromalign=right,
+    fromrule=aftername,
+    footsepline=off,
+    fromurl=false,
+    fromemail=false,
+}
+
+\definecolor{col_deRSE}{rgb}{0.535, 0.164, 0.410}
+
+\setkomavar{fromname}{\includegraphics[height=1em]{de-RSE-logo-text-colour}}
+\setkomafont{fromrule}{\color{col_deRSE}}
+\setkomavar{date}{}
+
+\endinput
+

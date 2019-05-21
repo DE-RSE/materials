@@ -1,53 +1,48 @@
-\documentclass[a4paper]{letter}
-\usepackage[a4paper]{geometry}
-\usepackage[ngerman]{babel}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+\documentclass[../Vorlagen/de-RSE_Kopf,a4paper]{scrlttr2}
+\graphicspath{{../Vorlagen/}}
 \usepackage{mathpazo}
-\usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
-
-\usepackage{eurosym}
-\DeclareTextCommandDefault{\texteuro}{\euro}
-\DeclareUnicodeCharacter{20AC}{\euro}
 
 \pagestyle{empty}
 
 \begin{document}
-{\Large\bf\centering Antrag auf Mitgliedschaft in der\\de-RSE e.V. - Gesellschaft für Forschungssoftware\\*[3em]}
+\begin{letter}{}
+\opening{}
+\vspace{-9cm}
+{\large\textbf{\centering Antrag auf Mitgliedschaft in der\\de-RSE e.V. - Gesellschaft für Forschungssoftware\\*[1em]}}
 
 \stepcounter{footnote}\footnotetext{optional}\addtocounter{footnote}{-1}
 
 \begin{Form}
 \begin{tabular}{ll}
-Vorname:            & \TextField[height=0.01cm, width=0.7\textwidth]{} \\\\
-Nachname:           & \TextField[height=0.01cm, width=0.7\textwidth]{} \\\\*[1em]
-Straße, Hausnummer: & \TextField[height=0.01cm, width=0.7\textwidth]{} \\\\
+Vorname:            & \TextField[height=0.01cm, width=0.65\textwidth]{} \\\\
+Nachname:           & \TextField[height=0.01cm, width=0.65\textwidth]{} \\\\*[.5em]
+Straße, Hausnummer: & \TextField[height=0.01cm, width=0.65\textwidth]{} \\\\
 PLZ:                & \TextField[height=0.01cm, width=0.2\textwidth]{} \\\\
-Wohnort:            & \TextField[height=0.01cm, width=0.7\textwidth]{} \\\\*[1em]
-Email:              & \TextField[height=0.01cm, width=0.7\textwidth]{} \\\\*[1em]
-PGP/GPG Schlüssel\footnotemark & \TextField[height=0.01cm, width=0.7\textwidth]{} \\\\
+Wohnort:            & \TextField[height=0.01cm, width=0.65\textwidth]{} \\\\*[.5em]
+Email:              & \TextField[height=0.01cm, width=0.65\textwidth]{} \\\\*[.5em]
+PGP/GPG Schlüssel\footnotemark & \TextField[height=0.01cm, width=0.65\textwidth]{} \\\\
 \end{tabular}
 
-Durch die Unterschrift erkennt der/die Antragssteller/-in die Satzung und die
-Ordnungen von de-RSE e.V. an. Diese sind öffentlich einsehbar.
+Durch die Unterschrift erkennt der/die Antragssteller/-in die Satzung und die Ordnungen von de-RSE e.V. - Gesellschaft für Forschungssoftware an.
+Diese sind öffentlich einsehbar.
 
 Der Mitgliedsbeitrag für ordentliche Mitglieder beträgt 60~€ pro Kalenderjahr. Für Studierende, Schüler, Arbeitslose, Umschüler, Rentner und Menschen mit Behinderung beträgt der jährliche Mitgliedsbeitrag nach Vorlage eines geeigneten Nachweises 30~€. Die Höhe des Mitgliedsbeitrags für Fördermitglieder ist ihnen freigestellt.
 
-Das Beitragsjahr beginnt mit dem Kalenderjahr des Eintritts des Mitglieds. Der Beitrag ist im Voraus für das gesamte Beitragsjahr fällig, es sei denn, beim Eintritt wird ausdrücklich eine anteilige Zahlung im ersten Jahr beantragt und diese wird genehmigt.
+Das Beitragsjahr beginnt mit dem Kalenderjahr des Eintritts des Mitglieds. Der Beitrag ist im Voraus für das gesamte Beitragsjahr fällig, es sei denn, beim Eintritt wird ausdrücklich eine anteilige Zahlung im ersten Jahr beantragt und diese wird genehmigt.\\*[.5em]
 
-\CheckBox[checked,name=anteiligeZahlung]{anteilige Zahlung im ersten Jahr beantragen}
+\CheckBox[checked,name=anteiligeZahlung]{anteilige Zahlung im ersten Jahr beantragen}\\*[.5em]
 
-Der Mitgliedsbeitrag ist unter Angabe der oben genannten Email auf folgendes Vereinskonto zu überweisen:
+Der Mitgliedsbeitrag ist unter Angabe der oben genannten Email auf folgendes Vereinskonto zu überweisen:\\
 
-IBAN:
+IBAN: DE08100900002775729000 (Berliner Volksbank)\\*[.5em]
 
-\vspace{4em}
+\vspace{1em}
 \begin{tabular}{ll}
 Datum:        & \TextField[height=0.01cm, width=0.2\textwidth]{} \\\\
-Unterschrift: & \\*[1em]
+Unterschrift: & \\
 \end{tabular}
 
 \end{Form}
-
+\end{letter}
 \end{document}
