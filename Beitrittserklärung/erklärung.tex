@@ -15,7 +15,7 @@
 {\tiny Kleineweg 79, 12101 Berlin}\\*[1em]
 \end{centering}
 
-\def\arraystretch{0.85}
+\def\arraystretch{0.95}
 \begin{tabular}{ll}
 \textbf{Vorname}:            & \TextField[width=0.65\textwidth]{} \\\\
 \textbf{Nachname}:           & \TextField[width=0.65\textwidth]{} \\\\*[.5em]
@@ -24,7 +24,7 @@
 \textbf{Wohnort}:            & \TextField[width=0.65\textwidth]{} \\\\*[.5em]
 \textbf{Geburtsdatum}:       & \TextField[width=0.65\textwidth]{} \\\\
 \textbf{Email}:              & \TextField[width=0.65\textwidth]{} \\\\
-`PGP/GPG Schlüssel:  & \TextField[width=0.65\textwidth]{} \\\\
+PGP/GPG Schlüssel:  & \TextField[width=0.65\textwidth]{} \\\\
 \end{tabular}
 
 Durch die Unterschrift erkennt der/die Antragssteller/-in die Satzung und die Ordnungen von de-RSE e.V. - Gesellschaft für Forschungssoftware an.
@@ -32,17 +32,19 @@ Diese sind öffentlich einsehbar.
 
 Der Mitgliedsbeitrag für ordentliche Mitglieder beträgt 60~€ pro Kalenderjahr. Für Studierende, Schüler, Arbeitslose, Umschüler, Rentner und Menschen mit Behinderung beträgt der jährliche Mitgliedsbeitrag nach Vorlage eines geeigneten Nachweises 30~€. Die Höhe des Mitgliedsbeitrags für Fördermitglieder ist ihnen freigestellt.
 
-Das Beitragsjahr beginnt mit dem Kalenderjahr des Eintritts des Mitglieds. Der Beitrag ist im Voraus für das gesamte Beitragsjahr fällig, es sei denn, beim Eintritt wird eine anteilige Zahlung im ersten Jahr beantragt und diese wird genehmigt.\\
+Das Beitragsjahr beginnt mit dem Kalenderjahr des Eintritts des Mitglieds. Der Beitrag ist im Voraus für das gesamte Beitragsjahr fällig, es sei denn, beim Eintritt wird eine anteilige Zahlung im ersten Jahr beim Vorstand beantragt und diese wird genehmigt.\\
 
-\CheckBox[checked,name=anteiligeZahlung]{anteilige Zahlung im ersten Jahr beantragen}\\*[.5em]
-
-Ich beantrage die Aufnahme in die de-RSE e.V. als\\*[.5em]
+%\CheckBox[checked,name=anteiligeZahlung]{anteilige Zahlung im ersten Jahr beantragen}\\*[.5em]
+%
+Ich beantrage die Aufnahme in den de-RSE e.V. als\\*[.5em]
 % Eigentlich wäre das hier besser, macht aber Probleme mit einigen pdf-viewern bzw. ist ein Latex-Problem
 %\ChoiceMenu[radio,name=Mitgliedstyp]{\mbox{}}{ordentliches Mitglied=o,Fördermitglied=f}\\*[.5em]
-\CheckBox[name=Mitgliedstyp]{ordentliches Mitglied} \CheckBox[name=Mitgliedstyp]{Fördermitglied}\\*[.5em]
+\CheckBox[name=Mitgliedstyp]{ordentliches Mitglied}
+\hspace{3cm}
+\CheckBox[name=Mitgliedstyp]{Fördermitglied}\\*[.5em]
 
 Der Mitgliedsbeitrag ist unter Angabe der oben genannten Email, oder falls später bekannt der Mitgliedsnummer, auf folgendes Vereinskonto zu überweisen:\\*[.5em]
-IBAN: DE08100900002775729000 (Berliner Volksbank)\\*[.5em]
+IBAN: DE08100900002775729000 (Berliner Volksbank), BIC: BEVODEBB\\*[.5em]
 
 \clearpage
 
@@ -56,10 +58,10 @@ Mir ist bekannt, dass dem Aufnahmeantrag ohne dieses Einverständnis nicht statt
 
 Ich bin außerdem damit einverstanden, dass der Verein im Zusammenhang mit dem Vereinszweck sowie satzungsgemäßen Veranstaltungen personenbezogene Daten und Fotos von mir veröffentlicht und diese ggf. an Print und andere Medien übermittelt.
 Dieses Einverständnis betrifft unter anderem folgende Veröffentlichungen: Kontaktdaten von Vereinsfunktionären, Berichte über Ehrungen und Berichte über vom Verein abgehaltene Veranstaltungen.
-Veröffentlicht werden ggf. Fotos, der Name, die Vereinszugehörigkeit, die Funktion im Verein.
-Mir ist bekannt, dass ich jederzeit gegenüber dem Vorstand der Veröffentlichung von persönlichen Daten widersprechen kann.
+Veröffentlicht werden ggf. u.a. Fotos, der Name, die Vereinszugehörigkeit, die Funktion im Verein.
+Mir ist bekannt, dass ich jederzeit gegenüber dem Vorstand der Veröffentlichung von persönlichen Daten widersprechen kann.\\*[1em]
 
-\CheckBox[name=persoenlicheDaten]{der Verwendung persönlicher Datem zum Vereinszweck zustimmen}\\*[.5em]
+\CheckBox[name=persoenlicheDaten]{Der Verwendung und Veröffentlichung persönlicher Daten zustimmen}\\*[.5em]
 
 \vspace{3cm}
 \begin{Form}
