@@ -13,7 +13,7 @@ Diese beinhalten:
 - Vorname, Nachname
 - Adresse
 - Eintritts- und ggf. Austrittsdaten
-- Kontodaten
+- Bankverbindungsdaten
 - Beitragszahlungsdaten
     - Höhe, Betrag
     - ggf. Überweisungsdaten
