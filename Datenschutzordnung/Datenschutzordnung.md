@@ -13,6 +13,7 @@ Diese beinhalten:
 - Vorname, Nachname
 - Adresse
 - Eintritts- und ggf. Austrittsdaten
+- Bankverbindungsdaten
 - Beitragszahlungsdaten
     - Höhe, Betrag
     - ggf. Überweisungsdaten
@@ -40,7 +41,6 @@ Im Folgenden sind alle Datenarten mit möglichen Nutzungen aufgeführt.
 
 | Datenart      | Verwendung       | Löschzeitpunkt     |
 |:--------------|:----------------------------|:-------------------|
-|Namen          |öffentliche Mitgliederliste^1^| nach Erlöschung der Zustimmung |
 |Namen          |öffentliche Mitgliederliste^1^| nach Erlöschung der Zustimmung |
 |Email          |öffentliche Mitgliederliste^1^| nach Erlöschung der Zustimmung |
 |Homepage       |öffentliche Mitgliederliste^1^| nach Erlöschung der Zustimmung |
