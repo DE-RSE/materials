@@ -32,8 +32,8 @@
 \setkomavar{fromname}{\includegraphics[height=1em]{de-RSE-logo-text-colour}}
 \setkomavar{fromemail}[]{vorstand@de-rse.org}
 \setkomavar{fromurl}[]{\url{https://www.de-rse.org/}}
-\setkomavar{backaddress}{de-RSE e.V., Kleineweg 79, 12101 Berlin}
-\setkomavar{fromaddress}{de-RSE e.V. - Society for Research Software\\Kleineweg 79\\12101 Berlin\\Germany}
+\setkomavar{backaddress}{de-RSE e.V., c/o DLR, Inst. f. Software Technology, Rutherfordstraße 2, 12489 Berlin}
+\setkomavar{fromaddress}{de-RSE e.V. - Society for Research Software\\c/o German Aerospace Center (DLR)\\Institute for Software Technology\\Rutherfordstraße 2\\12489 Berlin\\Germany}
 
 \setkomavar{firstfoot}{\begin{centering}Page \thepage\\\end{centering}}
 
