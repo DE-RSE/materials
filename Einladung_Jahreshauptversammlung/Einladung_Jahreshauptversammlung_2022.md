@@ -38,6 +38,12 @@ Solltest Du auch Interesse haben, den Verein im Vorstand zu unterstützen, melde
 
 Der Tätigkeitsbericht 2021 kann hier eingesehen werden: https://github.com/DE-RSE/berichte/raw/master/Jahresberichte/2021/Rechenschaftsbericht_2021_publiziert.pdf .
 
+Noch ein kleiner Hinweis: wahlberechtigt sind nur Vereinsmitglieder, die nicht in Verzug mit den Beitragszahlungen sind. Um Probleme am Wahltag zu vermeiden, müssen Beitragszahlungen spätestens drei Werktage vor der Mitgliederversammlung eingegangen sein.
+
+Nach der orgentlichen Mitgliederversammlung wollen wir, wie in den vergangenen Jahren auch, mit euch über den Verein, und allgemein RSEs und RS in Deutschland diskutieren. Themen, die wir gern diskutieren würden beinhalten:
+
+- Der Verein lebt durch seine Mitglieder: wo braucht der Verein aktuell Hilfe und wer könnte die anbieten? Im Sinn haben wir z.Bsp. die Frage nach dem Zuhause der E-Mailliste, dem Chatkanal oder Mitarbeit bei der Homepage.
+
 Mit freundlichen Grüßen
 
 Euer Vorstand
