@@ -24,9 +24,8 @@ Auf der Tagesordnung stehen folgende Themen.
 10. Neuwahl der Kassenprüfer
 11. Änderungen der Satzung (für Details siehe Anhang)
 12. Änderungen der Geschäftsordnung (für Details siehe Anhang)
-13. Satzungsgemäß gestellte Anträge
-14. Sonstiges
-15. Schließung des Mitgliederversammlung
+13. Sonstiges
+14. Schließung des Mitgliederversammlung
 
 Für die Mitarbeit im Vorstand in der nächsten Amtsperiode haben bisher folgende Personen Interesse bekundet:
 
