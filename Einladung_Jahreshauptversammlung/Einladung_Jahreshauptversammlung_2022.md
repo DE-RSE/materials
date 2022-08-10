@@ -13,17 +13,18 @@ Auf der Tagesordnung stehen folgende Themen.
 3. Bekanntgabe und Annahme der Wahlleitung
 4. Feststellung der ordnungsgemäßen Einladung und der Beschlussfähigkeit
 5. Bekanntgabe und Genehmigung der Tagesordnung
-6. Berichte 2021
+6. Protokoll der letzten Mitgliederversammlung
+7. Berichte 2021
     a. Rechenschaftsbericht des Vorstands
     b. Finanzbericht der Schatzmeister
     c. Bericht der Kassenprüfer
     d.  Einholung von Kommentaren der Mitglieder über die Berichte
-7. Entlastung des Vorstands für 2021
-8. Neuwahl des Vorstands
-9. Neuwahl der Kassenprüfer
-10. Satzungsgemäß gestellte Anträge
-11. Sonstiges
-12. Schließung des Mitgliederversammlung
+8. Entlastung des Vorstands für 2021
+9. Neuwahl des Vorstands
+10. Neuwahl der Kassenprüfer
+11. Satzungsgemäß gestellte Anträge
+12. Sonstiges
+13. Schließung des Mitgliederversammlung
 
 Für die Mitarbeit im Vorstand in der nächsten Amtsperiode haben bisher folgende Personen Interesse bekundet:
 
