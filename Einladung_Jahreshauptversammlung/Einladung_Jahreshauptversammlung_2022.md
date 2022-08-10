@@ -13,7 +13,7 @@ Auf der Tagesordnung stehen folgende Themen.
 3. Bekanntgabe und Annahme der Wahlleitung
 4. Feststellung der ordnungsgemäßen Einladung und der Beschlussfähigkeit
 5. Bekanntgabe und Genehmigung der Tagesordnung
-6. Annahme des Protokolls der letztjährigen Mitgliederversammlung
+6. Annahme des Protokolls der letzten Mitgliederversammlung
 7. Berichte 2021
     a. Rechenschaftsbericht des Vorstands
     b. Finanzbericht der Schatzmeister
@@ -47,7 +47,10 @@ Noch ein kleiner Hinweis: wahlberechtigt sind nur Vereinsmitglieder, die nicht i
 
 Nach der ordentlichen Mitgliederversammlung wollen wir, wie in den vergangenen Jahren auch, mit euch über den Verein, und allgemein RSEs und RS in Deutschland diskutieren. Themen, die wir gern diskutieren würden beinhalten:
 
-- Der Verein lebt wie schon geschrieben durch seine Mitglieder: wo braucht der Verein aktuell Hilfe und wer könnte die anbieten? Im Sinn haben wir z.Bsp. die Frage nach dem Zuhause der E-Mailliste, dem Chatkanal oder Mitarbeit bei der Homepage.
+- Wo braucht der Verein aktuell Hilfe und wer könnte die anbieten? Im Sinn haben wir zum Beispiel die Frage nach dem Zuhause der E-Mailliste, dem Chatkanal, Social Media oder Mitarbeit bei der Homepage.
+- Wo brauchen die Mitglieder Hilfe vom Verein? Wir können uns zeitlich und thematisch fokussierte Arbeitsgruppen vorstellen, die sich zum Beispiel mit Ausbildung von RSEs, Förderpolitik, Karriere/Evaluation von RSEs oder Lobbyarbeit für RS beschäftigen.
+
+Der Verein lebt wie schon geschrieben durch seine Mitglieder und wir freuen uns darauf, nach Vereinsgründung und Verzögerung durch die Pandemie, bald gemeinsam mit Dir die Forschungslandschaft in Deutschland mitzugestalten.
 
 Mit freundlichen Grüßen
 
