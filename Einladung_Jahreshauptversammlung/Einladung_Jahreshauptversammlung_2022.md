@@ -20,10 +20,10 @@ Auf der Tagesordnung stehen folgende Themen.
     c. Bericht der Kassenprüfer
     d.  Einholung von Kommentaren der Mitglieder über die Berichte
 8. Entlastung des Vorstands für 2021
-9. Änderungen der Satzung (für Details siehe Anhang)
-10. Änderungen der Geschäftsordnung (für Details siehe Anhang)
-11. Neuwahl des Vorstands
-12. Neuwahl der Kassenprüfer
+9. Neuwahl des Vorstands
+10. Neuwahl der Kassenprüfer
+11. Änderungen der Satzung (für Details siehe Anhang)
+12. Änderungen der Geschäftsordnung (für Details siehe Anhang)
 13. Satzungsgemäß gestellte Anträge
 14. Sonstiges
 15. Schließung des Mitgliederversammlung
