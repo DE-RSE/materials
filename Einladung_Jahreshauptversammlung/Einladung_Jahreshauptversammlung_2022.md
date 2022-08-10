@@ -2,7 +2,7 @@ Liebes de-RSE e.V.-Mitglied,
 
 der de-RSE e.V. lädt alle Vereinsmitglieder zur ordentlichen Jahreshauptversammlung am 29. August 2022 um 9:00 Uhr ein. Diese wird (nur) online abgehalten: https://meet.gwdg.de/b/fra-hkw-gqe.
 
-Wie in der Satzung vorgeschrieben, wird auf der Jahreshauptversammlung eine Wahl des Vorstands durchgeführt. Die Wahl muss laut Satzung nicht geheim durchgeführt werden, es sei denn, mindestens ein Mitglied fordert eine geheime Wahl.
+Wie in der Satzung vorgeschrieben, wird auf der Jahreshauptversammlung eine Wahl des Vorstands durchgeführt. Die Wahl muss laut Satzung nicht geheim durchgeführt werden, es sei denn, mindestens ein Mitglied fordert eine geheime Wahl. Für die Wahlen kommt wieder die Abstimmfunktion von BBB zum Einsatz.
 
 Unser Verein lebt nur durch seine Mitglieder. Laut Satzung werden zur Mitgliederversammlung 25% der ordentlichen Mitglieder zur Herstellung der Beschlussfähigkeit der Versammlung nötig sein. Das sind aller Voraussicht nach mindestens 15 wahlberechtigte Mitglieder. Bitte nehmt diese Verantwortung wahr, nehmt teil und wählt!
 
