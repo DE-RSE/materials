@@ -50,6 +50,6 @@ Nach der ordentlichen Mitgliederversammlung wollen wir, wie in den vergangenen J
 
 Der Verein lebt wie schon geschrieben durch seine Mitglieder und wir freuen uns darauf, nach Vereinsgründung und Verzögerung durch die Pandemie, bald gemeinsam mit Dir die Forschungslandschaft in Deutschland mitzugestalten.
 
-Mit freundlichen Grüßen
+liebe Grüße
 
 Euer Vorstand
