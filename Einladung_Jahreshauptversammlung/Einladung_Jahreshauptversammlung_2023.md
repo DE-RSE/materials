@@ -1,7 +1,7 @@
 Liebes de-RSE e.V.-Mitglied,
 
-der de-RSE e.V. lädt alle Vereinsmitglieder zur ordentlichen Jahreshauptversammlung am 26. September 2023 um 18:00 Uhr ein. Diese wird online abgehalten: https://meet.gwdg.de/b/fra-hkw-gqe.
-Teilnehmende der gleichzeitig stattfindenden un-deRSE23 Unkonferenz werden vor Ort teilnehmen können.
+der de-RSE e.V. lädt alle Vereinsmitglieder zur ordentlichen Jahreshauptversammlung am 26. September 2023 um 18:00 Uhr ein. Diese wird online abgehalten: [https://meet.gwdg.de/b/fra-hkw-gqe](https://meet.gwdg.de/b/fra-hkw-gqe).
+Teilnehmende der gleichzeitig stattfindenden un-deRSE23 Unkonferenz werden vor Ort an der Onlinekonferenz teilnehmen können.
 
 Wie in der Satzung vorgeschrieben, wird auf der Jahreshauptversammlung eine Wahl des Vorstands durchgeführt. Die Wahl muss laut Satzung nicht geheim durchgeführt werden, es sei denn, mindestens ein Mitglied fordert eine geheime Wahl. Für die Wahlen kommt wieder die Abstimmfunktion von BBB zum Einsatz. Teilnehmende der un-deRSE23 Unkonferenz können per physikalischem Wahlzettel an der Wahl teilnehmen.
 
@@ -15,8 +15,10 @@ Auf der Tagesordnung stehen folgende Themen.
 4. Feststellung der ordnungsgemäßen Einladung und der Beschlussfähigkeit
 5. Bekanntgabe und Genehmigung der Tagesordnung
 6. Annahme des Protokolls der letzten Mitgliederversammlung
+    - erreichbar unter: [https://github.com/DE-RSE/protokolle](https://github.com/DE-RSE/protokolle/blob/master/Mitgliederversammlungen)
 7. Berichte 2022
     a. Rechenschaftsbericht des Vorstands
+        - erreichbar unter: [https://github.com/DE-RSE/berichte](https://github.com/DE-RSE/berichte/blob/master/Jahresberichte/2022/Rechenschaftsbericht_2022_publiziert.pdf)
     b. Finanzbericht der Schatzmeister
     c. Bericht der Kassenprüfer
     d.  Einholung von Kommentaren der Mitglieder über die Berichte
@@ -26,6 +28,7 @@ Auf der Tagesordnung stehen folgende Themen.
 11. Sonstiges
 12. Schließung des Mitgliederversammlung
 
+\clearpage
 Für die Mitarbeit im Vorstand in der nächsten Amtsperiode haben bisher folgende Personen Interesse bekundet:
 
 - Vorsitz: 
@@ -37,9 +40,7 @@ Für die Mitarbeit im Vorstand in der nächsten Amtsperiode haben bisher folgend
 
 Solltest Du auch Interesse haben, den Verein im Vorstand zu unterstützen, melde Dich bitte so bald wie möglich beim Vorstand: vorstand@de-rse.org.
 
-Der Tätigkeitsbericht 2022 kann hier eingesehen werden:  
-https://github.com/DE-RSE/berichte/raw/master/Jahresberichte/2022/\
-Rechenschaftsbericht_2022_publiziert.pdf.
+Der Tätigkeitsbericht 2022 kann hier eingesehen werden: [https://github.com/DE-RSE/berichte](https://github.com/DE-RSE/berichte/raw/master/Jahresberichte/2022/Rechenschaftsbericht_2022_publiziert.pdf).
 
 Noch ein kleiner Hinweis: wahlberechtigt sind nur Vereinsmitglieder, die nicht in Verzug mit den Beitragszahlungen sind. Um Probleme am Wahltag zu vermeiden, müssen Beitragszahlungen spätestens drei Werktage vor der Mitgliederversammlung eingegangen sein.
 
