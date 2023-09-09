@@ -29,14 +29,8 @@ Auf der Tagesordnung stehen folgende Themen.
 12. Schließung des Mitgliederversammlung
 
 \clearpage
-Für die Mitarbeit im Vorstand in der nächsten Amtsperiode haben bisher folgende Personen Interesse bekundet:
-
-- Vorsitz: 
-- stellvertretender Vorsitz:
-- Schatzmeisterei:
-- stellvertretende Schatzmeisterei:
-- Schriftführerung:
-- stellvertretende Schriftführung: 
+Prinzipiell stehen, auch wie immer, alle Vorstandsposten zur Wiederwahl.
+Ganz besonders würden wir uns um Interessierte für den Vorsitz, den stellvertretenden Vorsitz oder die stellvertretende Schatzmeisterei freuen.
 
 Solltest Du auch Interesse haben, den Verein im Vorstand zu unterstützen, melde Dich bitte so bald wie möglich beim Vorstand: vorstand@de-rse.org.
 
