@@ -8,30 +8,32 @@ Wie in der Satzung vorgeschrieben, wird auf der Jahreshauptversammlung eine Wahl
 Unser Verein lebt nur durch seine Mitglieder. Laut Satzung werden zur Mitgliederversammlung 25% der ordentlichen Mitglieder zur Herstellung der Beschlussfähigkeit der Versammlung nötig sein. Das sind aller Voraussicht nach mindestens 18 wahlberechtigte Mitglieder. Unsere dringende Bitte am Euch ist daher, diese Verantwortung wahrzunehmen, teilzunehmen und zu wählen.
 
 Auf der Tagesordnung stehen folgende Themen:
+
 1. Eröffnung der Mitgliederversammlung und Begrüßung der Mitglieder und Gäste
 2. Bekanntgabe und Annahme der Schriftführung
 3. Bekanntgabe und Annahme der Wahlleitung
 4. Feststellung der ordnungsgemäßen Einladung und der Beschlussfähigkeit 
 5. Bekanntgabe und Genehmigung der Tagesordnung
 6. Annahme des Protokolls der letzten Mitgliederversammlung
-• erreichbar unter: [https://github.com/DE-RSE/protokolle](https://github.com/DE-RSE/protokolle)
+    • erreichbar unter: [https://github.com/DE-RSE/protokolle](https://github.com/DE-RSE/protokolle)
 7. Berichte 2023
-a. Rechenschaftsbericht des Vorstands
-• erreichbar unter: [https://github.com/DE-RSE/berichte](https://github.com/DE-RSE/berichte)
-b. Finanzbericht der Schatzmeister c. Bericht der Kassenprüfer
-d. Einholung von Kommentaren der Mitglieder über die Berichte 
+    a. Rechenschaftsbericht des Vorstands
+    • erreichbar unter: [https://github.com/DE-RSE/berichte](https://github.com/DE-RSE/berichte)
+    b. Finanzbericht der Schatzmeister
+    c. Bericht der Kassenprüfer
+    d. Einholung von Kommentaren der Mitglieder über die Berichte 
 8. Entlastung des Vorstands für 2023
-9. Änderungen der Satzung & Geschäftsordnung
-a. Wahlvertretungen ermöglichen
-• erreichbar unter: [https://github.com/DE-RSE/satzung/pull/54/files](https://github.com/DE-RSE/satzung/pull/54/files)
-b. Vorstandsamtszeit: 2 Jahre statt 1 Jahr
-• erreichbar unter: [https://github.com/DE-RSE/satzung/pull/53/files](https://github.com/DE-RSE/satzung/pull/53/files)
-b. Aufnahme institutioneller Mitglieder 
-• erreichbar unter: [https://github.com/DE-RSE/satzung/pull/49/files](https://github.com/DE-RSE/satzung/pull/49/files)
-1.   Neuwahl des Vorstands
-2.   Neuwahl der Kassenprüfer
-3.   Sonstiges
-4.   Schließung des Mitgliederversammlung
+9.  Änderungen der Satzung & Geschäftsordnung
+    a. Wahlvertretungen ermöglichen
+    • erreichbar unter: [https://github.com/DE-RSE/satzung/pull/54/files](https://github.com/DE-RSE/satzung/pull/54/files)
+    b. Vorstandsamtszeit: 2 Jahre statt 1 Jahr
+    • erreichbar unter: [https://github.com/DE-RSE/satzung/pull/53/files](https://github.com/DE-RSE/satzung/pull/53/files)
+    b. Aufnahme institutioneller Mitglieder 
+    • erreichbar unter: [https://github.com/DE-RSE/satzung/pull/49/files](https://github.com/DE-RSE/satzung/pull/49/files)
+10. Neuwahl des Vorstands
+11. Neuwahl der Kassenprüfer
+12. Sonstiges
+13. Schließung des Mitgliederversammlung
 
 \clearpage
 Prinzipiell stehen, auch wie immer, alle Vorstandsposten zur Wahl. Solltest Du Interesse haben, den Verein im Vorstand zu unterstützen, melde Dich bitte so bald wie möglich beim Vorstand: vorstand@de-rse.org.
