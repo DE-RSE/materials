@@ -1,6 +1,6 @@
 Liebes de-RSE e.V.-Mitglied,
 
-der de-RSE e.V. lädt alle Vereinsmitglieder zur ordentlichen Jahreshauptversammlung am 27. November 2024 um 10:00 Uhr ein. Diese wird online abgehalten: <https://meet.gwdg.de/b/fra-hkw-gqe>.
+der de-RSE e.V. lädt alle Vereinsmitglieder zur ordentlichen Jahreshauptversammlung am 13. Dezember 2024 um 14:00 Uhr ein. Diese wird online abgehalten: <https://meet.gwdg.de/b/fra-hkw-gqe>.
 
 
 Wie in der Satzung vorgeschrieben, wird auf der Jahreshauptversammlung eine Wahl des Vorstands durchgeführt. Die Wahl muss laut Satzung nicht geheim durchgeführt werden, es sei denn, mindestens ein Mitglied fordert eine geheime Wahl. Für die Wahlen kommt wieder die Abstimmfunktion von BBB zum Einsatz. 
@@ -32,8 +32,10 @@ Auf der Tagesordnung stehen folgende Themen:
     • erreichbar unter: [https://github.com/DE-RSE/satzung/pull/49/files](https://github.com/DE-RSE/satzung/pull/49/files)
 10. Neuwahl des Vorstands
 11. Neuwahl der Kassenprüfer
-12. Sonstiges
-13. Schließung des Mitgliederversammlung
+12. Wahl einer Onbutsperson
+13. Finanzielle Aufstellung des deRSE-Vereins
+14. Sonstiges
+15. Schließung des Mitgliederversammlung
 
 \clearpage
 Prinzipiell stehen, auch wie immer, alle Vorstandsposten zur Wahl. Solltest Du Interesse haben, den Verein im Vorstand zu unterstützen, melde Dich bitte so bald wie möglich beim Vorstand: vorstand@de-rse.org.
@@ -76,9 +78,12 @@ Euer Vorstand
     - Punkt 8-viii:
       - alt: "Die Amtsdauer der Vorstandsmitglieder beträgt **ein Jahr**. Sie werden von der Mitgliederversammlung aus den ordentlichen Mitgliedern des Vereins gewählt. Es werden nacheinander Vorstandsvorsitz, stellvertretender Vorstandsvorsitz, Schatzmeister bzw. -meisterin, stellvertretende Schatzmeisterin bzw. stellvertretender Schatzmeister, Schriftführende und stellvertretende Schriftführende gewählt. Eine Wiederwahl ist zulässig. Die jeweils amtierenden Vorstandsmitglieder bleiben nach Ablauf ihrer Amtszeit im Amt, bis Nachfolger gewählt worden sind."
       - neu: "Die Amtsdauer der Vorstandsmitglieder beträgt **zwei Jahre**. Sie werden von der Mitgliederversammlung aus den ordentlichen Mitgliedern des Vereins gewählt. Es werden nacheinander Vorstandsvorsitz, stellvertretender Vorstandsvorsitz, Schatzmeister bzw. -meisterin, stellvertretende Schatzmeisterin bzw. stellvertretender Schatzmeister, Schriftführende und stellvertretende Schriftführende gewählt. Eine Wiederwahl ist zulässig. Die jeweils amtierenden Vorstandsmitglieder bleiben nach Ablauf ihrer Amtszeit im Amt, bis Nachfolger gewählt worden sind."
-3. Geschützte Leerzeichen
-   - pull-request: [https://github.com/DE-RSE/satzung/pull/55/files](https://github.com/DE-RSE/satzung/pull/55/files)
-   - neu: keine sichtbaren Änderungen
+    - Geschlechterneutrale Sprache:
+      - pull-request: [https://github.com/DE-RSE/satzung/pull/45/files](https://github.com/DE-RSE/satzung/pull/45/files
+      - Änderungen siehe Figure 1
+    - Geschützte Leerzeichen
+      - pull-request: [https://github.com/DE-RSE/satzung/pull/55/files](https://github.com/DE-RSE/satzung/pull/55/files)
+      - neu: keine sichtbaren Änderungen
 
 
 ### Zur Abstimmung gestellte Geschäftsordnungssänderungen
@@ -91,3 +96,6 @@ Euer Vorstand
 2. Geschützte Leerzeichen
    - pull-request: [https://github.com/DE-RSE/satzung/pull/56/files](https://github.com/DE-RSE/satzung/pull/56/files)
    - neu: keine sichtbaren Änderungen
+
+
+![Satzungsänderung - Geschlechterneutrale Sprache](Einladung_Jahreshauptversammlung_2024_Anhang_Diff_PR_genderneutrale_sprache.png)
