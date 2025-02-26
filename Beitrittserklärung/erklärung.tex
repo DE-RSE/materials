@@ -3,6 +3,7 @@
 \usepackage{mathpazo}
 \usepackage[hidelinks]{hyperref}
 \usepackage{setspace}
+\usepackage{rotating}
 
 \pagestyle{empty}
 
@@ -70,5 +71,20 @@ Datum:        & \TextField[height=0.01cm, width=0.2\textwidth]{} & Unterschrift:
 \end{tabular}
 
 \end{Form}
+\vspace*{1cm}
+Bitte das ausgefüllte Formular an die untenstehende Adresse schicken.
+
+\vfill
+\flushright
+---\\
+\vspace*{2.7cm}
+\begin{turn}{180}
+  \begin{minipage}{15cm}
+    de-RSE e.V.\\
+    Kleineweg 79\\
+    12101 Berlin
+  \end{minipage}
+\end{turn}
+\vspace*{1cm}
 \end{letter}
 \end{document}
