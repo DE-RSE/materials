@@ -1,0 +1,290 @@
+\documentclass[a4paper, fontsize=11pt]{scrartcl}
+\usepackage{scrletter}
+\usepackage{mathpazo}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\usepackage{lastpage}
+\usepackage{scrlayer-scrpage}
+
+\usepackage{color}
+\definecolor{col_deRSE}{rgb}{0.535, 0.164, 0.410}
+
+\usepackage{graphicx}
+\graphicspath{{../Vorlagen/}}
+
+% \setkomafont{chapter}{\fontsize{12bp}{18.8bp}}
+\setkomafont{section}{\large\normalfont\textbf}
+\setkomafont{subsection}{\large\normalfont\textbf}
+
+\usepackage[ngerman]{babel}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{empty}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+
+\ifoot{Datenschutzrichtlinie, Stand: 15. März 2025 }
+\ofoot{Seite \thepage\ von \pageref*{LastPage}}
+
+\DeclareNewLayer[
+  background,
+  align=bl,
+  hoffset=13.8cm,
+  voffset=1cm,
+  addvoffset=2mm,% <- adjust this value to your needs
+  mode=picture,
+  contents=\putLL{\includegraphics[height=1.5em]{de-RSE-logo-text-colour}}
+]{headerimage}
+\AddLayersToPageStyle{@everystyle@}{headerimage}
+
+\DeclareNewLayer[%
+  head,% Ebene im Kopfbereich
+  hoffset=20mm,% vom linken Seitenrand,
+  voffset=16mm,
+  width=\paperwidth,% über die gesamte Seitenbreite
+  background,% im Hintergrund
+  contents={\color{col_deRSE}\par\noindent\rule{17cm}{0.4pt}}
+]{headerline}
+\AddLayersAtBeginOfPageStyle{@everystyle@}{headerline}
+
+\begin{document}
+% \begin{letter}{}
+% \opening{}
+\thispagestyle{headings}
+\vspace{-8.5cm}
+\begin{centering}
+{\large\textbf{Datenschutzrichtlinie für Mitarbeiterinnen und Mitarbeiter der Gesellschaft für Forschungssoftware (de-RSE e.V.)}}\\
+{\tiny c/o Deutsches Zentrum für Luft- und Raumfahrt (DLR), Institut für Softwaretechnologie, Rutherfordstraße 2, 12489 Berlin}\\*[1em]
+\end{centering}
+\vspace{0.5cm}
+{\large\textbf{Inhalt}} \\
+\begin{enumerate}
+    \item Anwendungsbereich
+    \item Datenschutzgrundsätze
+    \item Wahrung der Vertraulichkeit
+    \item Regelung zu PC/ Passwort/ Bildschirmsperre/ Datenspeicherung Laptop/
+    \item Mobiltelefon/ Fax/ freie Textfelder
+    \item Nutzung von Internet, E-Mail und Sozialen Netzwerken (einschließlich privater Nutzung)
+    \item Umgang mit Bewerbungsunterlagen
+    \item Anfragen und Beschwerden in Bezug auf Datenschutz
+    \item Unverzügliche Meldung von Datenpannen
+    \item Regelungen, die nur bestimmte Gruppen von Mitarbeitenden betreffen
+    \begin{enumerate}
+        \item Outsourcing/ Auftragsverarbeitung
+        \item neue Verfahren
+        \item Zugriffsberechtigungen
+    \end{enumerate} 
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\section{Anwendungsbereich}
+Diese Arbeitsanweisung beinhaltet verbindliche Verfahrensregelungen für alle Mitarbeitenden der Gesellschaft für Forschungssoftware (de-RSE e.V.) (im Folgenden „der Verein“, „der Arbeitgeber“ oder „wir“) zur Umsetzung der gesetzlichen Datenschutz-Anforderungen in die Praxis. Sie gilt ergänzend und konkretisierend zu der Verpflichtungserklärung zum Datenschutz (incl. Merkblatt).
+
+Weitere Anweisungen (z. B. in Zusammenhang mit besonderen Projekten oder im Auftrag eines Kunden) sowie die Regelungen des Arbeitsvertrages (z.B. zum vertraulichen Umgang mit Betriebs- und Geschäftsgeheimnissen) bleiben unberührt. Bei Verdacht einer Verletzung der Arbeitspflichten kann der Arbeitgeber nach Maßgabe der gesetzlichen Vorschriften Kontrollen durchführen. Soweit ein Verstoß gegen die gesetzlichen Vorschriften bzw. die Richtlinien festgestellt werden sollte, hat die/der Mitarbeitende mit arbeitsrechtlichen Konsequenzen zu rechnen.
+
+\section{Datenschutzgrundsätze}
+\begin{itemize}
+  \item Wir messen dem Schutz der Privatsphäre unserer Mitglieder, Mitarbeitenden und Vertragspartner*innen und damit einer vertrauensvollen Zusammenarbeit einen hohen Stellenwert zu.
+  \item Durch das Datenschutzrecht wird der Umgang mit „personenbezogenen Daten“ geschützt.\\
+  \\
+  Unter \textbf{personenbezogenen Daten} sind sämtliche Daten und Informationen zu verstehen, die zu einer identifizierbaren natürlichen Person (z. B. Mitglied, Kund*in, Mitarbeiter*in, Ansprechpartner*inn) in Verbindung gebracht werden können. Die wesentlichen Vorschriften ergeben sich aus der EU Datenschutz-Grundverordnung (DSGVO).
+  \item Aufgrund der gesetzlichen Vorgaben hat die GI angemessene technische und organisatorische Maßnahmen zum Schutz der personenbezogenen Daten eingerichtet. Im Rahmen der ihr zugewiesenen Aufgaben haben alle Mitarbeitenden die vorgegebenen organisatorischen Maßnahmen einzuhalten und die implementierten technischen Maßnahmen anzuwenden.
+  \item Alle Mitarbeitenden sind verpflichtet, personenbezogene Daten nur in dem Umfang und in der Weise zu verarbeiten und zu nutzen, wie es
+  \begin{itemize}
+    \item zur Erfüllung der ihr/ihm übertragenen Aufgaben und Funktionen erforderlich ist,
+    \item die eingerichteten Verfahren, Anwendungen sowie Prozesse und deren Zwecke vorsehen, und
+    \item Aufträge, Weisungen, der Arbeitsvertrag, verbindliche Richtlinien/Anwei-sungen und zu beachtende Gesetzesvorschriften vorgeben.
+  \end{itemize}
+  Dabei gilt das uneingeschränkte Prinzip, dass wir als de-RSE personenbezogene Daten nur auf rechtmäßige Weise verarbeiten, d.h. insbesondere erheben und abfragen, erfassen, speichern, verwenden und weitergeben.
+  \item Unser(e) Datenschutzbeauftragte(r) (DSB) unterstützt uns bei der Sicherstellung des Datenschutzes. Unser(e) DSB muss daher, um ihre/seine Aufgaben und Pflichten wahrnehmen zu können, frühzeitig in alle mit dem Schutz personenbezogener Daten zusammenhängende Fragen eingebunden werden. Selbstverständlich berät sie/er auch in Zweifelsfragen.
+\end{itemize}
+
+\section{Wahrung der Vertraulichkeit}
+\subsection{Vertrauliche Informationen und Daten}
+\begin{itemize}
+  \item Vertraulich sind sämtliche Informationen von und über den de-RSE e.V., wenn und solange sie nicht berechtigter- weise öffentlich gemacht worden sind (z.B. auf der Website oder in Pressemitteilungen). Insbesondere sind dies Informationen, die bei einem Verlust oder bei einer Veröffentlichung die Aktivitäten und die Entwicklung des de-RSE schädigen können, z.B. Strategiepläne oder jegliche Vertrags- und personenbezogenen Daten zu z.B. Kooperationspartner*innen, Gesellschafter*innen, Kund*innen (insbesondere auch deren Daten, die durch uns verarbeitet werden) und Mitarbeitenden.
+  \item Darüber hinaus können personenbezogene Daten, sofern sie z. B. in falsche Hände geraten, erhebliche Risiken für die Rechte und Freiheiten der betroffenen Person bedeuten. Dies kann erhebliche Kosten und eine massive Imagebeeinträchtigung für den de-RSE e.V. zur Folge haben. Die DSGVO sieht für diesen Fall bestimmte Meldepflichten und bei Verstößen Bußgelder bis zu mehrstelligen Millionenbeträgen vor.
+\end{itemize}
+
+\subsection{Umgang mit vertraulichen Informationen/personenbezogenen Daten}
+\begin{itemize}
+  \item An fremde Dritte (andere Firmen oder Institutionen) dürfen vertrauliche Daten nur dann und insoweit weitergegeben werden, als dies für die ordnungsgemäße Abwicklung des bearbeiteten Vorgangs unbedingt erforderlich ist. Andernfalls sind der/die Vorgesetzte und/oder die/der Datenschutzbeauftragte hinzuzuziehen.
+  \item Ihr Rechner, Ihr Laptop, die Anwendungen, das Passwort, die Ausweiskarte u.ä. dürfen keinen Unbefugten zugänglich sein.
+  \item Soweit Geräte zur Reparatur gebracht werden, auf denen personenbezogene Daten gespeichert sind (insbesondere PCs), ist dies nur über die Geschäftsleitung bzw. den Vorstand abzuwickeln, damit sichergestellt wird, dass alle Daten physisch gelöscht werden oder besondere vertragliche Verpflichtungen getroffen werden.
+  \item Vertrauliche oder sonstige mit personenbezogenen Daten versehene Papiere und Dokumente sind immer entweder im Schredder oder in der dafür vorgesehenen Datenschutz-Tonne zu entsorgen.
+  \item Mit vertraulichen Daten beschriebene elektronische Datenträger (z.B. Diskette, CD, DVD, USB-Stick) dürfen niemals in den Papierkorb geworfen werden, ohne sie vorher physisch zu zerstören (z.B. Zerkratzen, Zerbrechen - aber Vorsicht – Verletzungsgefahr).
+  \item Unterlagen mit personenbezogenen Daten, Datenträger, Akten und Listenausdrucke oder sonstigem vertraulichen Inhalt sind bei Abwesenheit vom Arbeitsplatz (zumindest zum Feierabend) unter Verschluss zu halten. Sinngemäß gilt dies auch für betriebsinterne Aufzeichnungen mit oder ohne Personenbezug auf Flipcharts oder Wandtafeln, die nach entsprechender Dokumentation (z.B. Speicherung eines Fotos) zu löschen sind.
+\end{itemize}
+
+\section{Regelung zu PC, Passwort, Bildschirmsperre, Datenspeicherung, Laptop,
+Mobiltelefon, Fax, freie Textfelder}
+\begin{itemize}
+  \item \textbf{Sperre des PC auch bei kurzfristigem Verlassen des Arbeitsplatzes}\\ Auch bei kurzzeitigem Verlassen des Arbeitsplatzes ist der Bildschirm auf die Anmeldungsmaske zu stellen bzw. der PC durch Aktivierung des passwortgeschützten Bildschirmschoners zu sperren (Strg+Alt+Entf oder WIN+L), wenn kein Sichtkontakt mehr zu dem Arbeitsplatz besteht. In jedem Falle ist sicherzustellen, dass niemand, auch kein andere Person, mit dem DV-Gerät unter der Benutzerkennung der abwesenden angestellten Person arbeiten kann. Bedenken Sie, dass aus den Protokolldaten Ihre Identität hervorgeht und jegliche Aktivität – auch unzulässige – durch Dritte Ihnen persönlich zugeschrieben werden muss. Das Ausforschen, Ausprobieren und die Benutzung fremder Zugriffsberechtigungen ist unzulässig.
+  \item \textbf{Umgang mit Passwörtern} \\ Ihr Passwort ist unbedingt geheim zu halten. Es ist verboten, Passwörter in der Nähe des Arbeitsplatzes oder auf dem PC selbst ungesichert abzulegen. Verwenden Sie Passwörter, die nicht einfach zu erraten sind; also keine Namen oder sonstigen Begriffe, die im Wörterbuch zu finden sind. Dies erreichen Sie auch durch Verfremdung Ihres alphabetischen Passworts und durch die Einfügung von Zahlen und Sonderzeichen.
+  Die Geheimhaltungsverpflichtung gilt auch gegenüber Kolleg*innen und Vorgesetzten. Sollte ein Passwort ausnahmsweise weitergegeben werden müssen, ist es anschließend sofort zu ändern. Das gilt auch, falls Sie den Verdacht haben, dass Dritte Kenntnis von Ihrem Passwort erlangt haben.
+  \item \textbf{Nutzung von Hard- und Software} \\ Es ist nur der Geschäftsführung bzw. dem Vorstand zur Nutzung freigegebene Software anzuwenden. Die Installation fremder Software (Spiele, Demoversionen, Shareware u.a.) ist zu unterlassen.
+  Nicht ordnungsgemäß erworbene Versionen von Software können einen Verstoß gegen das Urheberrecht bedeuten und sowohl den de-RSE e.V. als auch die angestellte Person, die die Software zum Einsatz bringt, in straf- und zivilrechtliche Haftung bringen. Darüber hinaus besteht eine wachsende Gefahr, durch Verwendung illegaler Softwarekopien unbemerkt Schadsoftware auf betriebliche Geräte oder das gesamte Netzwerk zu laden. Ferner ist es untersagt, Programme zu deinstallieren oder installierte Antivirus-Programme usw. zu deaktivieren.
+  \item \textbf{Datenspeicherung} \\ Sofern Daten gespeichert werden sollen/müssen, sind vorzugsweise die dafür vorgesehenen Serverlaufwerke zu nutzen (nur hier erfolgt eine regelmäßige Datensicherung). Lokale Laufwerke dürfen nicht für zu speichernde Arbeitsergebnisse genutzt werden, weil hierüber keine Datensicherung erfolgt. Bei Laptops sind mit dem nächsten Verbinden im Netzwerk gespeicherte Daten auf das Serverlaufwerk zu übertragen. \\
+  Bei der Ablage von Dateien ist darauf zu achten, dass nur Berechtigten der Zugriff ermöglicht wird. \\
+  Die Speicherung von Firmendaten auf privaten IT-Systemen oder privaten Speichermedien ist nicht gestattet.
+  \item \textbf{Mobile USB-Speicher, Memory-Sticks} \\ Es kommen nur USB-Speichergeräte zum Einsatz, die von dem Verein für dienstliche Zwecke bereitgestellt werden, um Sicherheitsrisiken für das Firmennetzwerk zu minimieren wie z. B. ungewollten Datenabfluss zu verhindern.
+  \item \textbf{Laptops, Tablets sowie Mobiltelefone und Smartphones} \\ Die Geräte dürfen nur ausnahmsweise und dann auch nur kurzfristig unbeaufsichtigt bleiben. In jedem Falle sind die Geräte auszuschalten bzw. passwortgeschützt zu sperren. Hierauf ist besonders beim Verlassen des Büros sowie in Kraftfahrzeugen und Hotelzimmern zu achten.\\
+  Die Aufbewahrung eines Laptops in einem Fahrzeug über Nacht ist nicht gestattet.\\
+  Bei Abhandenkommen eines Gerätes ist unverzüglich die Geschäftsführung bzw. der Vorstand zu informieren.\\
+  Soweit Sie Rechner, Laptop, Tablet o.ä. auf Reisen mit der Bahn oder dem Flugzeug nutzen, sollte dies nur dann erfolgen, wenn ausgeschlossen ist, dass neben Ihnen sitzenden Personen, unbemerkt Informationen von Ihrem Bildschirm ablesen können.
+  \item \textbf{Besondere Sorgfalt bei Fax mit vertraulichem Inhalt} \\ Vor Absendung des Telefaxes hat sich die/der Bediener*in über die Richtigkeit der Zielwahlnummer Gewissheit zu verschaffen, um eine Fehlsendung auszuschließen. Hierzu ist vor dem Starten des Sendevorgangs noch einmal die Übereinstimmung der Zielwahlnummer mit der im Display angezeigten Rufnummer auf Richtigkeit zu prüfen. \\
+  Unmittelbar vor Sendung des Telefax ist die/der Empfänger*in fernmündlich über die Sendung zu informieren, um sicherzustellen, dass sie/er oder ein(e) befugte(r) Vertreter*in die Sendung persönlich entgegennimmt.
+  \item \textbf{Frei beschreibbare Textfelder in EDV-Anwendungen} \\ Einige Anwendungen bieten die Möglichkeit, in Notizfelder freie Texte einzugeben.
+  Dabei ist zu beachten, dass nur objektive und beweisbare Daten über Personen gespeichert werden. Persönliche Werturteile und Angaben, die nichts mit der sachlichen Beschreibung der Umstände zu tun haben, müssen unterbleiben. Außerdem sind die Eintragungen in regelmäßigen Zeitabständen auf ihre Aktualität zu überprüfen und zu löschen, wenn die jeweilige Information nicht mehr benötigt wird.\\
+  Darüber hinaus sollte berücksichtigt werden, dass der betreffenden Person der Inhalt des Textfeldes mitgeteilt werden muss, wenn sie ein Auskunftsersuchen nach Art. 15 DSGVO stellt. Eintragungen, die bei Offenlegung der entsprechenden Vermerke die Reputation unseres Vereins oder das Verhältnis zu der betreffenden Person beeinträchtigen könnten, sind zu unterlassen.
+\end{itemize}
+
+\section{Nutzung von Internet, E-Mail und Sozialen Netzwerken sowie Vertreterregelung}
+(einschließlich privater Nutzung)
+
+\subsection{Regeln bei der Nutzung des Internets}
+\begin{itemize}
+  \item Weder der Virenschutz noch die vordefinierten Programmeinstellungen im Internetbrowser und im E- Mail-Programm dürfen verändert oder deaktiviert werden.
+  \item Der Aufruf von Internetseiten mit widerrechtlichem oder arbeitsvertragswidrigem Inhalt oder Inhalten, die gegen die guten Sitten verstoßen, ist strengstens untersagt. Es wird darauf hingewiesen, dass der Aufruf jeder Internetseite protokolliert werden kann.
+  \item Die Inanspruchnahme von kostenpflichtigen Diensten im Internet setzt die Zustimmung der Geschäftsleitung bzw. des Vorstands voraus.
+\end{itemize}
+
+\subsection{Regeln zur E-Mail-Kommunikation}
+\begin{itemize}
+  \item Öffnen Sie keine Anlagen zu ungewöhnlichen E-Mails (z. B. seltsame Betreffzeile). Völlig unerheblich ist, ob Ihnen die/der Absender*in bekannt ist oder nicht. Häufig geben die Betreffzeile und die Dateibezeichnung der beigefügten Anlage Hinweise darauf, dass es sich um E-Mail handelt, von der Gefährdungen ausgehen können. Löschen Sie diese E-Mail oder vergewissern Sie sich in Zweifelsfällen bei der/dem Absender*in der Mail, dass die besagte Mail tatsächlich von ihr/ihm stammt. Durch voreiliges Anklicken eines infizierten Anhangs gefährden Sie nicht nur Ihren PC sondern das gesamte Netzwerk.
+  \item E-Mail-Versand außerhalb des eigenen Netzwerks ist vergleichbar mit dem Versenden einer Postkarte: Jede Instanz auf dem Weg der Mail hat faktisch die Möglichkeit, den Inhalt der E-Mail zur Kenntnis zu nehmen oder zu verändern. Deshalb darf E-Mail nicht für die Kommunikation personenbezogener oder sonst vertraulicher Informationen genutzt wurden, wenn keine Verschlüsselung erfolgt. Sie können Ihre E - Mail vor unbefugtem Zugriff schützen, indem Sie die Möglichkeiten des Passwort-Schutzes der Programme, von PDF oder von ZIP-Archiven nutzen.
+  \item Achten Sie vor Versand einer E-Mail darauf, dass die eingegebenen Empfängeradressen richtig sind. Gleiches gilt auch bei Nutzung der Antwort-Funktion und damit evtl. Übernahme von von der/dem Absender*in vorgegebenen Adressen. Zum einen ist der Mail-Verteiler auch aus Gründen der Vermeidung unnötiger Mail-Flut kritisch zu prüfen, zum anderen kann ein auch nur einen Buchstaben betreffender Schreibfehler die E-Mail zu einer/einem völlig fremden Adressat*in umleiten.
+  \item Wenn E-Mails an eine Gruppe von Adressat*innen außerhalb unseres Vereins versendet werden, sind die E- Mail-Adressen grds. ins „bcc“ zu setzen, so dass die Empfänger*innen die E-Mail-Adressen der anderen Adressat*innen nicht einsehen können. Eine „offene“ Eingabe der E-Mail-Adresse im „cc“ ist nur dann zulässig, wenn alle Empfänger*innen im „offenen“ Verteiler voneinander wissen dürfen oder müssen, an wen diese E-Mail sonst noch geschickt wurde.
+  \item Werden Dateien mit Partner*innen oder sonstigen Dritten ausgetauscht, so ist aus Sicherheitsgründen soweit als möglich das PDF-Format zu wählen. Durch das PDF-Format werden Manipulationen an Dateien erschwert. Außerdem wird dadurch vermieden, dass aufgezeichnete Änderungen zusammen mit den ursprünglichen Textpassagen in einer Quelldatei ungewollt versandt und von Dritten nachvollzogen werden können.
+\end{itemize}
+
+\subsection{Vertreterregelung bei E-Mail-Postfach}
+\begin{itemize}
+  \item \textbf{Abwesenheits-, Out-of-Office-Notiz} \\
+  \begin{itemize}
+    \item Die Mitarbeitenden haben für die Dauer einer geplanten Abwesenheit im betrieblichen E-Mail-System eine Abwesenheitsnachricht (sogenannte Out-of-Office-Notiz) zu aktivieren, welche die Absender*innen der Nachricht über die Abwesenheit der betreffenden Person informiert und dessen Vertretung benennt.
+  \end{itemize}
+
+  \item \textbf{Vertretung bei Abwesenheit}
+  \begin{itemize}
+    \item Mitarbeitende sowie Vorgesetzte haben sicherzustellen, dass im Falle der geplanten und ungeplanten Abwesenheit eine Vertretung die anfallenden Tätigkeiten übernehmen kann. Dazu muss unter anderem sichergestellt werden, dass im Falle der Abwesenheit ein Zugriff auch auf die relevanten elektronischen Vereinssdaten erfolgen kann.
+    \item Dazu ist ein lesender Zugriff auf das E-Mail-Postfach durch Anpassen der Zugriffsberechtigungen des E-Mail-Programms für eine Vertretung einzurichten. Der Zugriff der Vertretung kann von der angestellten Person dauerhaft oder für die Dauer einer Abwesenheit eingestellt werden. Die Entscheidung über die temporäre oder permanente Vertretungsregelung trifft die angestellte Person.
+    \item Es ist untersagt, der Vertretung das eigene Passwort mitzuteilen, da dies die Nachweisbarkeit und Zuordnung einer Aktion zu einer Person unmöglich machen würde.
+  \end{itemize}
+  \item \textbf{Zugriff im Ausnahmefall}
+  \begin{itemize}
+    \item Sofern die angestellte Person, die zur Einrichtung einer Vertretungsregelung verpflichtet ist, die Aktivierung der Regelung im Vorfeld einer Abwesenheit vergisst oder aufgrund ungeplanter Abwesenheit daran gehindert ist, kann die Geschäftsleitung bzw. der Vorstand veranlassen, dass der Vertretungszugriff aktiviert wird. Gleiches gilt für den Fall, dass aus welchen Gründen auch immer, eine Vertretung anweisungswidrig nicht eingerichtet sein sollte oder die eingerichtete Vertretung selbst abwesend ist.
+    \item Besteht daher kein Zugriff auf wesentliche, betriebliche Informationen kann bei dringend benötigtem Zugriff einer von der zuständigen Geschäftsleitung bzw. dem Vorstand genannten Person der Vertretungszugriff zeitweise ermöglicht werden.
+    \item Sämtliche Personen, die im Rahmen der Vertreterregelung Zugriff auf E-Mails oder Daten der/des Vertretenen haben, sind verpflichtet, persönliche/private Kommunikation der/des Vertretenen nicht zu lesen und nicht zur Kenntnis zu nehmen, sobald die Informationen als private Daten erkannt werden.
+  \end{itemize}
+\end{itemize}
+
+\subsection{Private Nutzung von Internet, E-Mail und Telefonie}
+\begin{itemize}
+  \item Die Ihnen zur Verfügung gestellten EDV-Einrichtungen, Kommunikationsanlagen, Netzwerke sowie E-Mail- und Internet-Zugänge dürfen grundsätzlich nur für dienstliche Zwecke genutzt werden.
+  \item Unter dem Vorbehalt des jederzeitigen Widerrufs duldet der Arbeitgeber ausnahmsweise im geringfügigen Umfang eine private Nutzung von Telefon, Fax, Rechner und des Internetzugangs. Die Nutzung der de-RSE-E-Mailadresse für private Zwecke ist grundsätzlich untersagt. Die Erlaubnis gilt nur, soweit die dienstliche Aufgabenerfüllung in Qualität und Quantität sowie die Verfügbarkeit der EDV-Systeme für dienstliche Zwecke nicht beeinträchtigt werden und keine zusätzlichen Kosten verursachen. Dabei darf ebenfalls nicht gegen gesetzliche Verbote (Strafgesetzbuch, Datenschutzgesetze etc.) und ethische Grundsätze verstoßen werden. Unzulässig ist auch jede absichtliche oder wissentliche Nutzung der Telekommunikationseinrichtungen und -systeme, die geeignet ist, den Interessen des de-RSE e.V, oder dessen Ansehen in der Öffentlichkeit zu schaden, die Sicherheit des Vereinsnetzes zu beeinträchtigen oder die gegen geltende Rechtsvorschriften und die Arbeitsanweisungen für die Nutzung des EDV-Systems verstößt. Beispiele sind:
+  \begin{itemize}
+    \item das Abrufen oder Verbreiten von Inhalten, die gegen persönlichkeitsrechtliche, urheberrechtliche oder strafrechtliche Bestimmungen verstoßen,
+    \item das Abrufen oder Verbreiten von beleidigenden, verleumderischen, verfassungsfeindlichen, rassistischen, sexistischen, gewaltverherrlichenden oder pornografischen Äußerungen oder Abbildungen,
+    \item die Nutzung der Systeme für eigene geschäftliche Tätigkeiten.
+  \end{itemize} 
+  \item Ferner ist es untersagt, so genannte Kettenbriefe weiterzuleiten, weil diese neben der unnötigen Belastung der Server und Netzwerke wertvolle Arbeitszeit vergeuden. Entsprechende E-Mails, sofern sie in Ihrem Postfach eingehen sollten, sind zu löschen.
+  \item Eine Unterscheidung von dienstlicher und privater Nutzung auf technischem Weg erfolgt nicht. Ferner wird darauf hingewiesen, dass im Rahmen der Vertreterregelung bei E-Mail möglicherweise Einblick Dritter in E-Mails mit privatem Inhalt besteht. Das Gleiche gilt auch bei notwendigen Mail-, Rechner- bzw. Serverlaufwerkszugriffen bei Abwesenheit der/des betroffenen Mitarbeitenden oder im Rahmen von Zugriffen auf im Mail-Archivsystem gespeicherten privaten E-Mails. Es wird darauf hingewiesen, dass gegebenenfalls sämtliche eingehenden und ausgehenden Mails archiviert werden und auch eine Löschung solcher Mails daran nichts ändert. Entsprechendes gilt für eine private Datenspeicherung auf dem PC oder Serverlaufwerk. Dabei wird das evtl. anwendbare Fernmeldegeheimnis durch den Arbeitgeber unter den im Folgenden dargestellten Einschränkungen beachtet.
+  \item Die Protokollierung und Kontrolle der Verkehrs-, Verbindungs- und Nutzungsdaten und unter Umständen auch eine Kontrolle der Inhalte bei Datentransfers, E-Mails, Internetzugriffen und ähnlichen Diensten (mit Ausnahme der Telefonie) sowie gespeicherten Daten auf EDV-Einrichtungen bzw. Serverlauf- werken einschließlich der Archivierung erstrecken sich auch auf den Bereich der privaten Nutzung nach Maßgabe der folgenden Bestimmungen:
+  \begin{itemize}
+    \item Im Rahmen eines eventuell eingesetzten Spam-Filters sowie Viren-Scans oder ähnlicher Verfahren können Mails verändert oder gelöscht und ggf. auch Einblick in den Inhalt privater E-Mails genommen werden. Dabei werden nach Möglichkeit maschinelle Verfahren eingesetzt.
+    \item Besteht ein konkreter Verdacht, dass gegen wesentliche arbeitsvertragliche Pflichten und Verhaltensregeln verstoßen wurde, ist der Arbeitgeber nach Maßgabe des Mitbestimmungsrechts berechtigt, gespeicherte Daten, Inhalte oder Protokolldateien zu kontrollieren. Ferner können zur Überprüfung der Einhaltung der in dieser Anweisung enthaltenen Regelungen Stichproben in den Protokolldateien durchgeführt werden.
+    \item Unter Einsatz von maschinellen bzw. automatisierten Verfahren können zur Gewährleistung der Systemsicherheit sowie aus anderen berechtigten Gründen des Vereins Datentransfer und Daten gescannt, gefiltert, verändert, geblockt oder gelöscht werden.
+  \end{itemize}
+\end{itemize}
+
+{\large\textbf{Durch die private Nutzung erklärt die/der Beschäftigte seine Einwilligung in die Protokollierung und Kontrolle im vor beschriebenem Umfang für den Bereich der privaten Nutzung.}}
+
+\subsection{Regelung Soziale Netzwerke}
+\begin{itemize}
+  \item Soziale Netzwerke (auch Social Networks genannt) wie z.B. Facebook, WhatsApp, Xing, X, LinkedIn, usw. werden zunehmend auch von den Mitarbeitenden für private Zwecke genutzt. Hierbei besteht die Gefahr der Vermischung mit dem dienstlichen/beruflichen Kontext.
+  \item Bedenken Sie, dass alle Aktivitäten im Internet niemals anonym sind und für die Öffentlichkeit wie Kolleg*innen, Kund*innen, Lieferant*innen und Dienstleister*innen, Wettbewerber*innen, Pressevertreter*innen usw. jederzeit einsehbar sind.
+  \item Veröffentlichen Sie keine Interna oder Betriebsgeheimnisse des Vereins. Informationen zur Vereinssstrategie, zur wirtschaftlichen Situation unseres Vereins sowie Informationen über Kolleg*innen sowie Geschäftspartner*innen gehören nicht in die Öffentlichkeit.
+  \item Beachten Sie Urheberrechtshinweise und Copyrights bei Musikstücken, Filmbeiträgen und Unternehmenslogos. Respektieren Sie das Recht am eigenen Bild.
+  \item Bei persönlichen Meinungsäußerungen (auch im Kontext unseres Vereins) ist unbedingt deutlich zu machen, dass es sich um Ihre persönliche Ansicht handelt. Achten Sie darauf, dass die Fakten korrekt sind. Seien Sie sich bewusst, dass Sie in Online-Netzwerken ggf. als Repräsentant*in unseres Vereins gelten (auch ohne dass Sie das angegeben haben).
+  \item Seien Sie sich bewusst, dass Angaben und Beiträge für immer Bestand haben. Auch wenn ein Beitrag gelöscht oder rückgängig gemacht wird, kann eine dauerhafte Speicherung derzeit nicht verhindert werden.
+  \item Soweit der de-RSE e.V. selbst Soziale Netzwerke nutzt, erhalten die damit beschäftigten Mitarbeitenden gesonderte Richtlinien.
+\end{itemize}
+
+\section{Umgang mit Bewerbungsunterlagen}
+\begin{itemize}
+  \item Bitte denken Sie daran, alle Ihnen verfügbar gemachten Bewerbungsunterlagen mit allen Anlagen direkt datenschutzgerecht zu entsorgen (Schredder oder Datenschutz-Tonne), wenn Sie sie nicht mehr benötigen, spätestens aber, wenn die Bewerbungsphase abgeschlossen ist. Eine längerfristige Aufbewahrung ist gesetzlich verboten.
+  \item Sollten Sie einmal Original-Unterlagen zu einer Bewerbung erhalten, so bitten wir um zeitnahe Rückgabe an die bzw. den Personalverantwortlichen. Kopien dürfen nur gemacht werden, wenn dies unbedingt erforderlich ist, unterliegen aber derselben vorgenannten Löschungspflicht. Alle Bewerbungsunterlagen sind unter Verschluss zu halten.
+  \item Entsprechendes gilt auch für elektronische Dateien, wie E-Mail Vorgänge in Ihrem E-Mail System (Posteingang oder spezielle Ordner) sowie ggf. erstellte Kopien auf Ihrem Serverlaufwerk oder anderen Datenträgern). Diese Daten sind nach Abschluss der Bewerbungsphase zu löschen. Lediglich dem Personalbereich ist es gestattet, An- und Absageschreiben zu Bewerbungen zu archivieren, die übrigen Bewerbungsunterlagen für bis zu 6 Monaten nach Absage zu speichern und die Bewerbungsunterlagen zur Personalakte zu nehmen, insofern eine Einstellung erfolgt.
+\end{itemize}
+
+\section{Anfragen und Beschwerden in Bezug auf Datenschutz}
+\begin{itemize}
+  \item Jede betroffene Person hat das Recht auf Auskunft nach Art. 15 DSGVO, das Recht auf Berichtigung nach Art. 16 DSGVO, das Recht auf Löschung nach Art. 17 DSGVO, das Recht auf Einschränkung der Verarbeitung nach Art. 18 DSGVO sowie das Recht auf Datenübertragbarkeit aus Art. 20 DSGVO. Darüber hinaus besteht ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde und bei unserer/unserem Datenschutzbeauftragten.
+  \item Jede(r) Mitarbeitende, die/der eine Datenschutzanfrage oder -beschwerde empfängt oder eine mögliche Verletzung dieser Richtlinie bemerkt, muss die Beschwerde oder das Anliegen sofort an die/den Datenschutzbeauftragten oder an seine(n) Vorgesetzte(n) weiterleiten bzw. melden.
+  \item Wird eine Auskunft schriftlich und/oder von Staatsanwaltschaft, Kriminalpolizei sowie Steuerbehörden/Steuerfahndung verlangt, ist die Geschäftsführung bzw. der Vorstand unverzüglich einzuschalten.
+  \item Es wird darauf hingewiesen, dass eine nicht fristgerecht beantwortete Anfrage oder Beschwerde mit empfindlichen Geldbußen geahndet werden kann.
+\end{itemize}
+
+\section{Unverzügliche Meldung von Datenpannen}
+\begin{itemize}
+  \item Unter „Datenpanne“ ist jeder Vorfall zu verstehen, bei dem vermutlich oder definitiv vertrauliche oder sonstige personenbezogene Daten irgendwie abhandengekommen oder in den Zugriff von unbefugten Dritten geraten sind.
+  \item Beispiele sind: Diebstahl, Hackerangriff, technische Panne (z. B. ungeschützter Zugriff auf Dateien oder Datenbestände durch Unbefugte möglich), falscher Empfänger bei E-Mail, Fax oder Postbrief.
+  \item Bedenken Sie bitte, dass unser Unternehmen empfindlichen Bußgeldstrafen ausgesetzt sein würde, wenn eine zu meldende Datenpanne nicht innerhalb von 72 Stunden an die Datenschutzaufsichtsbehörde mitgeteilt wird.
+  
+  {\large\textbf{Wenn Ihnen eine Datenpanne bekannt wird, ist unverzüglich der Vorstand und die/der Datenschutzbeauftragte zu informieren.}} \\ \\
+  Bitte machen Sie dabei nach Möglichkeit auch Angaben zu folgenden Fragen:
+  \begin{itemize}
+    \item Was ist passiert?
+    \item Wann ist es passiert bzw. bekannt geworden?
+    \item Wo ist es passiert bzw. welche Systeme. Prozesse etc. sind betroffen?
+    \item Welche und ob bereits Maßnahmen getroffen wurden?
+    \item Was werden Sie weiter tun?
+  \end{itemize}
+\end{itemize}
+
+\section{Regelungen, die nur bestimmte Gruppen von Mitarbeitenden betreffen}
+\subsection{Mitarbeitende, die an Dienstleistende Aufträge erteilen, und dabei personenbezogene Daten (z.B. von Mitarbeitenden, Mitgliedern oder Kund*innen) im Auftrag des Verseins verarbeitet oder genutzt werden sollen (Outsourcing/ Auftragsverarbeitung)}
+\begin{itemize}
+  \item Der Gesetzgeber erlaubt die Verarbeitung von personenbezogenen Daten durch Dienstleistende nur dann, wenn entsprechende vertragliche Regelungen getroffen sind. Ferner unterliegen wir als Auftraggeber besonderen Prüfungspflichten.
+  \item Die Rechtsgrundlage hierfür ergibt sich aufgrund der Art. 28 und 32 DSGVO.
+  \item Grundsätzlich sollten wir uns einen gesetzeskonformen Vertragsvorschlag von Dienstleistenden geben lassen, der anhand der gesetzlichen Vorgaben geprüft werden muss. Ferner sollten die Dienstleistenden uns entsprechende Nachweise vorlegen können, anhand dessen wir prüfen können, dass die Dienstleistenden die vertraglich zu vereinbarenden technischen und organisatorischen Maßnahmen auch tatsächlich umsetzen (z.B. durch entsprechende Auditierungszertifikate).
+  \item Eine fehlerhafte Vertragsgestaltung oder eine nicht erfolgte Prüfung der Dienstleistenden durch uns kann mit hohen Bußgeldern geahndet werden.
+  \item \textbf{Vor Abschluss des Vertrages ist unser(e) Datenschutzbeauftragte(r) einzubeziehen.}
+\end{itemize}
+
+\subsection{Mitarbeitende, die neue Verfahren allein, im Auftrag oder als Projekt-/Teamleiter*in entwickeln oder einkaufen (als „Verfahren“ sind Applikationen, Apps, Software, Anwendungen, Formulare und Verträge, Marketingmaßnahmen, Website-Tools sowie sämtliche Prozesse zu verstehen, bei denen personenbezogene Daten erhoben, erfasst, weitergeleitet oder anderweitig genutzt werden)}
+
+Bei neuen Verfahren sind nach den Anforderungen der DSGVO mehrere Arbeits- und Prüfungsschritte vorzunehmen und zu dokumentieren.
+
+% TODO: Die Formulare müssen wir noch erstellen oder von der GI bekommen.
+\begin{enumerate}
+  \item Formularmäßige Erfassung im Verzeichnis der Verarbeitungstätigkeiten nach Art. 30 DSGVO (Formular VVT\_Datenblatt (Anlage zu 11) unter (TODO: Link zur Datenschutzinformationen) verfügbar)
+  \item Prüfung der Rechtsgrundlage für die Zulässigkeit des Verfahrens nach Art. 6 DSGVO (z.B. Vertragsgrundlage, Einwilligung)
+  \item Gewährleistung der Anforderungen des Datenschutzes durch Technikgestaltung (Privacy by Design) gemäß Art. 25 DSGVO (entsprechende ChecklistePrivacy by Design (Anlage zu 11) ist verfügbar unter (TODO:Link zur Datenschutzinformationen)
+  \item Wenn aufgrund der Art, des Umfangs, der Umstände und der Zwecke des Verfahrens voraussichtlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen besteht, ist eine Datenschutz-Folgenabschätzung nach Art. 35 DSGVO erforderlich (Erläuterungen Vorgehensweise bei einer DSFA (Anlage zu 11) (TODO: Link zur Datenschutzinformationen))
+  \item Erfüllung der Transparenzpflichten gemäß der Art. 12-14 DSGVO (vgl. die Datenschutzerklärung auf unserer Website)
+\end{enumerate}
+
+{\large\textbf{Eine frühzeitige Information unseres Datenschutzbeauftragten ist sinnvoll. Auf jeden Fall ist unser Daten- schutzbeauftragter vor Einsatz des Verfahrens zwingend einzubeziehen.}}
+
+\subsection{Führungskräfte}
+\begin{itemize}
+  \item \textbf{Berechtigungen für IT-Systeme} \\
+  Die Vorgesetzten beantragen für ihre zugeordneten Mitarbeitenden per E-Mail:
+  \begin{itemize}
+    \item Berechtigungen für IT-Systeme
+    \item Zugriffe auf Netzwerkfreigaben oder andere Ablagesysteme
+  \end{itemize}
+  Das gleiche gilt für neue Vorgesetzte, wobei darauf hinzuweisen ist, das bisherige Berechtigungen deaktiviert werden. \\ \\
+  Wenn eine beschäftigte Person auf Dauer oder vorübergehend aus dem Verein ausscheidet, entscheidet die Geschäftsleitung bzw. der Vorstand darüber wie mit den Berechtigungen der ausgeschiedenen Person zu verfahren ist.
+  \item \textbf{Zugriff auf Vereinsdaten} \\ Die Geschäftsleitung bzw. der Vorstand entscheidet darüber welche Mitarbeitenden auf Vereinsdaten zugreifen dürfen. Sofern Externen ein Zugriff auf die Vereinsdaten eingeräumt werden soll, erfordert dies die gesonderte Abstimmung.
+  
+\end{itemize}
+
+\end{document}
+
