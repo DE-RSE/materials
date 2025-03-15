@@ -1,0 +1,154 @@
+\documentclass[../Vorlagen/de-RSE_Kopf,a4paper]{scrlttr2}
+\graphicspath{{../Vorlagen/}}
+\usepackage{mathpazo}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\usepackage{lastpage}
+
+
+\usepackage{scrlayer-scrpage}
+\pagestyle{empty}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+
+\ifoot{Verpflichtungserklärung Vertraulichkeit, Stand: 14. März 2025 }
+\ofoot{Seite \thepage\ von \pageref*{LastPage}}
+
+\DeclareNewLayer[
+  background,
+  align=bl,
+  hoffset=13.8cm,
+  voffset=1cm,
+  addvoffset=2mm,% <- adjust this value to your needs
+  mode=picture,
+  contents=\putLL{\includegraphics[height=1.5em]{de-RSE-logo-text-colour}}
+]{headerimage}
+\AddLayersToPageStyle{@everystyle@}{headerimage}
+
+\DeclareNewLayer[%
+  head,% Ebene im Kopfbereich
+  hoffset=20mm,% vom linken Seitenrand,
+  voffset=16mm,
+  width=\paperwidth,% über die gesamte Seitenbreite
+  background,% im Hintergrund
+  contents={\color{col_deRSE}\par\noindent\rule{17cm}{0.4pt}}
+]{headerline}
+\AddLayersAtBeginOfPageStyle{@everystyle@}{headerline}
+
+\begin{document}
+% \begin{letter}{}
+% \opening{}
+\thispagestyle{headings}
+\vspace{-8.5cm}
+\begin{centering}
+{\large\textbf{Verpflichtung auf die Wahrung der Vertraulichkeit und Integrität bei der Verarbeitung personenbezogener Daten}}\\
+{\tiny c/o Deutsches Zentrum für Luft- und Raumfahrt (DLR), Institut für Softwaretechnologie, Rutherfordstraße 2, 12489 Berlin}\\*[1em]
+\end{centering}
+\vspace{0.5cm}
+
+Personenbezogene Daten sind nach den gesetzlichen Vorschriften so zu verarbeiten, dass die Rechte der durch die Verarbeitung betroffenen Personen auf Vertraulichkeit und Integrität ihrer personenbezogenen Daten gewährleistet werden. Dies umfasst jeglichen Umgang mit Daten, die zu einer identifizierten oder identifizierbaren natürlichen Person in Bezug stehen. \\
+\\
+Daher ist es Ihnen nur gestattet, personenbezogene Daten in dem Umfang und in der Weise zu verarbeiten, wie es zur Erfüllung der Ihnen übertragenen Aufgaben erforderlich ist. \\
+\\
+Nach diesen Vorschriften ist es untersagt, personenbezogene Daten unbefugt oder unrechtmäßig zu verarbeiten oder absichtlich oder fahrlässig die Sicherheit der Verarbeitung in einer Weise zu verletzen, die zur Vernichtung, zum Verlust, zur Veränderung, zu unbefugter Offenlegung oder unbefugtem Zugang führt.Nach diesen Vorschriften ist es untersagt, personenbezogene Daten unbefugt oder unrechtmäßig zu verarbeiten oder absichtlich oder fahrlässig die Sicherheit der Verarbeitung in einer Weise zu verletzen, die zur Vernichtung, zum Verlust, zur Veränderung, zu unbefugter Offenlegung oder unbefugtem Zugang führt. \\
+
+\vspace{-0.5cm}
+\begin{itemize}
+    \item Verstöße gegen die Datenschutzvorschriften können ggf. mit Geldbuße, Geldstrafe oder Freiheitsstrafe geahndet werden.
+    \item Entsteht der betroffenen Person durch die unzulässige Verarbeitung ihrer personenbezogenen Daten ein materieller oder immaterieller Schaden, kann ein Schadenersatzanspruch entstehen.
+    \item Ein Verstoß gegen die Vertraulichkeits- und Datenschutzvorschriften stellt einen Verstoß gegen arbeitsvertragliche Pflichten dar, der entsprechend arbeitsrechtlich geahndet werden kann.
+\end{itemize}
+
+Soweit Sie im Bereich der EDV bzw. Betreuung/Administration der Telekommunikationsanlage arbeiten, berührt Ihre Tätigkeit evtl. das Fernmeldegeheimnis. Sie dürfen sich für diesen Fall nicht über das erforderliche Maß hinaus Kenntnis vom Inhalt oder den näheren Umständen der Telekommunikation verschaffen. Sie dürfen derartige Kenntnisse grundsätzlich nicht an Dritte weitergeben. \\
+\\
+Die Verpflichtung auf die Vertraulichkeit besteht auch nach der Beendigung des Beschäftigungsverhältnisses uneingeschränkt fort.
+
+Ich, Herr/Frau XY erkläre hiermit, die Vertraulichkeit und Integrität personenbezogener Daten gemäß den oben beschriebenen Vorgaben einzuhalten. \\
+\\
+Zugleich bestätige ich mit meiner Unterschrift den Erhalt einer Zweitfassung dieser Verpflichtungserklärung nebst Erläuterungen und Verhaltenshinweisen zum Datenschutz und deren inhaltliche Kenntnisnahme.
+
+\vspace{1cm}
+\begin{Form}
+\begin{tabular}{llll}
+Datum:        & \TextField[height=0.01cm, width=0.2\textwidth]{} & Unterschrift: & \\
+\end{tabular}
+\end{Form}
+
+\vspace{1cm}
+Eine Verletzung datenschutzrechtlicher und anderer Vorschriften \textbf{kann mit Freiheitsstrafe} bis zu drei Jahren oder mit \textbf{Geldstrafe} geahndet werden. Entsprechende Vorschriften können sich z. B. aus Art. 84 DSGVO i.V.m. § 42 BDSG-neu, § 17 UWG, § 202a Abs. 1 StGB, § 303a Abs. 1 StGB, § 88 TKG, § 78 Abs. 1 Satz 2 \& 3 SGB X, § 203 StGB ergeben. Weitere Informationen zu datenschutzrechtlichen Fragestellungen erhalten Sie bei der/dem betrieblichen Datenschutzbeauftragten.
+
+\clearpage
+
+\begin{centering}
+{\large\textbf{Erläuterungen und Verhaltenshinweise zum Datenschutz}}\\
+\end{centering}
+\vspace{1.0cm}
+
+\textbf{Zielsetzung des Datenschutzrechts}\\
+Der Mensch (= \textbf{betroffene Person}) soll vor den möglichen Gefahren geschützt werden, die sich aus der bloßen Datenverarbeitung oder aus der Nutzung seiner Daten für das grundgesetzlich verbürgte \textbf{Persönlichkeitsrecht} ergeben können.\\
+Datenschutz = Schutz des Menschen. Datensicherung = Schutz der Daten.\\
+\\
+\textbf{Der Begriff "Personenbezogene Daten"}\\
+Personenbezogene Daten sind Informationen jedweder Art zu einer identifizierten oder identifizierbaren natürlichen Person, gleichgültig ob Mitarbeiter, Kollege, Kunde bzw. Lieferant oder Ansprechpartner. Jede Information zu einer dieser Personen zählt dazu: also auch bereits die Telefonnummer oder die E-Mail-Adresse; ebenso der Inhalt einer E-Mail. Auch wenn es sich um Einzelgewerbetreibende oder Freiberufler handelt, ist ein Personenbezug grundsätzlich anzunehmen.\\
+Gehen Sie im Zweifel bei Daten immer davon aus, dass ein Personenbezug vorliegt und fragen Sie bei ihrer/ihrem Vorgesetzten oder der/dem betrieblichen Datenschutzbeauftragten nach, wenn Sie unsicher sind, wie Sie mit den Daten umgehen sollen.\\
+Auch Daten ohne direkten Personenbezug (z. B. ohne Namensangabe) können personenbezogene Daten sein, wenn aus ihnen auf die zugehörigen Personen geschlossen werden kann (z. B. Personalnummer, PC-Benutzerkennung, Kfz-Kennzeichen).\\
+\\
+\textbf{Der Umgang mit personenbezogenen Daten ist nur beschränkt zulässig:}\\
+Der Umgang mit personenbezogenen Daten ist nur zulässig, wenn die DatenschutzGrundverordnung (DSGVO), das Bundesdatenschutzgesetz (BDSG) oder eine andere Rechtsvorschrift dies erlaubt oder die betroffene Person eingewilligt hat.\\
+
+\begin{itemize}
+    \item Personenbezogene Daten müssen auf \textbf{rechtmäßige Weise}, nach Treu und Glauben und in einer für die betroffene Person \textbf{nachvollziehbaren Weise} verarbeitet werden („Rechtmäßigkeit, Verarbeitung nach Treu und Glauben, Transparenz“).
+    \item Personenbezogene Daten müssen in einer Weise verarbeitet werden, die eine angemessene \textbf{Sicherheit} der personenbezogenen Daten gewährleistet, einschließlich Schutz vor \textbf{unbefugter oder unrechtmäßiger Verarbeitung} und vor unbeabsichtigtem \textbf{Verlust}, unbeabsichtigter \textbf{Zerstörung} oder unbeabsichtigter \textbf{Schädigung} durch geeignete technische und organisatorische Maßnahmen („Integrität und Vertraulichkeit“).
+    \item Personenbezogene Daten dürfen grundsätzlich nur für die Zwecke (weiter) verarbeitet werden, für die sie erhoben bzw. erstmals gespeichert worden sind, z.B. im Rahmen eines \textbf{Vertrages}. Voraussetzung ist allerdings, dass die \textbf{betroffene Person über die Zwecke hinreichend informiert} wurde.
+    \item Nur in \textbf{gesetzlich bestimmten Fällen} oder mit \textbf{Einwilligung} der betroffenen Person ist eine anderweitige Verarbeitung zulässig (z. B. die Weitergabe an Dritte).
+    \item Personenbezogene Daten dürfen nur so lange gespeichert werden, wie es der festgelegte Zweck erfordert. Unrichtige oder unvollständige Daten sind zu löschen oder zu berichtigen. 
+    \item  Ausnahmsweise ist eine Verarbeitung auch aufgrund eines \textbf{berechtigten Interesses} zulässig, wenn keine Interessen der betroffenen Person dagegenstehen und überwiegen. Die hierbei notwendige Abwägung erfordert i.d.R. aber die Einschaltung des Datenschutzbeauftragten.
+    \item Die Übermittlung in Länder außerhalb der EU/EWR-Staaten ist nur bei bestimmten Ausnahmen zulässig.
+\end{itemize}
+
+\textbf{Technische und organisatorische Sicherheitsmaßnahmen} \\
+Es ist gesetzlich vorgeschrieben, dass personenbezogene Daten durch bestimmte technische und organisatorische Maßnahmen geschützt werden müssen. Obwohl wir die notwendigen Maßnahmen grundsätzlich organisiert haben, sind Sie als \textbf{Mitarbeiter für die Umsetzung mitverantwortlich}. Richtiges Verhalten gemäß Arbeitsvertrag und Arbeits-/Dienstanweisung ist unabdingbar. Im Folgenden einige ausgewählte Beispiele: \\
+
+\begin{addmargin}[10mm]{0mm}
+\textbf{Zugriff} bzw. der Einblick auf Daten und Informationen in einem Netzwerk oder auf EDV- Anlagen/PC darf nur berechtigten Personen ermöglicht werden. Durch Benutzerkennung und Passwort werden die Systeme durch den Arbeitgeber entsprechend geschützt. In Ihrer Verantwortung liegt aber der \textbf{vertrauliche und sorgfältige Umgang mit Ihren Zugangsberechtigungsdaten} (z.B. Passwort) und den entsprechenden Systemen (z.B. Sperren des PCs bei Abwesenheit vom Arbeitsplatz). \\
+\\
+\textbf{Weitergabe von Daten und Informationen} \\
+Es ist sicherzustellen, dass Daten bei der elektronischen Übertragung oder während ihres Transports oder ihrer Speicherung auf Datenträger nicht unbefugt gelesen, kopiert, verändert oder entfernt werden können. Obwohl zahlreiche betriebliche Vorkehrungen getroffen sind, bleiben \textbf{Sie als Mitarbeiter*in} auch für die Umsetzung dieser Vorschrift mitverantwortlich\textbf{, um Gefährdungen zu verhindern}. Beispiele sind die Weitergabe von USB-Sticks, DVDs oder sonstigen externen Speichermedien sowie Daten per E-Mail, wobei i.d.R. eine passwortgeschützte Verschlüsselung der Daten erforderlich ist.
+\end{addmargin}
+
+\textbf{Rechte der betroffenen Person (Auswahl):} \\
+Jede(r), deren/dessen personenbezogene Daten verarbeitet werden, hat gegenüber der speichernden Stelle grundsätzlich das Recht auf \textbf{Auskunft} über gespeicherte Daten, Zweck und Rechtsgrundlage der Speicherung sowie Herkunft und Empfänger von Übermittlungen. Unzutreffende Daten sind zu \textbf{berichtigen}, unzulässig gespeicherte oder nicht mehr erforderliche Daten zu \textbf{löschen}. \\
+\\
+Wenn jemandem durch eine unrechtmäßige automatisierte Verarbeitung seiner
+personenbezogenen Daten ein materieller oder immaterieller Schaden zugefügt wird, kann diese Person \textbf{Schadenersatz} verlangen. Weitere Rechte der betroffenen Personen sind aus Gründen der Übersichtlichkeit hier nicht weiter aufgeführt. \\
+\\
+Wichtig ist in jedem Fall, dass bei entsprechenden Anfragen der betroffenen Personen eine zeitnahe Bearbeitung und Beantwortung gewährleistet wird. Jeder Mitarbeiter ist daher verpflichtet, ihm bekanntwerdende Anfragen oder Anträge im Zusammenhang mit dem Datenschutz unverzüglich zur Bearbeitung aufzugreifen bzw. nach Absprache weiterzuleiten. \\
+\\
+\textbf{Jede(r)} hat das Recht, sich unmittelbar an die/den betrieblichen Datenschutzbeauftragten oder auch direkt an die Datenschutzaufsichtsbehörde zu wenden, wenn sie/er der Ansicht ist, bei der Verarbeitung seiner personenbezogenen Daten in seinen Rechten verletzt zu sein. \\
+\\
+\textbf{Arbeitsrechtliche Verantwortlichkeit} \\ 
+Neben der in der Verpflichtungserklärung aufgeführten Strafbarkeit von Verstößen gegen die Datenschutzvorschriften stellt die Missachtung von Sorgfaltspflichten beim Umgang mit personenbezogenen Daten regelmäßig eine Verletzung von Verpflichtungen aus dem Beschäftigungsverhältnis dar. Diese Verpflichtungen und Einzelmaßnahmen ergeben sich aus Ihrem \textbf{Arbeitsvertrag, einzelnen Betriebsvereinbarungen bzw. entsprechenden Betriebsanweisungen oder Richtlinien/Policies}, mit denen sich jede(r) Mitarbeiter*in regelmäßig und eigenständig vertraut machen muss. Ein Verstoß hiergegen oder eine Missachtung kann zu arbeitsrechtlichen Konsequenzen führen. \\
+\\
+\textbf{Allgemeine Verhaltensregeln beim Um-gang mit Daten:} \\
+\begin{itemize}
+    \item Nur sichere Passwörter nutzen (z.B. mit Sonderzeichen/Ziffern, keine Namen) und unbedingt vertraulich halten (auch gegenüber Kollegen, Vorgesetzten oder EDV-Mitarbeitern).
+    \item Sichern Sie die Ihnen anvertrauten Daten und Datenträger, Akten und Schriftstücke mit personenbezogenen Daten oder sonstigem vertraulichen Inhalt vor dem Zugriff Unbefugter durch Verschließen; das gilt insbesondere bei längerer Abwesenheit vom Arbeitsplatz/Büro und zum Feierabend.
+    \item Bildschirme und PC sind bei Verlassen des Arbeitsplatzes zu sperren.
+    \item Laptops sind bei Reisen sorgfältig zu sichern, besonders im Auto, Hotel oder auf Flughäfen.
+    \item Keine vertraulichen Informationen per Fax schicken; falls doch erforderlich, sind besondere Vorkehrungen zu treffen; z. B. telefonische Absprache wegen Anwesenheit der/des Empfänger*in, Doppelkontrolle der Richtigkeit der gewählten bzw. eingegebenen Fax-Nummer vor Versand.
+    \item Bevor Sie eine E-Mail mit vertraulichem Inhalt versenden bzw. beantworten, ist die Liste der möglichen Empfänger zu überprüfen! (Achtung: vertrauliche Informationen über E-Mail außerhalb unseres Netzwerkes grundsätzlich nur dann versenden, wenn eine Verschlüsselung (z.B. mit Passwort) genutzt werden kann.)
+    \item Die Nutzung von „offenen“ E-Mail-Verteilern ist zu unterlassen, wenn darin externe Empfänger*innen enthalten sind. Ausnahme: Es gibt gute Gründe, dass alle Empfänger*innen im „offenen“ Verteiler voneinander wissen dürfen oder müssen, an wen diese E-Mail sonst noch geschickt wurde. Verstecken lässt sich der Adressverteiler, wenn die E-Mailadressen oder die Verteiler-Gruppe aus- schließlich in das „BCC-Feld“ (statt in das „AN-“ oder „CC-Feld“) eingetragen werden.
+    \item Vernichten Sie nicht mehr benötigte Datenträger (Papier und elektronische) datenschutzkonform, so dass eine missbräuchliche Verwendung der Daten nicht mehr möglich ist.
+    \item Wenn Ihnen eine Datenpanne bekannt wird (d.h. dass personenbezogene Daten fehlerhaft an Dritte übermittelt wurden oder auf andere Weise Unbefugten verfügbar geworden oder zur Kenntnis gelangt sind), informieren Sie unverzüglich Ihre(n) Vorgesetzte(n) und/oder die/den Datenschutzbeauftragte(n).
+    \item Keine vertraulichen Gespräche/Telefonate in der Öffentlichkeit führen, wenn unbeteiligte Dritte den Inhalt mithören können.
+\end{itemize}
+
+\textbf{Datenschutz geht uns alle an, denn das Vertrauen unserer Mitarbeiter, Kunden und Geschäftspartner ist nicht zuletzt von einem gesetzeskonformen Verhalten unseres Hauses abhängig.} \\
+\\
+Im Übrigen appellieren wir an Sie: \\
+\\
+\textbf{Behandeln Sie die Daten anderer so, wie Sie Ihre eigenen Daten behandelt wissen möchten!}
+
+% \end{letter}
+\end{document}
+
