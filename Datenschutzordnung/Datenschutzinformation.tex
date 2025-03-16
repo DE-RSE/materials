@@ -1,0 +1,189 @@
+\documentclass[a4paper, fontsize=11pt]{scrartcl}
+\usepackage{scrletter}
+\usepackage{mathpazo}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\usepackage{lastpage}
+\usepackage{scrlayer-scrpage}
+
+\usepackage{color}
+\definecolor{col_deRSE}{rgb}{0.535, 0.164, 0.410}
+
+\usepackage{graphicx}
+\graphicspath{{../Vorlagen/}}
+
+% \setkomafont{chapter}{\fontsize{12bp}{18.8bp}}
+\setkomafont{section}{\large\normalfont\textbf}
+\setkomafont{subsection}{\large\normalfont\textbf}
+
+\usepackage[ngerman]{babel}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+
+
+\pagestyle{empty}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+
+\ifoot{Datenschutzrichtlinie, Stand: 16. März 2025 }
+\ofoot{Seite \thepage\ von \pageref*{LastPage}}
+
+\DeclareNewLayer[
+  background,
+  align=bl,
+  hoffset=13.8cm,
+  voffset=1cm,
+  addvoffset=2mm,% <- adjust this value to your needs
+  mode=picture,
+  contents=\putLL{\includegraphics[height=1.5em]{de-RSE-logo-text-colour}}
+]{headerimage}
+\AddLayersToPageStyle{@everystyle@}{headerimage}
+
+\DeclareNewLayer[%
+  head,% Ebene im Kopfbereich
+  hoffset=20mm,% vom linken Seitenrand,
+  voffset=16mm,
+  width=\paperwidth,% über die gesamte Seitenbreite
+  background,% im Hintergrund
+  contents={\color{col_deRSE}\par\noindent\rule{17cm}{0.4pt}}
+]{headerline}
+\AddLayersAtBeginOfPageStyle{@everystyle@}{headerline}
+
+\begin{document}
+
+% \renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+% \renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
+% \renewcommand{\labelenumiv}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.\arabic{enumiv}}
+
+\thispagestyle{headings}
+\vspace{-8.5cm}
+\begin{centering}
+{\large\textbf{Datenschutzinformation für Beschäftigte der Gesellschaft für Forschungssoftware (de-RSE e.V.)}}\\
+{\tiny c/o Deutsches Zentrum für Luft- und Raumfahrt (DLR), Institut für Softwaretechnologie, Rutherfordstraße 2, 12489 Berlin}\\*[1em]
+\end{centering}
+\vspace{0.5cm}
+{\large\textbf{Information zum Datenschutz über unsere Verarbeitung von Beschäftigtendaten  nach Artikel (Art.) 13, 14 und 21 der Datenschutz-Grundverordnung Daten (DSGVO)}}
+
+\vspace{0.5cm}
+{\large\textbf{Kurzüberblick}} \\
+Wir nehmen den Datenschutz sehr ernst. Das gilt selbstverständlich auch in Bezug auf die Daten unserer Mitarbeitenden, früheren Mitarbeitenden und sämtlichen Personen, die nach der Definition des Gesetzes unter den Begriff „Beschäftigte“ fallen. Wir informieren Sie hiermit darüber, wie wir Ihre Daten verarbeiten und welche Ansprüche und Rechte Ihnen nach den datenschutzrechtlichen Regelungen zustehen (für Bewerber*innen bestehen gesonderte Informationsinhalte).
+
+\begin{itemize}
+    \item \textbf{Wichtige Kontaktdaten} \\ Siehe Abschnitt \ref{kontaktdaten}.
+    \item \textbf{Zwecke und Rechtsgrundlage, auf der wir Ihre Daten verarbeiten} \\ Wir verarbeiten personenbezogene Daten im Einklang mit den Bestimmungen der Datenschutz-Grundverordnung (DSGVO), dem Bundesdatenschutzgesetz (BDSG) sowie anderen anwendbaren Datenschutzvorschriften. Einzelheiten siehe Abschnitt \ref{zwecke}.
+    \item \textbf{Zwecke zur Erfüllung eines Vertrages oder von vorvertraglichen Maßnahmen} \\ Die Verarbeitung personenbezogener Daten erfolgt zur Begründung, Durchführung und Beendigung des Beschäftigungsverhältnisses mit Ihnen. Einzelheiten siehe Abschnitt \ref{zwecke1}.
+    \item \textbf{Zwecke im Rahmen eines berechtigten Interesses von uns oder Dritten} \\ Über die eigentliche Erfüllung des (Vor-) Vertrages hinaus verarbeiten wir Ihre Daten, wenn es erforderlich ist, um berechtigte Interessen von uns oder Dritten zu wahren. Einzelheiten siehe Abschnitt \ref{zwecke2}.
+    \item \textbf{Zwecke im Rahmen Ihrer Einwilligung} \\ Eine Verarbeitung Ihrer personenbezogenen Daten kann für bestimmte Zwecke auch aufgrund Ihrer Einwilligung erfolgen. Einzelheiten siehe Abschnittt \ref{zwecke3}.
+    \item \textbf{Zwecke zur Erfüllung gesetzlicher Vorgaben oder im öffentlichen Interesse} \\ Wie jeder, der sich am Wirtschaftsgeschehen beteiligt, unterliegen auch wir einer Vielzahl von rechtlichen Verpflichtungen. Primär sind dies gesetzliche Anforderungen, aber auch ggf. aufsichtsrechtliche oder andere behördliche Vorgaben. Einzelheiten siehe Abschnitt \ref{zwecke4}.
+    \item \textbf{Die von uns verarbeiteten Datenkategorien, soweit wir Daten nicht unmittelbar von Ihnen erhalten, und deren Herkunft} \\ Soweit dies für die Vertragsbeziehung mit Ihnen und die von Ihnen ausgeübte Tätigkeit erforderlich ist, verarbeiten wir ggf. von anderen Stellen oder von sonstigen Dritten oder aus öffentlichen Quellen zulässigerweise erhaltene Daten. Einzelheiten siehe Abschnitt \ref{Datenkategorien}.
+    \item \textbf{Empfänger*in oder Kategorien von Empfänger*innen Ihrer Daten} \\ Innerhalb unseres Hauses erhalten diejenigen internen Stellen bzw. Organisationseinheiten Ihre Daten, die diese zur Erfüllung unserer vertraglichen und gesetzlichen Pflichten oder im Rahmen der Bearbeitung und Umsetzung unseres berechtigten Interesses benötigen. Einzelheiten siehe Abschnitt \ref{empfaenger}.
+    \item \textbf{Dauer der Speicherung Ihrer Daten} \\ Wir verarbeiten und speichern Ihre Daten im Grundsatz für die Dauer unserer Vertragsbeziehung. Es gibt allerdings einige Besonderheiten, siehe Abschnitt \ref{dauer}.
+    \item \textbf{Verarbeitung Ihrer Daten in einem Drittland oder durch eine internationale Organisation} \\ Eine Datenübermittlung an Stellen in Staaten außerhalb des Europäischen Wirtschaftsraums EU/EWR (sogenannte Drittländer) erfolgt dann, wenn es zur Ausführung einer vertraglichen Verpflichtung Ihnen gegenüber erforderlich sein sollte (z.B. bei einer Auslandsentsendung), es gesetzlich vorgeschrieben ist (z. B. steuerrechtliche Meldepflichten), es im Rahmen eines berechtigten Interesses von uns oder einem Dritten liegt oder Sie uns eine Einwilligung erteilt haben. Einzelheiten siehe Abschnitt \ref{verarbeitung}.
+    \item \textbf{Ihre Datenschutzrechte} \\ Unter bestimmten Voraussetzungen können Sie uns gegenüber Ihre Datenschutzrechte geltend machen. Welche Rechte dies sind und unter welchen Voraussetzungen Sie diese geltend machen können, entnehmen Sie bitte den weiteren Ausführungen in Abschnitt \ref{datenschutzrechte}.
+    \item \textbf{Umfang Ihrer Pflichten, uns Ihre Daten bereitzustellen} \\ Sie brauchen nur diejenigen Daten bereitzustellen, die für die Aufnahme und Durchführung der Vertragsbeziehung oder für ein vorvertragliches Verhältnis mit uns erforderlich sind oder zu deren Erhebung wir gesetzlich verpflichtet sind. Weitere Einzelheiten entnehmen Sie bitte den Ausführungen in Abschnitt \ref{umfang}.
+    \item \textbf{Bestehen einer automatisierten Entscheidungsfindung im Einzelfall (einschließlich Profiling)} \\ Wir setzen keine rein automatisierten Entscheidungsverfahren gemäß Artikel 22 DSGVO ein. Sofern wir ein solches Verfahren zukünftig in Einzelfällen doch einsetzen sollten, werden wir Sie hierüber gesondert informieren, sofern dies gesetzlich vorgegeben ist.
+    \item \textbf{Informationen über Ihr Widerspruchsrecht Art. 21 DSGVO} \\ Einzelheiten zu Ihrem besonderen Widerspruchsrecht finden Sie im Ende dieser Datenschutzinformation in Abschnitt \ref{entscheidung}.
+\end{itemize}
+
+\vspace{1.5cm}
+{\Large\textbf{Datenschutzinformation im Einzelnen}} \\
+
+\begin{enumerate}[label=\textbf{\arabic*.},ref=\arabic*]
+  \item \label{kontaktdaten} \textbf{Für die Datenverarbeitung verantwortliche Stelle und Kontaktdaten} \\\\
+  \textit{Verantwortliche Stelle im Sinne des Datenschutzrechts:} \\\\
+  Gesellschaft für Forschungssoftware (de-RSE e.V.) \\
+  c/o Deutsches Zentrum für Luft- und Raumfahrt (DLR) \\
+  Institut für Softwaretechnologie \\
+  Rutherfordstraße 2 \\
+  12489 Berlin \\
+  E-Mail: \href{mailto:vorstand@de-rse.org}{vorstand@de-rse.org} \\\\
+  \textit{Kontaktdaten unseres Datenschutzbeauftragten:} \\\\
+  DLR - Institut für Softwaretechnologie\\
+  z.Hd. Michael Meinel \\
+  Rutherfordstraße 2 \\
+  12489 Berlin \\
+  E-Mail: \href{mailto:Michael.Meinel@de-rse.org}{Michael.Meinel@de-rse.org} \\\\
+  \item \label{zwecke} \textbf{Zwecke und Rechtsgrundlage, auf der wir Ihre Daten verarbeiten} \\ Wir verarbeiten personenbezogene Daten im Einklang mit den Bestimmungen der Datenschutz-Grundverordnung (DSGVO), dem Bundesdatenschutzgesetz (BDSG) sowie anderen anwendbaren Datenschutzvorschriften. Details im Folgendem. Weitere Einzelheiten oder Ergänzungen zu den Zwecken der Datenverarbeitung können Sie den jeweiligen Vertragsunterlagen, Formularen, einer Einwilligungserklärung, evtl. Betriebs-/Dienstvereinbarungen und anderen Ihnen bereitgestellten Informationen (wie z.B. Arbeitsanweisungen/Organisationsrichtlinien oder Rundschreiben) entnehmen. Darüber hinaus kann diese Datenschutzinformation von Zeit zu Zeit aktualisiert werden, worüber Sie gesonderte Nachricht erhalten.
+  \begin{enumerate}[label=\textbf{\ref{zwecke}.\arabic*},ref=\ref{zwecke}.\arabic*]
+    \item \label{zwecke1} \textbf{Zwecke zur Erfüllung eines Vertrages oder von vorvertraglichen Maßnahmen} \\ (Art. 6 Abs. 1 b DSGVO) \\ Die Verarbeitung personenbezogener Daten erfolgt zur Begründung, Durchführung und Beendigung des Beschäftigungsverhältnisses mit Ihnen, wie insbesondere für folgende Zwecke: Gehaltsabrechnung, Zeiterfassung, Urlaubsplanung und Einsatz-Disposition, Nachweisbarkeit von Transaktionen, Aufträgen und sonstigen Vereinbarungen sowie zur Qualitätskontrolle durch entsprechende Dokumentation, Beurteilung, Maßnahmen zur Steuerung und Optimierung von Geschäftsprozessen sowie zur Erfüllung der allgemeinen Sorgfaltspflichten, statistische Auswertungen zur Unternehmenssteuerung, Steuerung und Kontrolle durch Muttergesellschaft; Personalentwicklung (Fortbildung und Weiterent-wicklung), Organisations- und Einsatzplanung, Reise- und Veranstaltungsmanagement, Reisebuchung und Reisekostenabrechnung, Berechtigungs- und Ausweisverwaltung, Erstellung Firmenausweis, Kostenerfassung und Controlling, Berichtswesen, Passwortmanagement, interne und externe Kommunikation, mitarbeiterbezogene Versicherungen und Altersvorsorge, Notfall-Management, Abrechnung und steuerliche Bewertung betrieblicher Leistungen (z.B. Kantinenessen oder Personaleinkauf sofern zutreffend), Standorterfassung, Fahrzeugmanagement einschließlich Führerscheinkontrolle, Abrechnung über Firmen-Kreditkarte, Schlüsselvergabe, Materialausgabe und Geräteverwaltung, Mitarbeiterführung, optimale Stellenbesetzung, Leistungs- und Verhaltenskontrollen im gesetzlich zulässigen Umfang, arbeitsrechtliche Maßnahmen, Risikomanagement, Mitgliedschaft in Arbeitskreisen und Verbänden, Arbeitssicherheit und Gesundheitsschutz, vertragsbezogene Kommunikation mit Ihnen, Geltendmachung rechtlicher Ansprüche und Verteidigung bei rechtlichen Streitigkeiten; Gewährleistung der IT-Sicherheit (u. a. System- bzw. Plausibilitätstests) und der allgemeinen Sicherheit, u. a. Gebäude- und Anlagensicherheit, Sicherstellung und Wahrnehmung des Hausrechts durch entsprechende Maßnahmen wie auch ggf. durch Videoüberwachungen zum Schutz von Dritten und unseren Mitarbeitern sowie zur Verhinderung von und zur Sicherung von Beweismitteln bei Straftaten; Vorschlagswesen, Erfindungen, Gewährleistung der Integrität, Verhinderung und Aufklärung von Straftaten; Authentizität und Verfügbarkeit der Daten, Kontrolle durch Aufsichtsgremien oder Kontrollinstanzen (z. B. Revision), ggf. Kontrollen durch Kunden bzw. deren Prüfer (z.B. bei Nachhaltigkeits-Audits oder zur Überprüfung der Einhaltung der Gesetze durch Vorlage von Gehaltsbelegen, Betriebsvereinbarungen, Arbeitsverträgen und Kontaktdaten zwecks Interview), Nachweisbarkeit von Aufträgen und sonstigen Vereinbarungen sowie zur Qualitätskontrolle.
+    \item \label{zwecke2} \textbf{Zwecke im Rahmen eines berechtigten Interesses von uns oder Dritten} \\ (Art. 6 Abs. 1 f DSGVO) \\ Über die eigentliche Erfüllung des (Vor-) Vertrages hinaus verarbeiten wir Ihre Daten gegebenenfalls, wenn es erforderlich ist, um berechtigte Interessen von uns oder Dritten zu wahren. Verarbeitungen Ihrer Daten finden nur dann und insoweit statt, als keine überwiegenden Interessen Ihrerseits gegen eine entsprechende Verarbeitung sprechen, wie insbesondere für folgende Zwecke: \\
+      \begin{itemize}
+        \item Maßnahmen zur Weiterentwicklung von Dienstleistungen und Produkten;
+        \item Prüfung und Optimierung von Verfahren zur Bedarfsanalyse;
+        \item Werbung oder Meinungsforschung, soweit Sie der Nutzung Ihrer Daten nicht widersprochen haben;
+        \item Offenlegung von personenbezogenen Daten im Rahmen einer Due Diligence bei Unternehmensverkaufsverhandlungen;
+        \item Abgleiche mit europäischen und internationalen Antiterrorlisten soweit über die gesetzlichen Verpflichtungen hainausgehend;
+        \item Anreicherung unserer Daten, u.a. durch Nutzung oder der Recherche öffentlich zugänglicher Daten soweit erforderlich;
+        \item Benchmarking;
+        \item Geltendmachung rechtlicher Ansprüche und Verteidigung bei rechtlichen Streitigkeiten, die nicht unmittelbar dem Vertragsverhältnis zuzuordnen sind;
+        \item Entwicklung von Scoring-Systemen oder automatisierten Entscheidungsprozessen
+        \item Gebäude- und Anlagensicherheit (z. B. durch Zutrittskontrollen und Videoüberwachung), soweit über die allgemeinen Sorgfaltspflichten hinausgehend;
+        \item Weiterentwicklung bestehender Systeme und Prozesse;
+        \item interne und externe Untersuchungen, Sicherheitsüberprüfungen;
+        \item Veröffentlichungen;
+        \item Erhalt und Aufrechterhaltung von Zertifizierungen privatrechtlicher oder behördlicher Natur;
+        \item Gratulation und Aufmerksamkeiten zu besonderen Anlässen;
+        \item Kommunikation im Intranet/Mitarbeiter-Zeitschrift/Mitarbeiter-Rundmails;
+        \item Speicherung und Archivierung bestimmter Daten für Zwecke interner und externer Publikationen (z.B. Geschäftsbericht) sowie der Dokumentation der Unternehmen/Orga-nisations-Historie;
+        \item Presse und Öffentlichkeitsarbeit.
+      \end{itemize}
+    \item \label{zwecke3} \textbf{Zwecke im Rahmen Ihrer Einwilligung} \\ (Art. 6 Abs. 1 a DSGVO) Eine Verarbeitung Ihrer personenbezogenen Daten kann für bestimmte Zwecke (z.B. Nutzung betrieblicher Kommunikationssysteme für private Zwecke; Fotos/Videos von Ihnen zur Veröffentlichung im Intranet/Internet) auch aufgrund Ihrer Einwilligung erfolgen. In der Regel können Sie diese jederzeit widerrufen. Dies gilt auch für den Widerruf von Einwilligungserklärungen, die vor der Geltung der DSGVO, also vor dem 25. Mai 2018, uns gegenüber erteilt worden sind. Über die Zwecke und über die Konsequenzen eines Widerrufs oder der Verweigerung einer Einwilligung werden Sie gesondert im entsprechenden Text der Einwilligung informiert. Grundsätzlich gilt, dass der Widerruf einer Einwilligung erst für die Zukunft wirkt. Verarbeitungen, die vor dem Widerruf erfolgt sind, sind davon nicht betroffen und bleiben rechtmäßig.
+    \item \label{zwecke4} \textbf{Zwecke zur Erfüllung gesetzlicher Vorgaben} (Art. 6 Abs. 1 c DSGVO) \textbf{oder im öffentlichen Interesse} (Art. 6 Abs. 1 e DSGVO) \\ Wie jeder, der sich am Wirtschaftsgeschehen beteiligt, unterliegen auch wir einer Vielzahl von rechtlichen Verpflichtungen. Primär sind dies gesetzliche Anforderungen (z.B. Betriebsverfassungsgesetz, Sozialgesetzbuch, Handels- und Steuergesetze, aber auch ggf. aufsichtsrechtliche oder andere behördliche Vorgaben (z.B. Berufsgenossenschaft). Zu den Zwecken der Verarbeitung gehören ggf. die Identitäts- und Altersprüfung, Betrugs- und Geldwäscheprävention (z.B. Abgleiche mit europäischen und internationalen Antiterrorlisten), das betriebliches Gesundheitsmanagement und das betriebliche Eingliederungsmanagement (BEM), die Gewährleistung der Arbeitssicherheit, die Erfüllung steuerrechtlicher Kontroll- und Meldepflichten sowie die Archivierung von Daten zu Zwecken des Datenschutzes und der Datensicherheit sowie für Zwecke der Prüfung durch Steuerberater/Wirtschaftsprüfer, Steuerund andere Behörden. Darüber hinaus kann die Offenlegung personenbezogener Daten im Rahmen von behördlichen/gerichtlichen Maßnahmen zu Zwecken der Beweiserhebung, Strafverfolgung oder der Durchsetzung zivilrechtlicher Ansprüche erforderlich werden.
+  \end{enumerate}
+  \item \label{Datenkategorien} \textbf{Die von uns verarbeiteten Datenkategorien, soweit wir Daten nicht unmittelbar von Ihnen erhalten, und deren Herkunft} \\ Soweit dies für die Vertragsbeziehung mit Ihnen und die von Ihnen ausgeübte Tätigkeit erforderlich ist, verarbeiten wir ggf. von anderen Stellen oder von sonstigen Dritten (z. B. Qualitätsbewertung oder Beschwerden von Kunden/Lieferanten/Verbrauchern) zulässigerweise erhaltene Daten. Zudem verarbeiten wir personenbezogene Daten, die wir aus öffentlich zugänglichen Quellen (wie z.B. Handels- und Vereinsregister, Melderegister, Presse, Internet und andere Medien) zulässigerweise gewonnen, erhalten oder erworben haben, soweit dies erforderlich ist und wir nach den gesetzlichen Vorschriften diese Daten verarbeiten dürfen. \\\\ Relevante personenbezogene Datenkategorien können insbesondere ggf. sein: \\
+  \begin{itemize}
+    \item Adress- und Kontaktdaten (Melde- und vergleichbare Daten, wie z. B. E-Mail-Adresse und Telefonnummer)
+  \end{itemize}
+   Weiteren Einzelheiten zu den von uns verarbeiteten Datenkategorien können Sie den jeweiligen Vorgängen (zum Beispiel auf Grundlage der Vertragsunterlagen, einer Einwilligungserklärung, evtl. Betriebs-/Dienstvereinbarungen und anderen Ihnen bereitgestellten Informationen wie z.B. Arbeitsanweisungen/Organisationsrichtlinien oder Rundschreiben entnehmen.
+  \item \label{empfaenger} \textbf{Empfänger oder Kategorien von Empfängern Ihrer Daten} \\ Innerhalb unseres Hauses erhalten diejenigen internen Stellen bzw. Organisationseinheiten Ihre Daten, die diese zur Erfüllung unserer vertraglichen und gesetzlichen Pflichten (wie Vorgesetzte, Buchhaltung, Betriebsarzt, Arbeitssicherheit, ggf. Mitarbeitervertretung usw.) oder im Rahmen der Bearbeitung und Umsetzung unseres berechtigten Interesses benötigen. Eine Weitergabe Ihrer Daten an externe Stellen erfolgt \textbf{ausschließlich}
+  \begin{itemize}
+    \item im Zusammenhang mit der Durchführung des Arbeitsvertrages;
+    \item zu Zwecken, bei denen wir zur Erfüllung gesetzlicher Vorgaben zur Auskunft, Meldung oder Weitergabe von Daten verpflichtet (z.B. Berufsgenossenschaft, Krankenkassen, Finanzbehörden) oder berechtigt sind oder die Datenweitergabe im öffentlichen Interesse liegt (vgl. Abschnitt \ref{zwecke4});
+    \item soweit externe Dienstleistungsunternehmen Daten in unserem Auftrag als Auftragsverarbeiter oder Funktionsübernehmer verarbeiten (z.B. Kreditinstitute, externe Rechenzentren, Reisebüro/Travel-Management, Versicherungsmakler, Versicherungs-unternehmen, Pensionskassen, Druckereien oder Unternehmen für Datenentsorgung, Kurierdienste, Post, Logistik);
+    \item aufgrund unseres berechtigten Interesses oder des berechtigten Interesses des Dritten für im Rahmen der unter Abschnitt \ref{zwecke2} genannten Zwecke (z.B. an Behörden, Auskunfteien, Inkasso, Rechtsanwälte, Gerichte, Gutachter, konzernangehörige Unternehmen und Gremien und Kontrollinstanzen) oder im Zusammenhang mit Ausgliederungen bzw. Verkauf von Unternehmensteilen an andere Unternehmen;
+    \item wenn Sie uns eine Einwilligung zur Übermittlung an Dritte gegeben haben.
+  \end{itemize}
+  \textbf{Wir werden Ihre Daten darüber hinaus nicht an Dritte weitergeben, sofern wir Sie darüber nicht gesondert informieren.} \\ Soweit wir Dienstleister im Rahmen einer Auftragsverarbeitung beauftragen, unterliegen Ihre Daten dort den von uns vorgegebenen Sicherheitsstandards, um ihre Daten angemessen zu schützen. In den übrigen Fällen dürfen die Empfänger die Da- ten nur für die Zwecke nutzen, für die sie ihnen übermittelt wurden.
+  \item \label{dauer} \textbf{Dauer der Speicherung Ihrer Daten} \\
+  Wir verarbeiten und speichern Ihre Daten im Grundsatz für die Dauer unserer Vertragsbe- ziehung. Das schließt auch die Anbahnung eines Vertrages mit ein (vorvertraglichen Rechts- verhältnis). \\\\
+  Darüber hinaus unterliegen wir verschiedenen Aufbewahrungs- und Dokumentations- pflichten, die sich unter anderem aus dem Handelsgesetzbuch (HGB) und der Abgabenord- nung (AO), ergeben. Die dort vorgegebenen Fristen zur Aufbewahrung bzw. Dokumentation betragen bis zehn Jahre über das Ende der Vertragsbeziehung oder das vorvertragliche Rechtsverhältnis hinaus. \\\\
+  Ferner können spezielle gesetzliche Vorschriften eine längere Aufbewahrungsdauer erfordern wie z.B. die Erhaltung von Beweismitteln im Rahmen der gesetzlichen Verjährungsvorschriften. Nach den §§ 195 ff. des Bürgerlichen Gesetzbuches (BGB) beträgt die regelmäßige Verjährungsfrist zwar drei Jahre, es können aber auch Verjährungsfristen bis zu 30 Jahren anwendbar sein. Kürzere Fristen werden im Zusammenhang mit Krankmeldungen, Abmahnungen und Daten des betrieblichen Eingliederungsmanagements (BEM) umgesetzt. Sind die Daten für die Erfüllung vertraglicher oder gesetzlicher Pflichten und Rechte nicht mehr erforderlich, werden diese regelmäßig gelöscht, es sei denn, deren - befristete - Weiterverarbeitung ist zur Erfüllung der unter Ziffer 2.2 aufgeführten Zwecke aus einem überwiegenden berechtigten Interesse des Arbeitgebers erforderlich. Ein solches überwiegen- des berechtigtes Interesse liegt z.B. dann vor, wenn eine Löschung wegen der besonderen Art der Speicherung nicht oder nur mit unverhältnismäßig hohem Aufwand möglich ist. In diesen Fällen können wir auch nach Beendigung unserer Vertragsbeziehung für eine mit den Zwecken vereinbare Dauer Ihre Daten speichern und ggf. in beschränktem Umfang nutzen. Grundsätzlich tritt in diesen Fällen an die Stelle einer Löschung eine Einschränkung der Verarbeitung. Mit anderen Worten, die Daten werden gegen die sonst übliche Nutzung durch entsprechende Maßnahmen gesperrt. Ferner kann auch nach dem Ende des Beschäftigungsverhältnisses bei Anwartschaften auf Altersbezüge eine Speicherung der dazu notwendigen Daten bis zum Ende der Zahlungen an die Bezugsberechtigten und den daran anschließenden Zeitraum der gesetzlichen Aufbewahrungsfrist notwendig sein.
+  \item \label{verarbeitung} \textbf{Verarbeitung Ihrer Daten in einem Drittland oder durch eine internationale
+  Organisation} \\ Eine Datenübermittlung an Stellen in Staaten außerhalb des Europäischen Wirtschaftsraums EU/EWR (sogenannte Drittländer) erfolgt dann, wenn es zur Ausführung einer vertraglichen Verpflichtung Ihnen gegenüber erforderlich sein sollte (z. B. bei einer Auslandsentsendung), es gesetzlich vorgeschrieben ist (z. B. steuerrechtliche Meldepflichten), es im Rahmen eines berechtigten Interesses von uns oder einem Dritten liegt oder Sie uns eine Einwilligung erteilt haben.
+  Dabei kann die Verarbeitung Ihrer Daten in einem Drittland auch im Zusammenhang mit der Einschaltung von Dienstleistern im Rahmen der Auftragsverarbeitung erfolgen. Soweit für das betreffende Land kein Beschluss der EU-Kommission über ein dort vorliegendes angemessenes Datenschutzniveau vorliegen sollte, gewährleisten wir nach den EU-Datenschutzvorgaben durch entsprechende Verträge, dass ihre Rechte und Freiheiten angemessen geschützt und garantiert werden. Informationen zu den geeigneten oder angemessenen Garantien und die Möglichkeit, wie und wo eine Kopie von ihnen zu erhalten ist, können auf Anfrage beim betrieblichen Datenschutzbeauftragten oder der für Sie zuständigen Personalabteilung angefordert werden.
+  \item \label{datenschutzrechte} \textbf{Ihre Datenschutzrechte} \\
+  Unter bestimmten Voraussetzungen können Sie uns gegenüber Ihre Datenschutzrechte geltend machen
+  \begin{itemize}
+    \item So haben Sie das Recht, von uns Auskunft über Ihre bei uns gespeicherten Daten zu erhalten nach den Regeln von Art. 15 DSGVO (ggf. mit Einschränkungen nach § 34 BDSG)
+    \item Auf Ihren Antrag hin werden wir die über Sie gespeicherten Daten nach Art. 16 DSGVO berichtigen, wenn diese unzutreffend oder fehlerhaft sind.
+    \item Wenn Sie es wünschen, werden wir Ihre Daten nach den Grundsätzen von Art. 17 DSGVO löschen, sofern andere gesetzliche Regelungen (z. B. gesetzliche Aufbewahrungspflichten oder die Einschränkungen nach § 35 BDSG) oder ein überwiegendes Interesse unsererseits (z.B. zur Verteidigung unserer Rechte und Ansprüche) dem nicht entgegenstehen.
+    \item Unter Berücksichtigung der Voraussetzungen des Art. 18 DSGVO können Sie von uns verlangen, die Verarbeitung Ihrer Daten einzuschränken.
+    \item Ferner können Sie gegen die Verarbeitung Ihrer Daten Widerspruch nach Art. 21 DSGVO einlegen, aufgrund dessen wir die Verarbeitung Ihrer Daten beenden müssen. Dieses Widerspruchsrecht gilt allerdings nur bei Vorliegen ganz besonderer Umstände Ihrer persönlichen Situation, wobei Rechte unseres Hauses Ihrem Widerspruchsrecht ggf. entgegenstehen können.
+    \item Auch haben Sie das Recht, Ihre dem Arbeitgeber bereitgestellten Daten gemäß den Regularien von Art. 20 DSGVO in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder sie einem Dritten zu übermitteln.
+    \item Darüber hinaus haben Sie das Recht, eine erteilte Einwilligung in die Verarbeitung personenbezogener Daten jederzeit uns gegenüber mit Wirkung für die Zukunft zu widerrufen (vgl. Ziffer 2.3).
+    \item Ferner steht Ihnen ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde zu (Art. 77 DSGVO). Wir empfehlen allerdings, eine Beschwerde zunächst immer an un- seren Datenschutzbeauftragten zu richten.
+  \end{itemize}
+  \textbf{Ihre Anträge über die Ausübung ihrer Rechte sollten nach Möglichkeit schriftlich an die oben angegebene Anschrift oder direkt an unseren Datenschutzbeauftragten adressiert werden.}
+  \item \label{umfang} \textbf{Umfang Ihrer Pflichten, uns Ihre Daten bereitzustellen} \\ Sie brauchen nur diejenigen Daten bereitzustellen, die für die Aufnahme und Durchführung der Vertragsbeziehung oder für ein vorvertragliches Verhältnis mit uns erforderlich sind oder zu deren Erhebung wir gesetzlich verpflichtet sind. Ohne diese Daten werden wir in der Regel nicht in der Lage sein, den Vertrag zu schließen oder diesen weiter auszufuhren. Dies kann sich auch auf später im Rahmen der Vertragsbeziehung erforderliche Daten beziehen. Sofern wir darüber hinaus Daten von Ihnen erbitten, werden Sie über die Freiwilligkeit der Angaben gesondert informiert.
+  \item \label{entscheidung} \textbf{Bestehen einer automatisierten Entscheidungsfindung im Einzelfall (einschließlich Profiling)} \\ Wir setzen keine rein automatisierten Entscheidungsverfahren gemäß Artikel 22 DSGVO ein. Sofern wir ein solches Verfahren zukünftig in Einzelfällen doch einsetzen sollten, werden wir Sie hierüber gesondert informieren, sofern dies gesetzlich vorgegeben ist.\\\\
+  \textbf{Information über Ihr Widerspruchsrecht Art. 21 DSGVO}
+  \begin{enumerate}[label=\textbf{\arabic*.}]
+    \item Sie haben das Recht, jederzeit gegen die Verarbeitung Ihrer Daten, die aufgrund von Art. 6 Abs. 1 f DSGVO (Datenverarbeitung auf der Grundlage einer Interes- senabwägung) oder Art. 6 Abs. 1 e DSGVO (Datenverarbeitung im öffentlichen Interesse) erfolgt, Widerspruch einzulegen. Voraussetzung ist allerdings, dass für Ihren Widerspruch Gründe vorliegen, die sich aus Ihrer besonderen persön- lichen Situation ergeben. Dies gilt auch für ein auf diese Bestimmung gestütztes Profiling im Sinne von Art. 4 Nr. 4 DSGVO. \\\\
+    Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
+    \item Unter Umständen nutzen wir Ihre personenbezogenen Daten in Einzelfällen auch, um Direktwerbung zu betreiben. Sofern Sie keine Werbung erhalten möchten, haben Sie jederzeit das Recht, Widerspruch dagegen einzulegen; dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht. Diesen Widerspruch werden wir für die Zukunft beachten. \\\\
+    Ihre Daten werden wir nicht mehr für Zwecke der Direktwerbung verarbeiten, wenn Sie der Verarbeitung für diese Zwecke widersprechen.
+  \end{enumerate} 
+  \vspace{0.5cm}
+  Der Widerspruch kann formfrei erfolgen und sollte möglichst gerichtet werden an: \\\\
+  Gesellschaft für Forschungssoftware (de-RSE e.V.) \\
+  c/o Deutsches Zentrum für Luft- und Raumfahrt (DLR) \\
+  Institut für Softwaretechnologie \\
+  Rutherfordstraße 2 \\
+  12489 Berlin \\\\
+  Unsere Information zum Datenschutz über unsere Datenverarbeitung nach Artikel (Art.) 13, 14 und 21 DSGVO kann sich von Zeit zu Zeit ändern. Alle Änderungen werden wir im Intranet im Ordner „Datenschutz“ bereitstellen und Sie darüber informieren.
+\end{enumerate}
+
+\end{document}
+
