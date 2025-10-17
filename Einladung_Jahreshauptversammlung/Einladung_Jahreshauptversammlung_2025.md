@@ -23,12 +23,15 @@ Auf der Tagesordnung stehen folgende Themen:
     c. Bericht der Kassenprüfer
     d. Einholung von Kommentaren der Mitglieder über die Berichte 
 8. Entlastung des Vorstands für 2024
-9.  Neuwahl des Vorstands
-10. Neuwahl der Kassenprüfer
-11. Wahl einer Onbutsperson
-12. Satzungsgemäß gestellte Anträge (siehe Anhang)
-13. Sonstiges
-14. Schließung des Mitgliederversammlung
+9.  Änderungen der Geschäftsordnung
+    a. Wahlvertretungen ermöglichen
+    • erreichbar unter: [https://github.com/DE-RSE/satzung/pull/57/files](https://github.com/DE-RSE/satzung/pull/57/files)
+10. Neuwahl des Vorstands
+11. Neuwahl der Kassenprüfer
+12. Wahl einer Onbutsperson
+13. Satzungsgemäß gestellte Anträge (siehe Anhang)
+14. Sonstiges
+15. Schließung des Mitgliederversammlung
 
 \clearpage
 Prinzipiell stehen, wie auch in den Vorjahren, alle Vorstandsposten zur Wahl. Wir würden uns sehr über Dein Interesse freuen, den Verein im Vorstand zu unterstützen. Insofern melde Dich bitte so bald wie möglich beim Vorstand: vorstand@de-rse.org.
@@ -53,4 +56,7 @@ Euer Vorstand
 
 ## Anhänge
 
-
+### Zur Abstimmung gestellte Änderung der Geschäftsordnung
+1. Beiträge von Mitgliedern die Organisationen angehören, die selbst institutioneller Mitglieder sind: neuer Satz Punkt 6-iv
+    - pull-request: [https://github.com/DE-RSE/satzung/pull/57/files](https://github.com/DE-RSE/satzung/pull/57/files)
+    - neu: "Der Beitrag für Beschäftigte von Einrichtungen, die institutionelle Mitglieder des de-RSE e.V. sind, beträgt 45 Euro."
