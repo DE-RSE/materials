@@ -59,4 +59,4 @@ Euer Vorstand
 ### Zur Abstimmung gestellte Änderung der Geschäftsordnung
 1. Beiträge von Mitgliedern die Organisationen angehören, die selbst institutioneller Mitglieder sind: neuer Satz Punkt 6-iv
     - pull-request: [https://github.com/DE-RSE/satzung/pull/57/files](https://github.com/DE-RSE/satzung/pull/57/files)
-    - neu: "Der Beitrag für Beschäftigte von Einrichtungen, die institutionelle Mitglieder des de-RSE e.V. sind, beträgt 45 Euro."
+    - neu: "Der Beitrag für Angehörige von Einrichtungen, die institutionelle Mitglieder des de-RSE e.V. sind, beträgt 45 Euro."
