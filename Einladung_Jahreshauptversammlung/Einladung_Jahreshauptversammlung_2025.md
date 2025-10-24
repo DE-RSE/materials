@@ -24,14 +24,13 @@ Auf der Tagesordnung stehen folgende Themen:
     d. Einholung von Kommentaren der Mitglieder über die Berichte 
 8. Entlastung des Vorstands für 2024
 9.  Änderungen der Geschäftsordnung
-    a. Wahlvertretungen ermöglichen
+    a. Reduzierte Mitgliedbeiträge für Angehörige von Einrichtungen, die institutionelle Mitglieder des de-RSE e.V. sind
     • erreichbar unter: [https://github.com/DE-RSE/satzung/pull/57/files](https://github.com/DE-RSE/satzung/pull/57/files)
 10. Neuwahl des Vorstands
 11. Neuwahl der Kassenprüfer
-12. Wahl einer Onbutsperson
-13. Satzungsgemäß gestellte Anträge (siehe Anhang)
-14. Sonstiges
-15. Schließung des Mitgliederversammlung
+12. Satzungsgemäß gestellte Anträge (siehe Anhang)
+13. Sonstiges
+14. Schließung des Mitgliederversammlung
 
 \clearpage
 Prinzipiell stehen, wie auch in den Vorjahren, alle Vorstandsposten zur Wahl. Wir würden uns sehr über Dein Interesse freuen, den Verein im Vorstand zu unterstützen. Insofern melde Dich bitte so bald wie möglich beim Vorstand: vorstand@de-rse.org.
@@ -44,8 +43,11 @@ Nach der ordentlichen Mitgliederversammlung wollen wir, wie in den vergangenen J
 
 -   Wo braucht der Verein aktuell Hilfe und wer könnte die anbieten? 
 -   Wo brauchen die Mitglieder Hilfe vom Verein? 
+-   Was ist in den Arbeitskreisen geschehen?
+-   Wie ist der Stand von FutuRSI (KTS Projekt)?
+-   Wie ist der Stand des RSE-Masters (KTS Projekt)?
 
-Wir haben zeitlich und thematisch fokussierte Arbeitskreise eingerichtet. Diese sind in Teilen gemeinsame Arbeitskreise mit der GI, die sich zum Beispiel mit Ausbildung von RSEs, Community-Arbeit oder der Veranstaltungsorganisation beschäftigen. Wir sind offen für neue Themen und freuen uns über neue Vorschläge uns Beteiligungen.
+Die Arbeitskreise sind thematisch fokussiert und werden in Teilen gemeinsam mit der GI geführt. Thematisch befassen sie sich zum Beispiel mit der Ausbildung von RSEs, Community-Arbeit oder der Veranstaltungsorganisation. Wir sind offen für neue Themen und freuen uns über neue Vorschläge uns Beteiligungen.
 
 Der Verein lebt wie schon geschrieben durch seine Mitglieder und wir freuen uns darauf, gemeinsam mit Dir die Forschungslandschaft in Deutschland mitzugestalten.
 
@@ -57,6 +59,8 @@ Euer Vorstand
 ## Anhänge
 
 ### Zur Abstimmung gestellte Änderung der Geschäftsordnung
-1. Beiträge von Mitgliedern die Organisationen angehören, die selbst institutioneller Mitglieder sind: neuer Satz Punkt 6-iv
+1. Beiträge von Mitgliedern die Organisationen angehören, die selbst institutionelle Mitglieder sind: neuer Satz Punkt 6-iv
     - pull-request: [https://github.com/DE-RSE/satzung/pull/57/files](https://github.com/DE-RSE/satzung/pull/57/files)
     - neu: "Der Beitrag für Angehörige von Einrichtungen, die institutionelle Mitglieder des de-RSE e.V. sind, beträgt 45 Euro."
+2. Proposal for de-RSE to become a CoARA member 
+   - Alexander Struck, contact: Alexander.Struck@hu-berlin.de
