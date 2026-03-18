@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use one of these pictures, please cite it as below."
+authors:
+  - family-names: Pagan
+    given-names: Adam
+    affiliation: University of Stuttgart
+    orcid: https://orcid.org/0000-0002-9428-4328
+title: "deRSE26 Group Picture"
+license: CC-BY-4.0
+date-released: 2026-03-06

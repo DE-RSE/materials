@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use one of these pictures, please cite it as below."
+authors:
+  - family-names: Chen
+    given-names: Zhixin
+    affiliation: University of Stuttgart
+    orcid: https://orcid.org/0000-0001-9156-6736
+title: "deRSE26 Award Ceremony"
+license: CC-BY-4.0
+date-released: 2026-03-06
