@@ -17,14 +17,14 @@
 
 \def\arraystretch{0.95}
 \begin{tabular}{ll}
-\textbf{Vorname}:            & \TextField[width=0.65\textwidth]{} \\\\
-\textbf{Nachname}:           & \TextField[width=0.65\textwidth]{} \\\\*[.5em]
-\textbf{Straße, Hausnummer}: & \TextField[width=0.65\textwidth]{} \\\\
-\textbf{PLZ}:                & \TextField[width=0.2\textwidth]{}  \\\\
-\textbf{Wohnort}:            & \TextField[width=0.65\textwidth]{} \\\\*[.5em]
-\textbf{Geburtsdatum}:       & \TextField[width=0.65\textwidth]{} \\\\
-\textbf{Email}:              & \TextField[width=0.65\textwidth]{} \\\\
-PGP/GPG Schlüssel:  & \TextField[width=0.65\textwidth]{} \\\\
+\textbf{Vorname}:            & \TextField[width=0.65\textwidth,name=vorname]{} \\\\
+\textbf{Nachname}:           & \TextField[width=0.65\textwidth,name=nachname]{} \\\\*[.5em]
+\textbf{Straße, Hausnummer}: & \TextField[width=0.65\textwidth,name=strasse]{} \\\\
+\textbf{PLZ}:                & \TextField[width=0.2\textwidth,name=plz]{}  \\\\
+\textbf{Wohnort}:            & \TextField[width=0.65\textwidth,name=wohnort]{} \\\\*[.5em]
+\textbf{Geburtsdatum}:       & \TextField[width=0.65\textwidth,name=dob]{} \\\\
+\textbf{Email}:              & \TextField[width=0.65\textwidth,name=email]{} \\\\
+PGP/GPG Schlüssel:  & \TextField[width=0.65\textwidth,name=gpg]{} \\\\
 \end{tabular}
 
 Durch die Unterschrift erkennt der/die Antragssteller/-in die Satzung und die Ordnungen von de-RSE e.V. - Gesellschaft für Forschungssoftware an.
@@ -39,9 +39,9 @@ Das Beitragsjahr beginnt mit dem Kalenderjahr des Eintritts des Mitglieds. Der B
 Ich beantrage die Aufnahme in den de-RSE e.V. als\\*[.5em]
 % Eigentlich wäre das hier besser, macht aber Probleme mit einigen pdf-viewern bzw. ist ein Latex-Problem
 %\ChoiceMenu[radio,name=Mitgliedstyp]{\mbox{}}{ordentliches Mitglied=o,Fördermitglied=f}\\*[.5em]
-\CheckBox[name=Mitgliedstyp]{ordentliches Mitglied}
-\hspace{3cm}
-\CheckBox[name=Mitgliedstyp]{Fördermitglied}\\*[.5em]
+\begin{Form}
+\ChoiceMenu[radio=true,radiosymbol=\ding{108},name=Mitgliedstyp]{}{ordentliches Mitglied,\hspace{4em}Fördermitglied}\\*[.5em]
+\end{Form}
 
 Der Mitgliedsbeitrag ist unter Angabe der oben genannten Email, oder falls später bekannt der Mitgliedsnummer, auf folgendes Vereinskonto zu überweisen:\\*[.5em]
 IBAN: DE08100900002775729000 (Berliner Volksbank), BIC: BEVODEBB\\*[.5em]
@@ -66,7 +66,7 @@ Mir ist bekannt, dass ich jederzeit gegenüber dem Vorstand der Veröffentlichun
 \vspace{3cm}
 \begin{Form}
 \begin{tabular}{llll}
-Datum:        & \TextField[height=0.01cm, width=0.2\textwidth]{} & Unterschrift: & \\
+Datum:        & \TextField[height=0.01cm, width=0.2\textwidth, name=signature]{} & Unterschrift: & \\
 \end{tabular}
 
 \end{Form}
