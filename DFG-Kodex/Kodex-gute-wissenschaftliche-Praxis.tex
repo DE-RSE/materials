@@ -1,0 +1,401 @@
+\documentclass[a4paper, fontsize=11pt]{scrartcl}
+\usepackage{scrletter}
+\usepackage{mathpazo}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\usepackage{lastpage}
+\usepackage{scrlayer-scrpage}
+
+\usepackage{color}
+\definecolor{col_deRSE}{rgb}{0.535, 0.164, 0.410}
+
+\usepackage{graphicx}
+\graphicspath{{../Vorlagen/}}
+
+\setkomafont{section}{\large\normalfont\textbf}
+\setkomafont{subsection}{\normalsize\normalfont\textbf}
+\setkomafont{subsubsection}{\normalsize\normalfont\itshape}
+
+\usepackage[ngerman]{babel}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+
+\ifoot{de-RSE e.V. Kodex guter wissenschaftlicher Praxis}
+\ofoot{Seite \thepage\ von \pageref*{LastPage}}
+
+\DeclareNewLayer[
+  background,
+  align=bl,
+  hoffset=13.8cm,
+  voffset=1cm,
+  addvoffset=2mm,% <- adjust this value to your needs
+  mode=picture,
+  contents=\putLL{\includegraphics[height=1.5em]{de-RSE-logo-text-colour}}
+]{headerimage}
+\AddLayersToPageStyle{@everystyle@}{headerimage}
+
+\DeclareNewLayer[%
+  head,% Ebene im Kopfbereich
+  hoffset=20mm,% vom linken Seitenrand,
+  voffset=16mm,
+  width=\paperwidth,% über die gesamte Seitenbreite
+  background,% im Hintergrund
+  contents={\color{col_deRSE}\par\noindent\rule{17cm}{0.4pt}}
+]{headerline}
+\AddLayersAtBeginOfPageStyle{@everystyle@}{headerline}
+
+\newcommand{\offen}[1]{\textbf{[Offen: #1]}}
+
+\begin{document}
+\thispagestyle{headings}
+\vspace{-8.5cm}
+\begin{centering}
+{\large\textbf{Kodex zur Sicherung guter wissenschaftlicher Praxis\\ der Gesellschaft für Forschungssoftware (de-RSE e.V.)}}\\*[0.5em]
+{\small Ordnung des Vereins -- Umsetzungsdokument zum Kodex der Deutschen Forschungsgemeinschaft}\\*[0.5em]
+{\tiny c/o Deutsches Zentrum für Luft- und Raumfahrt (DLR), Institut für Softwaretechnologie, Rutherfordstraße 2, 12489 Berlin}\\*[1em]
+\end{centering}
+\vspace{0.3cm}
+
+{\large\textbf{Inhalt}} \\
+\begin{enumerate}
+    \item Präambel
+    \item Geltungsbereich
+    \item Leitlinien guter wissenschaftlicher Praxis
+    \begin{enumerate}
+        \item Prinzipien (Leitlinien 1--6)
+        \item Forschungsprozess (Leitlinien 7--17)
+        \item Nichtbeachtung guter wissenschaftlicher Praxis (Leitlinien 18--19)
+    \end{enumerate}
+    \item Verfahren bei Verdacht auf wissenschaftliches Fehlverhalten
+    \item Durchführungsbestimmungen
+    \item Inkrafttreten, Übergangsvorschriften und Überprüfung
+    \item Quellen
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\small Die Gliederung und die Nummerierung der Leitlinien folgen dem Kodex der Deutschen Forschungsgemeinschaft [DFG22]. Der vorliegende Kodex setzt alle 19 Leitlinien für den de-RSE e.V. um und konkretisiert sie, wo die Besonderheiten von Forschungssoftware dies erfordern. Das Verfahren in Abschnitt 4 folgt der Mustersatzung der Hochschulrektorenkonferenz [HRK22].\normalsize
+
+\vspace{0.5cm}
+
+\section{Präambel}
+
+Die Deutsche Forschungsgemeinschaft (DFG) hat mit dem Kodex \enquote{Leitlinien zur Sicherung guter wissenschaftlicher Praxis} verbindliche Standards für die wissenschaftliche Arbeit in Deutschland festgelegt [DFG22]. Sie erwartet von allen Einrichtungen, die Mittel bei ihr beantragen oder verwalten, dass die wesentlichen Elemente dieser Leitlinien rechtsverbindlich umgesetzt werden. Mit der Handreichung \enquote{Umgang mit Forschungssoftware im Förderhandeln der DFG} hat sie diese Standards 2024 ausdrücklich auf Forschungssoftware bezogen [DFG24].
+
+Die Gesellschaft für Forschungssoftware (de-RSE e.V.) verfolgt nach § 3 ihrer Satzung die Förderung der Bildung sowie der Wissenschaft und Forschung im Bereich Forschungssoftware. Forschungssoftware ist ein eigenständiges wissenschaftliches Ergebnis: Sie trägt Methoden, Annahmen und Entscheidungen in sich, sie bestimmt die Nachvollziehbarkeit und Reproduzierbarkeit von Forschungsergebnissen, und sie wird von Menschen entwickelt, deren Beitrag zur Wissenschaft sichtbar und anerkannt werden muss. Gute wissenschaftliche Praxis ist damit kein Rahmen, der die Arbeit des de-RSE e.V. lediglich umgibt, sondern ihr eigentlicher Gegenstand.
+
+Der de-RSE e.V. bekennt sich deshalb uneingeschränkt zu den Leitlinien der DFG und macht sie mit diesem Kodex zur Grundlage seiner eigenen Tätigkeit sowie jeder Forschung, die er durchführt, koordiniert oder verantwortet. Wissenschaftliche Redlichkeit, Transparenz, Offenheit und die faire Anerkennung von Beiträgen sind Grundlage der Glaubwürdigkeit des Vereins gegenüber seinen Mitgliedern, gegenüber Mittelgebern und gegenüber der Öffentlichkeit. Abweichungen von der so definierten guten wissenschaftlichen Praxis sind als wissenschaftliches Fehlverhalten anzusehen.
+
+Der Kodex greift die fachlichen Standards auf, die der Verein selbst mitentwickelt hat: die gemeinsam mit der Fachgruppe RSE der Gesellschaft für Informatik erarbeitete Muster-Leitlinie zur effizienten Entwicklung von Forschungssoftware [GI25], die FAIR-Prinzipien für Forschungssoftware [FAIR22], die Software Citation Principles [SKN16] sowie die Positionspapiere des Vereins [Anzt21, Goth25].
+
+\section{Geltungsbereich}
+
+\subsection{Persönlicher Geltungsbereich}
+\begin{itemize}
+  \item Dieser Kodex gilt \textbf{unmittelbar und vollständig} für
+  \begin{itemize}
+    \item die Mitglieder der Organe des Vereins,
+    \item die Beschäftigten des Vereins,
+    \item alle Personen, die im Auftrag oder unter der Verantwortung des Vereins wissenschaftlich tätig sind, insbesondere in vom Verein beantragten, verwalteten oder durchgeführten Projekten,
+    \item alle Personen, die den Verein nach außen vertreten.
+  \end{itemize}
+  \item Für die übrigen Mitglieder ist der Kodex \textbf{anerkanntes Selbstverständnis} des Vereins. Als Ordnung des Vereins erkennen sie ihn nach § 4.iv der Satzung mit der Beitrittserklärung an. Eine Zuständigkeit des Vereins für ihre wissenschaftliche Arbeit an ihrer Heimateinrichtung wird dadurch nicht begründet.
+  \item Sind Personen, die diesem Kodex unterliegen, zugleich Angehörige einer anderen Einrichtung, so bleiben deren Regelungen guter wissenschaftlicher Praxis unberührt. Bei einem Verdacht auf wissenschaftliches Fehlverhalten stimmt sich der Verein mit der betroffenen Einrichtung über die Zuständigkeit ab; eine Doppelbefassung ist zu vermeiden.
+\end{itemize}
+
+\subsection{Nutzung der Affiliation des Vereins}
+Wer eine Publikation, Forschungssoftware, Forschungsdaten oder einen wissenschaftlichen Vortrag unter Angabe der Affiliation des de-RSE e.V. veröffentlicht -- einschließlich der Nutzung der Organisationskennung des Vereins (ROR) --, unterliegt für diese Veröffentlichung vollständig diesem Kodex, unabhängig davon, in welcher Eigenschaft die Person dem Verein sonst angehört. Für ein daraus erwachsendes Verfahren ist die Ombudsperson des Vereins zuständig.
+
+\subsection{Sachlicher Geltungsbereich}
+\begin{itemize}
+  \item Der Kodex gilt für alle wissenschaftlichen Aktivitäten des Vereins, insbesondere für Fachpublikationen, Positionspapiere, Stellungnahmen und Informationsmaterialien sowie für Forschungssoftware und Forschungsdaten, die unter dem Namen des Vereins veröffentlicht werden.
+  \item Bei Veranstaltungen gilt der Kodex, soweit der Verein \textbf{Ausrichter} ist; er erfasst dann insbesondere die Einreichung von Beiträgen, deren Begutachtung und die Arbeit der Programmkomitees. Ist der Verein lediglich Förderer, Partner oder Mitwirkender, wirkt er darauf hin, dass der Ausrichter gleichwertige Standards anwendet.
+\end{itemize}
+
+\subsection{Verhältnis zu anderen Regelungen}
+\begin{itemize}
+  \item Gesetzliche Regelungen sowie arbeits- und vereinsrechtliche Vorschriften haben Vorrang. Die Satzung und die Geschäftsordnung des Vereins bleiben unberührt; im Konfliktfall gehen sie vor.
+  \item Der Verhaltenskodex des Vereins (Code of Conduct) bleibt daneben in vollem Umfang anwendbar. Die Abgrenzung der Verfahren regelt Abschnitt 4.8.
+\end{itemize}
+
+\section{Leitlinien guter wissenschaftlicher Praxis}
+
+\subsection{Prinzipien}
+
+\subsubsection*{Leitlinie 1 -- Allgemeine Prinzipien}
+Alle vom Geltungsbereich erfassten Personen verpflichten sich, lege artis zu arbeiten, strikte Ehrlichkeit im Hinblick auf die eigenen Beiträge und die Beiträge Dritter zu wahren, wissenschaftliche Ergebnisse und deren Grundlagen konsequent selbst anzuzweifeln, Unsicherheiten und Grenzen der eigenen Aussagen offenzulegen sowie den kritischen Diskurs in der Wissenschaft zu fördern. Ergebnisse Dritter werden nur unter korrekter Angabe der Quelle verwendet.
+
+\subsubsection*{Leitlinie 2 -- Berufsethos}
+\begin{itemize}
+  \item Die Regeln guter wissenschaftlicher Praxis sind Teil des Berufsethos aller wissenschaftlich Tätigen und damit auch des Berufsbildes des Research Software Engineering [Goth25]. Wer diesem Kodex unterliegt, kennt ihn, wendet ihn an und macht ihn in der eigenen Arbeitsumgebung sichtbar.
+  \item Der Verein vermittelt diese Grundsätze in seinen Veranstaltungen, Arbeitskreisen, Materialien und Weiterbildungsangeboten und richtet sich dabei ausdrücklich auch an Berufseinsteigende und an den wissenschaftlichen Nachwuchs. Die Vermittlung setzt so früh wie möglich in der wissenschaftlichen Laufbahn an, und Weiterbildungsangebote finden regelmäßig statt. Der Verein entwickelt diese Grundsätze im fachlichen Diskurs für den Bereich Forschungssoftware weiter.
+  \item Offenheit und Inklusivität sind nach der Präambel der Satzung wesentliches Merkmal des de-RSE e.V. Wissenschaftliche Redlichkeit schließt einen respektvollen, diskriminierungsfreien Umgang miteinander ein. Für Verhalten, das gegen den Verhaltenskodex des Vereins verstößt, gilt das dort vorgesehene Verfahren; die Abgrenzung regelt Abschnitt 4.8.
+\end{itemize}
+
+\subsubsection*{Leitlinie 3 -- Organisationsverantwortung des Vorstands}
+Der Vorstand trägt die Verantwortung für angemessene organisatorische Rahmenbedingungen, die die Einhaltung dieses Kodex sichern. Er stellt insbesondere sicher, dass
+\begin{itemize}
+  \item Aufgaben der Leitung, Aufsicht, Konfliktregelung und Qualitätssicherung in Projekten, Arbeitskreisen und Programmkomitees des Vereins eindeutig zugewiesen sind und tatsächlich wahrgenommen werden;
+  \item dieser Kodex allen betroffenen Personen bekannt gemacht wird und öffentlich zugänglich ist;
+  \item Ombudsperson und Stellvertretung bestellt und ihre Kontaktdaten veröffentlicht sind;
+  \item angemessene Ressourcen und Infrastrukturen für die Einhaltung dieses Kodex bereitstehen, insbesondere für Versionsverwaltung, Archivierung und Veröffentlichung;
+  \item Beiträge zu Forschungssoftware und wissenschaftlicher Infrastruktur bei Bewertungen des Vereins als eigenständige wissenschaftliche Leistung berücksichtigt werden.
+\end{itemize}
+Der Vorstand kann die operative Wahrnehmung einzelner dieser Aufgaben einem Vorstandsmitglied oder einer Geschäftsführung übertragen; die Gesamtverantwortung bleibt beim Vorstand.
+
+\subsubsection*{Leitlinie 4 -- Verantwortung der Leitung von Arbeitseinheiten}
+Für jede Arbeitseinheit des Vereins -- insbesondere Projekte, Arbeitskreise und Programmkomitees -- wird eine verantwortliche Leitung bestimmt. Diese sorgt dafür, dass die Mitwirkenden ihre Rollen, Rechte und Pflichten kennen, dass Zusammenarbeit und Abstimmung gewährleistet sind und dass die Grundsätze dieses Kodex eingehalten werden. Der Betreuung und Förderung von Berufseinsteigenden und wissenschaftlichem Nachwuchs gilt dabei besondere Aufmerksamkeit; für Konfliktfälle steht die Ombudsperson zur Verfügung.
+
+\subsubsection*{Leitlinie 5 -- Leistungsdimensionen und Bewertungskriterien}
+Bei allen Bewertungen wissenschaftlicher Leistungen durch den Verein -- insbesondere bei der Auswahl von Beiträgen für Veranstaltungen und Publikationen, bei der Vergabe von Preisen und Auszeichnungen, bei Einstellungen sowie bei der Zuweisung von Mitteln -- haben Originalität und Qualität stets Vorrang vor Quantität. Dabei gilt:
+\begin{itemize}
+  \item Grundlage jeder Bewertung ist die inhaltliche Auseinandersetzung mit der Leistung selbst. Sie kann durch nichts ersetzt werden.
+  \item Quantitative Indikatoren -- insbesondere Journal Impact Factor, h-Index, Zahl der Publikationen oder Zahl der Code-Beiträge -- dürfen weder als alleiniger noch als wesentlicher Maßstab verwendet werden.
+  \item Die Vielfalt wissenschaftlicher Beiträge wird anerkannt. Forschungssoftware, Forschungsdaten, Dokumentation, Lehre, Betreuung, Gutachtertätigkeit, Community-Arbeit und der Betrieb wissenschaftlicher Infrastruktur sind eigenständige, bewertungsfähige Leistungen und stehen nicht hinter Textpublikationen zurück.
+  \item Besondere persönliche Umstände, Unterbrechungen und Umwege im Werdegang werden angemessen berücksichtigt.
+  \item Die für eine Bewertung maßgeblichen Kriterien werden vorab festgelegt und den Betroffenen zugänglich gemacht.
+\end{itemize}
+
+\subsubsection*{Leitlinie 6 -- Ombudspersonen}
+Der Verein bestellt eine Ombudsperson und eine stellvertretende Ombudsperson als Ansprechpersonen in Fragen guter wissenschaftlicher Praxis und bei Verdacht auf wissenschaftliches Fehlverhalten. Das Nähere zu Wahl, Amtszeit, Unabhängigkeit und Aufgaben regelt Abschnitt 4.1.
+
+\subsection{Forschungsprozess}
+
+\subsubsection*{Leitlinie 7 -- Phasenübergreifende Qualitätssicherung}
+Die Qualität wird über alle Phasen hinweg gesichert: von der Planung über die Durchführung und Auswertung bis zur Veröffentlichung und Archivierung. Werden Ergebnisse öffentlich zugänglich gemacht, werden die angewandten Mechanismen der Qualitätssicherung angegeben. Für Forschungssoftware umfasst dies insbesondere die Auswahl und Nutzung eingesetzter Software Dritter, die eigene Entwicklung und Programmierung, ein dem Reifegrad angemessenes Testkonzept, die Codeüberprüfung durch Dritte sowie die kontinuierliche Integration (Continuous Integration). Die Herkunft der eingesetzten Daten, Materialien und Software wird angegeben und ihre Nachnutzung dokumentiert; der Quellcode öffentlich zugänglicher Software ist persistent, zitierbar und dokumentiert. Die konkrete Ausgestaltung nach Softwareart, Nutzungsgrad und Technologie-Reifegrad richtet sich nach Abschnitt 3 der Muster-Leitlinie [GI25].
+
+\subsubsection*{Leitlinie 8 -- Akteure, Verantwortlichkeiten und Rollen}
+In gemeinschaftlicher Arbeit sind Verantwortlichkeiten und Rollen zu jeder Zeit klar bestimmt und allen Beteiligten bekannt. Sie werden bei Bedarf an veränderte Gegebenheiten angepasst. Für Forschungssoftware werden die maßgeblichen Rollen -- insbesondere Verantwortung für Pflege (Maintenance), Codeüberprüfung, Freigabe von Versionen und Betrieb -- im Quellcode-Repositorium dokumentiert, in der Regel in einer Datei \texttt{MAINTAINERS} oder \texttt{GOVERNANCE}. Ebenso wird festgelegt, wie über Beiträge Dritter entschieden wird und wer die Software nach Projektende weiterführt.
+
+\subsubsection*{Leitlinie 9 -- Forschungsdesign}
+Bei der Planung eines Vorhabens wird der aktuelle Stand der Forschung und der Technik umfassend berücksichtigt und dokumentiert. Vor der Entwicklung neuer Forschungssoftware wird geprüft, ob bestehende Software nachgenutzt oder erweitert werden kann; unnötige Mehrfachentwicklung ist zu vermeiden. Die Recherche und ihre Ergebnisse werden nachvollziehbar festgehalten. Werden bestehende Lösungen verworfen, wird der Grund dokumentiert.
+
+\subsubsection*{Leitlinie 10 -- Rechtliche und ethische Rahmenbedingungen}
+\begin{itemize}
+  \item Rechte und Pflichten aus dem Urheberrecht, dem Datenschutzrecht sowie aus vertraglichen Bindungen werden beachtet. Bei Software Dritter wird vor der Nutzung geprüft, ob die Lizenzbedingungen eingehalten werden und ob Lizenzkompatibilität besteht [GI25, Abschnitt 4.5].
+  \item Die Nutzungsrechte an Forschungsdaten, Quellcode und weiteren Ergebnissen werden so früh wie möglich geklärt und schriftlich dokumentiert -- insbesondere in Projekten mit mehreren beteiligten Einrichtungen und vor dem Ausscheiden beteiligter Personen.
+  \item Ethische Aspekte des Vorhabens werden geprüft, insbesondere absehbare Folgen und Missbrauchsmöglichkeiten der entwickelten Software. Bestehen Anhaltspunkte für sicherheitsrelevante Risiken, werden diese vor der Veröffentlichung bewertet und dokumentiert.
+  \item Die Datenschutzrichtlinie des Vereins bleibt unberührt.
+\end{itemize}
+
+\subsubsection*{Leitlinie 11 -- Methoden und Standards}
+Zur Anwendung kommen wissenschaftlich begründete und nachvollziehbare Methoden. Werden neue Methoden oder Werkzeuge entwickelt, wird besonderer Wert auf deren Qualitätssicherung und die Dokumentation ihrer Voraussetzungen und Grenzen gelegt. Für Forschungssoftware gelten insbesondere Versionsverwaltung, die Verwendung etablierter Formate und Schnittstellen sowie die Dokumentation von Abhängigkeiten und Laufzeitumgebung, damit Ergebnisse reproduzierbar bleiben.
+
+\subsubsection*{Leitlinie 12 -- Dokumentation}
+Alle Informationen, die für das Zustandekommen eines Ergebnisses relevant sind, werden so dokumentiert, dass das Ergebnis nachvollzogen und überprüft werden kann. Dazu zählen auch Einzelergebnisse, die eine Hypothese nicht stützen. Für Forschungssoftware umfasst die Dokumentation insbesondere die Entwicklungsgeschichte, die verwendeten Eingabedaten und Parameter, die Softwareumgebung sowie die getroffenen Entwurfsentscheidungen; der Quellcode selbst wird dokumentiert. Eine nachträgliche Veränderung von Aufzeichnungen ohne Kennzeichnung ist unzulässig.
+
+\subsubsection*{Leitlinie 13 -- Herstellung von öffentlichem Zugang zu Forschungsergebnissen}
+Der de-RSE e.V. bekennt sich zu den Prinzipien von Open Science.
+\begin{itemize}
+  \item \textbf{Vollständigkeit.} Ergebnisse werden vollständig und nachvollziehbar beschrieben. Die verwendeten Daten, Materialien und Methoden sowie die eingesetzte Software werden verfügbar gemacht, und die Arbeitsabläufe und ihr Zusammenspiel werden dargelegt.
+  \item \textbf{Veröffentlichung und Lizenzierung.} Forschungssoftware, die im Verein oder in seinem Auftrag entsteht, wird unter Angabe des Quellcodes öffentlich zugänglich gemacht. Sie erhält eine von der Open Source Initiative anerkannte Lizenz [OSI]. Die Auswahl der konkreten Lizenz erfolgt projektbezogen nach den Kriterien in Abschnitt 4 der Muster-Leitlinie [GI25] und wird im Quellcode-Repositorium dokumentiert. Forschungsdaten, Publikationen, Positionspapiere und Materialien des Vereins werden offen zugänglich gemacht und unter einer freien Lizenz veröffentlicht; für Texte und Materialien ist dies in der Regel CC~BY~4.0.
+  \item \textbf{Auffindbarkeit und Nachnutzbarkeit.} Veröffentlichte Software und Daten folgen den FAIR-Prinzipien für Forschungssoftware [FAIR22]. Sie werden mit beschreibenden Metadaten versehen und so bereitgestellt, dass Dritte sie finden, verstehen und nachnutzen können.
+  \item \textbf{Zitierbarkeit.} Der Quellcode öffentlich zugänglicher Software ist persistent, zitierbar und dokumentiert. Software und Daten, die für ein wissenschaftliches Ergebnis wesentlich sind, werden zitiert wie andere wissenschaftliche Quellen -- unter Angabe von Autorschaft, Titel, Version beziehungsweise Commit, Repositorium und persistentem Identifikator; maßgeblich sind die Software Citation Principles [SKN16]. Ein Verweis in einer Fußnote oder eine URL ohne Versionsangabe genügt nicht. Der Verein wirkt darauf hin, dass diese Praxis auch in den von ihm ausgerichteten Veranstaltungen und Publikationsorganen angewandt wird.
+  \item \textbf{Abweichungen.} Abweichungen sind zulässig, wenn Datenschutz, Rechte Dritter, vertragliche Bindungen oder Sicherheitserwägungen entgegenstehen. Sie sind zu begründen und zu dokumentieren.
+\end{itemize}
+
+\subsubsection*{Leitlinie 14 -- Autorschaft}
+\begin{itemize}
+  \item Autorin oder Autor ist, wer einen genuinen, nachvollziehbaren Beitrag zu dem Inhalt einer wissenschaftlichen Text-, Daten- oder Softwarepublikation geleistet hat. Alle Autorinnen und Autoren stimmen der endgültigen Fassung zu und tragen für sie gemeinsam die Verantwortung. Sie wirken darauf hin, dass Verlage, Repositorien und Infrastrukturanbieter die Ergebnisse zitierbar machen.
+  \item Eine sogenannte \enquote{Ehrenautorschaft} ist ausgeschlossen; ebenso ist es unzulässig, eine Autorschaft zu verweigern oder Personen ohne ihre Zustimmung als Autorinnen oder Autoren zu benennen. Die Leitung einer Organisationseinheit oder eines Projekts, die Einwerbung von Fördermitteln, die Bereitstellung von Material oder die bloße Beteiligung an der Datenerhebung rechtfertigen für sich allein keine Autorschaft; angemessene Formen der Erwähnung sind Fußnoten oder Danksagungen.
+  \item \textbf{Beiträge zu Forschungssoftware} sind wissenschaftliche Beiträge. Der Verein erkennt insbesondere Beiträge zu Entwurf, Implementierung, Test, Dokumentation, Wartung, Paketierung und Betrieb als anerkennungsfähige Leistungen an. Beruhen die Erkenntnisse einer Publikation wesentlich auf einer Forschungssoftware, ist eine gemeinsame Autorschaft mit den maßgeblich an ihrer Entwicklung beteiligten Personen geboten.
+  \item Für Software, die unter Verantwortung des Vereins veröffentlicht wird, gilt:
+  \begin{itemize}
+    \item Die Autorschaft wird maschinenlesbar dokumentiert, in der Regel in einer Datei \texttt{CITATION.cff} nach dem Citation File Format [CFF] oder in \texttt{codemeta.json}.
+    \item Die Art der einzelnen Beiträge wird nach der Taxonomie CRediT [CRediT] offengelegt.
+    \item Die Kriterien für die Aufnahme in die Autorenliste werden vor Beginn der Zusammenarbeit festgelegt, im Repositorium dokumentiert und bei wesentlichen Änderungen der Beitragslage einvernehmlich fortgeschrieben.
+    \item Beiträge, die keine Autorschaft begründen, werden gesondert genannt, etwa in einer Datei \texttt{CONTRIBUTORS}.
+  \end{itemize}
+  \item Erkennen Autorinnen oder Autoren nachträglich einen wesentlichen Fehler in einer Veröffentlichung, so berichtigen sie diesen unverzüglich. Für Forschungssoftware erfolgt die Berichtigung durch eine korrigierte, versionierte und dauerhaft archivierte Fassung sowie durch einen ausdrücklichen Hinweis auf die Fehlerhaftigkeit der bisherigen Fassung.
+  \item Können sich Beteiligte über die Autorschaft nicht einigen, kann die Ombudsperson zur Vermittlung angerufen werden.
+\end{itemize}
+
+\subsubsection*{Leitlinie 15 -- Publikationsorgan}
+Vor der Veröffentlichung prüfen die Autorinnen und Autoren die Eignung des gewählten Publikationsorgans; dazu zählen neben Zeitschriften und Büchern auch fachspezifische Daten- und Software-Repositorien. Veröffentlichungen in Organen, die keine hinreichende Qualitätssicherung erkennen lassen (\enquote{predatory publishing}), sind zu unterlassen. Ergebnisse dürfen nicht ohne sachlichen Grund mehrfach als Erstveröffentlichung publiziert werden; eine Vorabveröffentlichung als Preprint oder als Software-Release ist ausdrücklich erwünscht und ist kein Verstoß gegen dieses Gebot. Wer eine Veröffentlichung mitverantwortet, trägt Verantwortung für ihren Inhalt.
+
+\subsubsection*{Leitlinie 16 -- Vertraulichkeit und Neutralität bei Begutachtungen und Beratungen}
+Wer für den Verein Beiträge begutachtet oder in Auswahl- und Beratungsgremien mitwirkt -- insbesondere in Programmkomitees von Veranstaltungen, deren Ausrichter der Verein ist, sowie bei Preisen und Auszeichnungen --, ist zur Vertraulichkeit über die begutachteten Inhalte verpflichtet und darf sie weder für eigene Zwecke verwenden noch an Dritte weitergeben. Interessenkonflikte und Befangenheit sind unaufgefordert und unverzüglich der verantwortlichen Leitung anzuzeigen; die betroffene Person wirkt an der Bewertung nicht mit.
+
+\subsubsection*{Leitlinie 17 -- Archivierung}
+Forschungsdaten, Forschungssoftware und die zugehörige Dokumentation, die einer wissenschaftlichen Veröffentlichung zugrunde liegen, werden für einen Zeitraum von mindestens zehn Jahren nach der Veröffentlichung zugänglich und nachnutzbar aufbewahrt.
+\begin{itemize}
+  \item Als Regelfall wird Zenodo genutzt; jede archivierte Fassung erhält einen persistenten Identifikator (DOI). Ein anderes anerkanntes Repositorium ist zulässig, sofern es persistente Identifikatoren vergibt und die Aufbewahrungsfrist gewährleistet.
+  \item Ein Quellcode-Repositorium allein genügt der Archivierungspflicht nicht; für jede zitierte Fassung ist eine archivierte, versionierte Veröffentlichung anzulegen.
+  \item Eine kürzere Aufbewahrungsfrist ist nur aus nachvollziehbaren Gründen zulässig und zu begründen. Der Verlust von Originaldaten oder Quellcode verstößt gegen die Grundregeln wissenschaftlicher Sorgfalt und kann den Verdacht unredlichen Verhaltens begründen.
+\end{itemize}
+
+\subsection{Nichtbeachtung guter wissenschaftlicher Praxis}
+
+\subsubsection*{Leitlinie 18 -- Hinweisgebende und von Vorwürfen betroffene Personen}
+\begin{itemize}
+  \item Es gehört zur Wissenschaftsethik, wissenschaftliches Fehlverhalten anderer nicht schweigend zu tolerieren. Das übliche Vorgehen bei einem Verdacht sollte zunächst sein, die mögliche Verfehlung bei den Urheberinnen und Urhebern anzusprechen und um Klärung und gegebenenfalls Korrektur nachzusuchen. Ist dies nicht möglich oder nicht zumutbar, steht das Verfahren nach Abschnitt 4 offen.
+  \item Weder der hinweisgebenden noch der beschuldigten Person sollen wegen der Hinweisgabe Nachteile für das eigene wissenschaftliche oder berufliche Fortkommen erwachsen. Der Schutz gilt auch dann, wenn sich ein in gutem Glauben erhobener Verdacht nicht bestätigt.
+  \item Die Erhebung wissentlich unbegründeter oder arglistiger Vorwürfe stellt ihrerseits wissenschaftliches Fehlverhalten dar.
+  \item Bis zur Feststellung eines Fehlverhaltens gilt die Unschuldsvermutung. Vorwürfe werden vertraulich behandelt; eine Information der Öffentlichkeit erfolgt nicht vor Abschluss des Verfahrens.
+\end{itemize}
+
+\subsubsection*{Leitlinie 19 -- Verfahren in Verdachtsfällen wissenschaftlichen Fehlverhaltens}
+\textbf{Wissenschaftliches Fehlverhalten} liegt vor, wenn in einem wissenschaftserheblichen Zusammenhang vorsätzlich oder grob fahrlässig Falschangaben gemacht werden, fremde wissenschaftliche Leistungen unberechtigt zu eigen gemacht werden oder die Forschungstätigkeit anderer beeinträchtigt wird. In Betracht kommt insbesondere:
+\begin{itemize}
+  \item \textbf{Falschangaben}, namentlich das Erfinden und das Verfälschen von Daten, Messwerten oder Ergebnissen; die selektive Auswahl oder Unterdrückung unerwünschter Ergebnisse; inkongruente oder manipulierte Darstellungen; unrichtige Angaben in Bewerbungen, Förderanträgen, Publikationen, Lebensläufen und Beitragsangaben;
+  \item das \textbf{unberechtigte Zu-eigen-Machen fremder Leistungen}, namentlich
+  \begin{itemize}
+    \item die unbefugte Verwertung fremder Leistungen unter Anmaßung der Autorschaft (Plagiat) -- einschließlich der Übernahme fremden Quellcodes unter Entfernung oder Verfälschung von Urheber- und Lizenzangaben;
+    \item die Anmaßung oder unbegründete Annahme wissenschaftlicher Autor- oder Mitautorschaft;
+    \item die Ausbeutung fremder, nicht veröffentlichter Ideen oder Forschungsansätze (Ideendiebstahl), insbesondere aus Begutachtungsverfahren;
+    \item das Veröffentlichen oder Zugänglichmachen ohne Zustimmung der Berechtigten;
+    \item die Verletzung von Lizenzbedingungen freier und quelloffener Software in einem wissenschaftserheblichen Zusammenhang;
+  \end{itemize}
+  \item die \textbf{Beeinträchtigung der Forschungstätigkeit anderer}, namentlich die Sabotage sowie die Beseitigung, Beschädigung, Verfälschung oder Manipulation von Forschungsdaten, Quellcode, Repositorien oder wissenschaftlichen Versuchsanordnungen, soweit sie mutwillig, bewusst oder grob fahrlässig erfolgt;
+  \item \textbf{Verstöße im Rahmen von Begutachtungen}, namentlich die unbefugte Nutzung begutachteter Inhalte und die Verletzung der Vertraulichkeit nach Leitlinie 16.
+\end{itemize}
+Eine Mitverantwortung kann sich unter anderem aus aktiver Beteiligung, aus Mitwissen um Fälschungen anderer, aus Mitautorschaft an fehlerhaften Veröffentlichungen sowie aus grober Vernachlässigung der Aufsichtspflicht ergeben.
+
+Das Verfahren regelt Abschnitt 4.
+
+\section{Verfahren bei Verdacht auf wissenschaftliches Fehlverhalten}
+
+Die nachfolgenden Regelungen haben vereinsinternen Charakter. Gesetzliche Regelungen sowie das Arbeits- und Vereinsrecht haben Vorrang. Für das gesamte Verfahren gilt das Gebot der Verschwiegenheit; es ist zügig durchzuführen.
+
+\subsection{Ombudsperson}
+\begin{itemize}
+  \item Ombudsperson und stellvertretende Ombudsperson werden von der Mitgliederversammlung für die Dauer von zwei Jahren gewählt. Eine Wiederwahl ist zulässig. Die jeweils Amtierenden bleiben nach Ablauf ihrer Amtszeit im Amt, bis Nachfolgende gewählt sind. Bis zur Wahl einer Stellvertretung durch die Mitgliederversammlung kann der Vorstand eine Person kommissarisch mit der Stellvertretung beauftragen.
+  \item Ombudsperson und Stellvertretung müssen ordentliche Mitglieder des Vereins sein und dürfen dem Vorstand nicht angehören. Sie sollen persönlich integer sein und über einschlägige Erfahrung in Wissenschaft und Forschungssoftware-Entwicklung verfügen. Sie üben ihr Amt unabhängig und weisungsfrei aus und sind zur Verschwiegenheit verpflichtet. Sie dürfen wegen der Ausübung ihres Amtes nicht benachteiligt werden.
+  \item Die Ombudsperson berät neutral in Fragen guter wissenschaftlicher Praxis, nimmt Verdachtsmeldungen vertraulich entgegen, führt die Vorprüfung durch und wirkt auf eine lösungsorientierte Konfliktvermittlung hin.
+  \item Ist die Ombudsperson in einem Fall selbst betroffen oder befangen, tritt die Stellvertretung ein. Sind beide verhindert oder befangen, benennt der Vorstand eine unabhängige Ersatzperson; ist der Vorstand selbst betroffen, wird die Ersatzperson von der Mitgliederversammlung benannt.
+  \item Name und Kontaktdaten von Ombudsperson und Stellvertretung werden auf der Website des Vereins veröffentlicht.
+  \item Unabhängig hiervon steht es allen Betroffenen frei, sich an das überregionale \enquote{Ombudsgremium für die wissenschaftliche Integrität in Deutschland} (OWID) zu wenden [OWID]. Der Weg zur Ombudsperson des Vereins und der Weg zum überregionalen Gremium stehen gleichrangig nebeneinander.
+\end{itemize}
+
+\subsection{Meldung}
+\begin{itemize}
+  \item Konkrete Verdachtsmomente sind der Ombudsperson in Textform, nach Möglichkeit unter Beifügung von Beleg- oder Beweismaterial, mitzuteilen. Auch Personen, gegen die sich ein Verdacht richtet, können sich mit der Bitte um Klärung und Beistand an die Ombudsperson wenden.
+  \item Die Identität der hinweisgebenden Person wird vertraulich behandelt. Eine Offenlegung erfolgt nur mit ihrer Einwilligung oder wenn sie zur Wahrung der Verteidigungsrechte der beschuldigten Person oder aufgrund gesetzlicher Vorschriften zwingend erforderlich ist. Vor einer Offenlegung wird die hinweisgebende Person unterrichtet; sie kann den Verdacht zurückziehen.
+  \item Anonyme Hinweise werden geprüft, sofern sie belastbare und hinreichend konkrete Tatsachen benennen.
+  \item Bei einem Verdacht gegen mehrere Personen wird gegen jede Person ein gesondertes Verfahren geführt.
+\end{itemize}
+
+\subsection{Vorprüfung}
+\begin{itemize}
+  \item Die Ombudsperson prüft die Vorwürfe auf Plausibilität, Konkretheit und Bedeutung sowie auf mögliche Motive und ergreift unverzüglich die ihr geeignet erscheinenden Schritte zur diskreten Aufklärung des Sachverhalts.
+  \item Sie fordert die beschuldigte Person zur Stellungnahme auf. Die Frist beträgt vier Wochen und kann auf begründeten Antrag verlängert werden. Die beschuldigte Person kann eine Person ihres Vertrauens hinzuziehen.
+  \item Die Ombudsperson informiert zu Beginn der Vorprüfung den Vorstand in geeigneter Weise. Richtet sich der Verdacht gegen ein Vorstandsmitglied, unterrichtet sie die übrigen Vorstandsmitglieder.
+  \item Die Ombudsperson entscheidet, ob ein hinreichender Verdacht auf wissenschaftliches Fehlverhalten besteht. Sie stellt das Verfahren ein, wenn dies nicht der Fall ist, und teilt dies der hinweisgebenden und der beschuldigten Person unter Angabe der Gründe mit.
+  \item Gegen die Einstellung kann die hinweisgebende Person innerhalb von zwei Wochen in Textform Einwendungen erheben (Remonstration). Die Ombudsperson entscheidet darüber abschließend.
+  \item Besteht ein hinreichender Verdacht, legt die Ombudsperson dem Vorstand einen Bericht mit einem Vorschlag zum weiteren Vorgehen vor. Der Vorstand entscheidet über die Einleitung des förmlichen Untersuchungsverfahrens.
+  \item Die Unterlagen der Ombudsperson sind Dritten unzugänglich aufzubewahren.
+\end{itemize}
+
+\subsection{Förmliches Untersuchungsverfahren}
+\begin{itemize}
+  \item Für das förmliche Untersuchungsverfahren setzt der Vorstand eine Untersuchungskommission ein. Sie besteht aus einem nicht betroffenen Mitglied des Vorstands, zwei erfahrenen, nicht betroffenen ordentlichen Mitgliedern des Vereins sowie mindestens einer vereinsexternen, fachlich einschlägigen Person, die den Vorsitz führt. Scheidet ein Mitglied aus oder erweist es sich als befangen, benennt der Vorstand unverzüglich Ersatz. Die Kommission ist beschlussfähig, wenn mindestens drei Mitglieder mitwirken und die vorsitzende Person darunter ist.
+  \item Bei Bedarf können externe Sachverständige hinzugezogen werden. Wird ein Verdacht von außerhalb an den Verein herangetragen, wird die Kommission um mindestens ein weiteres externes Mitglied ergänzt.
+  \item Die Kommission hört die beschuldigte Person mündlich oder schriftlich an; sie kann eine Person ihres Vertrauens hinzuziehen. Sie hört ferner die hinweisgebende Person sowie erforderlichenfalls weitere Auskunftspersonen an.
+  \item Die Beratungen sind nicht öffentlich; es gilt das Beratungsgeheimnis. Die Kommission entscheidet mit Mehrheit nach den hergebrachten Regeln der freien Beweiswürdigung.
+  \item Das Ergebnis wird von der oder dem Vorsitzenden zusammengefasst und dem Vorstand, den Kommissionsmitgliedern sowie der beschuldigten Person schriftlich bekannt gegeben. Die hinweisgebende Person wird in geeigneter Weise über den Abschluss des Verfahrens unterrichtet.
+  \item Ein formalisiertes vereinsinternes Beschwerdeverfahren gegen den Bericht der Kommission oder gegen die Entscheidung des Vorstands findet nicht statt; der ordentliche Rechtsweg bleibt unberührt.
+\end{itemize}
+
+\subsection{Zusammenarbeit mit anderen Einrichtungen}
+Der Vorstand kann mit einer anderen wissenschaftlichen Einrichtung eine Vereinbarung darüber schließen, dass deren Ombudswesen oder deren Untersuchungskommission für den Verein tätig wird. Eine solche Vereinbarung bedarf eines Vorstandsbeschlusses, ist der Mitgliederversammlung mitzuteilen und lässt die Verantwortung des Vereins nach diesem Kodex unberührt.
+
+\subsection{Maßnahmen}
+Wird ein wissenschaftliches Fehlverhalten festgestellt, entscheidet der Vorstand über die gebotenen Maßnahmen. Sie können einzeln oder nebeneinander ergriffen werden und müssen dem festgestellten Fehlverhalten angemessen sein. In Betracht kommen insbesondere:
+\begin{itemize}
+  \item eine schriftliche Rüge;
+  \item die Aufforderung zur Berichtigung oder Zurückziehung betroffener Veröffentlichungen und Software-Releases sowie die Information der betroffenen Verlage, Repositorien und Mitautorinnen und Mitautoren;
+  \item der Entzug der Berechtigung, die Affiliation des Vereins zu führen;
+  \item der Entzug oder die Aberkennung von Preisen und Auszeichnungen des Vereins;
+  \item der befristete oder dauerhafte Ausschluss von Gutachter- und Gremienfunktionen sowie von Veranstaltungen des Vereins;
+  \item die Rücknahme von Förderentscheidungen und die Rückforderung gewährter Mittel;
+  \item vereinsrechtliche Maßnahmen bis zum Ausschluss aus dem Verein nach § 5.iv der Satzung;
+  \item arbeitsrechtliche Maßnahmen gegenüber Beschäftigten des Vereins bis zur Kündigung;
+  \item die Geltendmachung zivilrechtlicher Ansprüche, insbesondere auf Schadensersatz;
+  \item die Information betroffener Dritter, insbesondere von Mittelgebern, Kooperationspartnern und der Heimateinrichtung der betroffenen Person;
+  \item die Erstattung einer Strafanzeige, soweit rechtlich geboten.
+\end{itemize}
+
+\subsection{Aufbewahrung}
+Die Verfahrensunterlagen werden für die Dauer von zehn Jahren nach Abschluss des Verfahrens aufbewahrt und Dritten unzugänglich verwahrt. Die datenschutzrechtlichen Vorgaben und die Datenschutzrichtlinie des Vereins sind einzuhalten.
+
+\subsection{Abgrenzung zum Verhaltenskodex}
+\begin{itemize}
+  \item Für wissenschaftliches Fehlverhalten nach Leitlinie 19 ist die Ombudsperson zuständig; das Verfahren richtet sich nach diesem Abschnitt.
+  \item Für Verstöße gegen den Verhaltenskodex des Vereins ist der Vorstand zuständig; das Verfahren richtet sich nach dem Verhaltenskodex.
+  \item Betrifft ein Sachverhalt beide Regelwerke, werden beide Verfahren nebeneinander geführt. Ombudsperson und Vorstand unterrichten einander über die Einleitung und den Abschluss ihres jeweiligen Verfahrens, soweit die Verschwiegenheitspflicht und die Rechte der Beteiligten dem nicht entgegenstehen.
+  \item Geht eine Meldung bei der unzuständigen Stelle ein, wird sie mit Zustimmung der meldenden Person unverzüglich weitergeleitet.
+\end{itemize}
+
+\section{Durchführungsbestimmungen}
+\begin{itemize}
+  \item Der Vorstand macht diesen Kodex allen vom Geltungsbereich erfassten Personen bekannt und veröffentlicht ihn auf der Website des Vereins (\url{https://de-rse.org/}).
+  \item Neue Beschäftigte sowie Personen, die im Auftrag des Vereins wissenschaftlich tätig werden, werden bei Aufnahme ihrer Tätigkeit auf diesen Kodex verpflichtet. Neue Mitglieder werden im Aufnahmeverfahren auf den Kodex hingewiesen.
+  \item Der Vorstand berichtet der Jahreshauptversammlung in allgemeiner Form über die Anwendung dieses Kodex, insbesondere über Anzahl und Art der behandelten Fälle, ohne Rückschlüsse auf einzelne Personen zu ermöglichen.
+  \item Der Vorstand kann zu einzelnen Leitlinien ergänzende Handreichungen erlassen, insbesondere zu Lizenzierung, Archivierung, Zitation und Autorschaftskriterien. Diese dürfen diesem Kodex nicht widersprechen.
+\end{itemize}
+
+\section{Inkrafttreten, Übergangsvorschriften und Überprüfung}
+\begin{itemize}
+  \item Dieser Kodex wurde vom Vorstand des de-RSE e.V. am \offen{Datum der Vorstandssitzung} beschlossen und von der Mitgliederversammlung am 23. September 2026 als Ordnung des Vereins bestätigt. Er tritt mit dem Tag des Vorstandsbeschlusses in Kraft. 
+  \item \textbf{Änderungsermächtigung.} Der Vorstand wird ermächtigt, Änderungen an diesem Kodex vorzunehmen, die
+  \begin{itemize}
+    \item von der Deutschen Forschungsgemeinschaft oder einem anderen Mittelgeber für die Anerkennung des Vereins als antragsberechtigte Einrichtung verlangt werden,
+    \item zur Anpassung an geänderte Leitlinien der Deutschen Forschungsgemeinschaft erforderlich sind, oder
+    \item lediglich sprachlicher oder redaktioneller Art sind und den Inhalt unverändert lassen.
+  \end{itemize}
+  Solche Änderungen bedürfen eines Vorstandsbeschlusses und sind der nächsten Mitgliederversammlung mitzuteilen. Die Regelung entspricht § 9.iii und § 9.iv der Satzung.
+  \item Sonstige inhaltliche Änderungen bedürfen eines Beschlusses der Mitgliederversammlung mit der Mehrheit, die § 9.ii der Satzung für Änderungen der Geschäftsordnung vorsieht. Der Kodex steht als Ordnung des Vereins gleichrangig neben der Geschäftsordnung.
+  \item Der Kodex findet auf Sachverhalte Anwendung, die nach seinem Inkrafttreten verwirklicht worden sind.
+  \item Ein Verfahren kann auch dann geführt werden, wenn die betroffene Person dem Verein nicht mehr angehört oder nicht mehr für ihn tätig ist, sofern sie es zum Zeitpunkt des Sachverhalts war.
+  \item Der Kodex wird mindestens alle fünf Jahre sowie bei wesentlichen Änderungen der DFG-Leitlinien überprüft und bei Bedarf angepasst.
+  \item Sollten einzelne Bestimmungen dieses Kodex unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.
+\end{itemize}
+
+
+\vspace{1.8cm}
+\noindent\begin{minipage}[t]{0.33\textwidth}
+\rule{\linewidth}{0.4pt}\\
+\small Ort, Datum
+\end{minipage}\hfill
+\begin{minipage}[t]{0.62\textwidth}
+\rule{\linewidth}{0.4pt}\\
+\small Vorstandsvorsitz
+\end{minipage}
+
+\vspace{1.8cm}
+\noindent\begin{minipage}[t]{0.33\textwidth}
+\rule{\linewidth}{0.4pt}\\
+\small Ort, Datum
+\end{minipage}\hfill
+\begin{minipage}[t]{0.62\textwidth}
+\rule{\linewidth}{0.4pt}\\
+\small Stellvertretender Vorstandsvorsitz
+\end{minipage}
+
+\vspace{0.5em}
+
+
+\clearpage
+\section{Quellen}
+\begin{itemize}\small
+  \item[{[DFG22]}] Deutsche Forschungsgemeinschaft: Leitlinien zur Sicherung guter wissenschaftlicher Praxis. Kodex, Version 1.1, 2022. \url{https://doi.org/10.5281/zenodo.6472827}
+  \item[{[DFG24]}] Deutsche Forschungsgemeinschaft: Umgang mit Forschungssoftware im Förderhandeln der DFG. Handreichung, Oktober 2024. \url{https://doi.org/10.5281/zenodo.13919790}
+  \item[{[HRK22]}] Hochschulrektorenkonferenz: Mustersatzung zur Sicherung guter wissenschaftlicher Praxis und zum Umgang mit Verdachtsfällen wissenschaftlichen Fehlverhaltens. Entschließung der Mitgliederversammlung vom 10.\,Mai 2022. \url{https://www.hrk.de/positionen/beschluss/detail/mustersatzung-zur-sicherung-guter-wissenschaftlicher-praxis-und-zum-umgang-mit-verdachtsfaellen-wisse/}
+  \item[{[GI25]}] Gesellschaft für Informatik, de-RSE e.V.: GI- und DE-RSE Muster-Leitlinie zur effizienten Entwicklung von Forschungssoftware. Januar 2025. \url{https://doi.org/10.18420/2025-gi_de-rse}
+  \item[{[FAIR22]}] Chue Hong, N. P., Katz, D. S., Barker, M. et al.: FAIR Principles for Research Software (FAIR4RS Principles), Version 1.0, 2022. \url{https://doi.org/10.15497/RDA00068}
+  \item[{[SKN16]}] Smith, A. M., Katz, D. S., Niemeyer, K. E.: Software citation principles. PeerJ Computer Science 2:e86, 2016. \url{https://doi.org/10.7717/peerj-cs.86}
+  \item[{[CFF]}] Druskat, S. et al.: Citation File Format. \url{https://doi.org/10.5281/zenodo.1003149}
+  \item[{[CRediT]}] NISO: CRediT -- Contributor Roles Taxonomy. ANSI/NISO Z39.104-2022. \url{https://credit.niso.org/}
+  \item[{[OSI]}] Open Source Initiative: OSI Approved Licenses. \url{https://opensource.org/licenses}
+  \item[{[OWID]}] Ombudsgremium für die wissenschaftliche Integrität in Deutschland (OWID). Überregionale Anlaufstelle, 1999 von der DFG eingerichtet, seit 2024 in Trägerschaft des OWID e.V.; vormals \enquote{Ombudsman für die Wissenschaft}. \url{https://ombudsgremium.de/}
+  \item[{[Anzt21]}] Anzt, H., Bach, F., Druskat, S. et al.: An environment for sustainable research software in Germany and beyond. F1000Research 9:295, 2021. \url{https://doi.org/10.12688/f1000research.23224.2}
+  \item[{[Goth25]}] Goth, F., Alves, R., Braun, M. et al.: Foundational Competencies and Responsibilities of a Research Software Engineer. F1000Research 13:1429, 2025. \url{https://doi.org/10.12688/f1000research.157778.2}
+  \item[{[KF18]}] Katerbow, M., Feulner, G.: Handreichung zum Umgang mit Forschungssoftware. Allianz der deutschen Wissenschaftsorganisationen, 2018. \url{https://doi.org/10.5281/zenodo.1172970}
+\end{itemize}
+
+\end{document}

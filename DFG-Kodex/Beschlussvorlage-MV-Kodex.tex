@@ -1,0 +1,82 @@
+\documentclass[a4paper, fontsize=11pt]{scrartcl}
+\usepackage{scrletter}
+\usepackage{mathpazo}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\usepackage{lastpage}
+\usepackage{scrlayer-scrpage}
+
+\usepackage{color}
+\definecolor{col_deRSE}{rgb}{0.535, 0.164, 0.410}
+
+\usepackage{graphicx}
+\graphicspath{{../Vorlagen/}}
+
+\setkomafont{section}{\large\normalfont\textbf}
+\setkomafont{subsection}{\normalsize\normalfont\textbf}
+
+\usepackage[ngerman]{babel}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+
+\ifoot{Beschlussvorlage Kodex guter wissenschaftlicher Praxis}
+\ofoot{Seite \thepage\ von \pageref*{LastPage}}
+
+\DeclareNewLayer[
+  background, align=bl, hoffset=13.8cm, voffset=1cm, addvoffset=2mm,
+  mode=picture,
+  contents=\putLL{\includegraphics[height=1.5em]{de-RSE-logo-text-colour}}
+]{headerimage}
+\AddLayersToPageStyle{@everystyle@}{headerimage}
+
+\DeclareNewLayer[%
+  head, hoffset=20mm, voffset=16mm, width=\paperwidth, background,
+  contents={\color{col_deRSE}\par\noindent\rule{17cm}{0.4pt}}
+]{headerline}
+\AddLayersAtBeginOfPageStyle{@everystyle@}{headerline}
+
+\newcommand{\offen}[1]{\textbf{[Offen: #1]}}
+
+\begin{document}
+\thispagestyle{headings}
+\vspace{-8.5cm}
+\begin{centering}
+{\large\textbf{Antrag: Kodex zur Sicherung guter wissenschaftlicher Praxis}}\\*[0.5em]
+{\small Beschlussvorlage für die Mitgliederversammlung des de-RSE e.V. am \offen{Datum}}\\*[0.5em]
+{\tiny c/o Deutsches Zentrum für Luft- und Raumfahrt (DLR), Institut für Softwaretechnologie, Rutherfordstraße 2, 12489 Berlin}\\*[1em]
+\end{centering}
+\vspace{0.3cm}
+
+\section{Beschlussvorschlag}
+
+Die Mitgliederversammlung möge beschließen:
+
+\begin{quote}
+\enquote{Die Mitgliederversammlung bestätigt den vom Vorstand am 6. September 2026 beschlossenen \enquote{Kodex zur Sicherung guter wissenschaftlicher Praxis der Gesellschaft für Forschungssoftware (de-RSE e.V.)} in der als Anlage beigefügten Fassung als Ordnung des Vereins.
+
+Der Vorstand wird ermächtigt, Änderungen am Kodex vorzunehmen, die von der Deutschen Forschungsgemeinschaft oder einem anderen Mittelgeber für die Anerkennung des Vereins als antragsberechtigte Einrichtung verlangt werden, die zur Anpassung an geänderte Leitlinien der Deutschen Forschungsgemeinschaft erforderlich sind oder die lediglich sprachlicher oder redaktioneller Art sind. Solche Änderungen sind der nächsten Mitgliederversammlung mitzuteilen. Sonstige inhaltliche Änderungen bedürfen eines Beschlusses der Mitgliederversammlung mit der Mehrheit, die § 9.ii der Satzung für Änderungen der Geschäftsordnung vorsieht.
+
+Der Kodex steht als Ordnung des Vereins gleichrangig neben der Geschäftsordnung.}
+\end{quote}
+
+\section{Begründung}
+
+\begin{itemize}
+  \item Der Verein strebt die Anerkennung als antragsberechtigte Einrichtung bei der Deutschen Forschungsgemeinschaft an. Diese setzt voraus, dass die \enquote{Leitlinien zur Sicherung guter wissenschaftlicher Praxis} rechtsverbindlich umgesetzt sind. Der vorgelegte Kodex setzt alle 19 Leitlinien um und konkretisiert sie für den Bereich Forschungssoftware.
+  \item Nach Auskunft der DFG genügt dafür ein eigenständiges, vom Vorstand beschlossenes Dokument; eine Verankerung in der Satzung oder in der Geschäftsordnung ist \emph{nicht} erforderlich. Der Vorstandsbeschluss ist daher das gegenüber der DFG maßgebliche Instrument und von diesem Antrag unabhängig.
+  \item Die Bestätigung durch die Mitgliederversammlung hat einen davon getrennten Zweck: Erst als \emph{Ordnung} des Vereins erfasst der Kodex nach § 4.iv der Satzung auch die Mitglieder, die nicht Organmitglied, Beschäftigte oder im Auftrag des Vereins tätig sind. Der Kodex ist damit nicht nur eine Auflage gegenüber einem Mittelgeber, sondern das Selbstverständnis des Vereins.
+  \item Der Kodex wird bewusst \emph{nicht} in die Geschäftsordnung aufgenommen. Diese regelt Beiträge, Kassenführung, Wahlen und Versammlungsfragen; der Kodex enthält demgegenüber fachliche und verfahrensrechtliche Regelungen von erheblichem Umfang. Als eigenständige Ordnung bleiben beide Dokumente les- und pflegbar.
+  \item Die Änderungsermächtigung entspricht dem Muster, das die Satzung in § 9.iii für behördlich verlangte und in § 9.iv für redaktionelle Änderungen bereits vorsieht. Sie ist erforderlich, weil die inhaltliche Prüfung des Entwurfs durch die DFG (Team Wissenschaftliche Integrität) vor dieser Mitgliederversammlung nicht mehr abgeschlossen werden kann. Ohne die Ermächtigung müsste jede von der DFG verlangte Anpassung bis zur nächsten Mitgliederversammlung warten oder eine außerordentliche Mitgliederversammlung nach § 7.xiv auslösen.
+\end{itemize}
+
+
+\vspace{1em}
+\noindent\small \textbf{Anlage:} Kodex zur Sicherung guter wissenschaftlicher Praxis der Gesellschaft für Forschungssoftware (de-RSE e.V.)
+
+\end{document}
