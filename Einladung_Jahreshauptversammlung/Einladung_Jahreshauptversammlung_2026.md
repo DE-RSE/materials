@@ -23,9 +23,7 @@ Auf der Tagesordnung stehen folgende Themen:
     c. Bericht der Kassenprüfer
     d. Einholung von Kommentaren der Mitglieder über die Berichte 
 8. Entlastung des Vorstands für 2025
-9.  Änderungen der Geschäftsordnung
-    a. Selbstverpfichtung zur Einhaltung des DFG Kodex "Leitlinien zur Sicherung guter wissenschaftlicher Praxis" 
-    • erreichbar unter: [https://github.com/DE-RSE/satzung/pull/57/files](https://github.com/DE-RSE/satzung/pull/57/files)
+9. Annahme des Kodex zur Sicherung guter wissenschaftlicher Praxis
 10. Neuwahl des Vorstands
 11. Neuwahl der Kassenprüfer
 12. Satzungsgemäß gestellte Anträge (siehe Anhang)
@@ -58,9 +56,5 @@ Euer Vorstand
 
 
 ## Anhänge
-
-### Zur Abstimmung gestellte Änderung der Geschäftsordnung
-1. Selbstverpfichtung zur Einhaltung des DFG Kodex "Leitlinien zur Sicherung guter wissenschaftlicher Praxis": neuer Satz Punkt 6-iv
-    - pull-request: [https://github.com/DE-RSE/satzung/pull/57/files](https://github.com/DE-RSE/satzung/pull/57/files)
-    - neu: "Der Beitrag für Angehörige von Einrichtungen, die institutionelle Mitglieder des de-RSE e.V. sind, beträgt 45 Euro."
+- Kodex zur Sicherung guter wissenschaftlicher Praxis
 
