@@ -14,19 +14,17 @@ Auf der Tagesordnung stehen folgende Themen:
 3. Bekanntgabe und Annahme der Wahlleitung
 4. Feststellung der ordnungsgemäßen Einladung und der Beschlussfähigkeit 
 5. Bekanntgabe und Genehmigung der Tagesordnung
-6. Annahme des Protokolls der letzten Mitgliederversammlung
-    • erreichbar unter: [https://github.com/DE-RSE/protokolle](https://github.com/DE-RSE/protokolle)
+6. Annahme des Protokolls der letzten Mitgliederversammlung (erreichbar unter: [https://github.com/DE-RSE/protokolle](https://github.com/DE-RSE/protokolle))
 7. Berichte 2025
-    a. Rechenschaftsbericht des Vorstands
-    • erreichbar unter: [https://github.com/DE-RSE/berichte](https://github.com/DE-RSE/berichte)
+    a. Rechenschaftsbericht des Vorstands (erreichbar unter: [https://github.com/DE-RSE/berichte](https://github.com/DE-RSE/berichte))
     b. Finanzbericht der Schatzmeister
     c. Bericht der Kassenprüfer
     d. Einholung von Kommentaren der Mitglieder über die Berichte 
 8. Entlastung des Vorstands für 2025
-9. Annahme des Kodex zur Sicherung guter wissenschaftlicher Praxis
+9. Abstimmung über den Kodex zur Sicherung guter wissenschaftlicher Praxis (siehe Anhang)
 10. Neuwahl des Vorstands
 11. Neuwahl der Kassenprüfer
-12. Satzungsgemäß gestellte Anträge (siehe Anhang)
+11. Neuwahl der Ombudspersonen
 13. Sonstiges
 14. Schließung des Mitgliederversammlung
 
@@ -46,9 +44,9 @@ Nach der ordentlichen Mitgliederversammlung wollen wir, wie in den vergangenen J
 -   Wie ist der Stand des RSE-Masters (KTS Projekt)?
 -   Wie ist der Stand des Teaching Awards (KTS Projekt)?
 
-Die Arbeitskreise sind thematisch fokussiert und werden in Teilen gemeinsam mit der GI geführt. Thematisch befassen sie sich zum Beispiel mit der Ausbildung von RSEs, Community-Arbeit oder der Veranstaltungsorganisation. Wir sind offen für neue Themen und freuen uns über neue Vorschläge uns Beteiligungen.
+Die Arbeitskreise sind thematisch fokussiert und werden in Teilen gemeinsam mit der GI geführt. Thematisch befassen sie sich zum Beispiel mit der Ausbildung von RSEs, Community-Arbeit oder der Veranstaltungsorganisation. Wir sind offen für neue Themen und freuen uns über neue Vorschläge und Beteiligungen.
 
-Der Verein lebt wie schon geschrieben durch seine Mitglieder und wir freuen uns darauf, gemeinsam mit Dir die Forschungslandschaft in Deutschland mitzugestalten.
+Der Verein lebt wie schon geschrieben durch seine Mitglieder und wir freuen uns darauf, gemeinsam mit Euch die Forschungslandschaft in Deutschland mitzugestalten.
 
 Liebe Grüße
 
@@ -56,5 +54,5 @@ Euer Vorstand
 
 
 ## Anhänge
-- Kodex zur Sicherung guter wissenschaftlicher Praxis
+- Kodex zur Sicherung guter wissenschaftlicher Praxis mit Beschlussvorlage
 
