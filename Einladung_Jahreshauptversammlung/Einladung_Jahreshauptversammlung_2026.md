@@ -3,7 +3,7 @@ Liebes de-RSE e.V.-Mitglied,
 der de-RSE e.V. lädt alle Vereinsmitglieder zur ordentlichen Jahreshauptversammlung am 23. September 2026 um 17:00 Uhr ein. Diese Veranstaltung findet in diesem Jahr im Rahmen des de-RSE Collaboration Workshops statt und wird hybrid abgehalten: <https://meet.academiccloud.de/gl/rooms/fra-hkw-gqe/join>.
 
 
-Wie in der Satzung vorgeschrieben, wird auf der Jahreshauptversammlung eine Wahl des Vorstands durchgeführt. Die Wahl muss laut Satzung nicht geheim durchgeführt werden, es sei denn, mindestens ein Mitglied fordert eine geheime Wahl. Für die Wahlen kommen Wahlkarten (lokal) und die Abstimmfunktion von BigBlueButton (online) zum Einsatz. 
+Wie in der Satzung vorgeschrieben, wird auf der Jahreshauptversammlung eine Wahl des Vorstands, Kassenprüfer und der Ombudspersonen durchgeführt. Die Wahlen müssen laut Satzung nicht geheim durchgeführt werden, es sei denn, mindestens ein Mitglied fordert eine geheime Wahl. Für die Wahlen kommen Wahlkarten (lokal) und die Abstimmfunktion von BigBlueButton (online) zum Einsatz. 
 
 Unser Verein lebt nur durch seine Mitglieder. Laut Satzung werden zur Mitgliederversammlung 25% der ordentlichen Mitglieder zur Herstellung der Beschlussfähigkeit der Versammlung nötig sein. Das sind aller Voraussicht nach mindestens 20 wahlberechtigte Mitglieder. Unsere dringende Bitte an Euch ist daher, diese Verantwortung wahrzunehmen, teilzunehmen und zu wählen.
 
@@ -21,12 +21,13 @@ Auf der Tagesordnung stehen folgende Themen:
     c. Bericht der Kassenprüfer
     d. Einholung von Kommentaren der Mitglieder über die Berichte 
 8. Entlastung des Vorstands für 2025
-9. Abstimmung über den Kodex zur Sicherung guter wissenschaftlicher Praxis (siehe Anhang)
-10. Neuwahl des Vorstands
-11. Neuwahl der Kassenprüfer
-11. Neuwahl der Ombudspersonen
-13. Sonstiges
-14. Schließung des Mitgliederversammlung
+9. Neuwahl des Vorstands
+10. Neuwahl der Kassenprüfer
+11. Einführung eines Kodex zur Sicherung guter wissenschaftlicher Praxis (siehe Anhang)
+    a. Abstimmung über die Einführung des Kodex (siehe Beschlussvorlage)
+    b. Neuwahl der Ombudspersonen
+12. Sonstiges
+13. Schließung des Mitgliederversammlung
 
 \clearpage
 Prinzipiell stehen, wie auch in den Vorjahren, alle Vorstandsposten zur Wahl. Es gibt jedoch zwei Vorstandsmitglieder, die ihr Amt gerne abgeben würden. Wir würden uns daher sehr über Dein Interesse freuen, den Verein im Vorstand zu unterstützen. Insofern melde Dich ggf. so bald wie möglich beim Vorstand: vorstand@de-rse.org.
