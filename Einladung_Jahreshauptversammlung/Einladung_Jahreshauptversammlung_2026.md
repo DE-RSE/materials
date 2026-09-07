@@ -5,7 +5,7 @@ der de-RSE e.V. lädt alle Vereinsmitglieder zur ordentlichen Jahreshauptversamm
 
 Wie in der Satzung vorgeschrieben, wird auf der Jahreshauptversammlung eine Wahl des Vorstands, Kassenprüfer und der Ombudspersonen durchgeführt. Die Wahlen müssen laut Satzung nicht geheim durchgeführt werden, es sei denn, mindestens ein Mitglied fordert eine geheime Wahl. Für die Wahlen kommen Wahlkarten (lokal) und die Abstimmfunktion von BigBlueButton (online) zum Einsatz. 
 
-Unser Verein lebt nur durch seine Mitglieder. Laut Satzung werden zur Mitgliederversammlung 25% der ordentlichen Mitglieder zur Herstellung der Beschlussfähigkeit der Versammlung nötig sein. Das sind aller Voraussicht nach mindestens 20 wahlberechtigte Mitglieder. Unsere dringende Bitte an Euch ist daher, diese Verantwortung wahrzunehmen, teilzunehmen und zu wählen.
+Unser Verein lebt nur durch seine Mitglieder. Laut Satzung werden zur Mitgliederversammlung 25% der ordentlichen Mitglieder zur Herstellung der Beschlussfähigkeit der Versammlung nötig sein. Das sind aller Voraussicht nach mindestens 21 wahlberechtigte Mitglieder. Unsere dringende Bitte an Euch ist daher, diese Verantwortung wahrzunehmen, teilzunehmen und zu wählen.
 
 Auf der Tagesordnung stehen folgende Themen:
 
